@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+    <string id="AppName">Minimalist</string>
+
+    <!-- Settings titles -->
+    <string id="AccentColorTitle">Accent Color</string>
+    <string id="BgColorTitle">Background</string>
+    <string id="LeftMetricTitle">Left Complication</string>
+    <string id="RightMetricTitle">Right Complication</string>
+    <string id="ShowSecondsTitle">Show Seconds</string>
+    <string id="StepGoalTitle">Step Goal</string>
+
+    <!-- Accent colors -->
+    <string id="ColorGold">Gold</string>
+    <string id="ColorOcean">Ocean</string>
+    <string id="ColorRose">Rose</string>
+    <string id="ColorSage">Sage</string>
+    <string id="ColorLavender">Lavender</string>
+
+    <!-- Background themes -->
+    <string id="BgObsidian">Obsidian</string>
+    <string id="BgMidnight">Midnight</string>
+    <string id="BgSlate">Slate</string>
+    <string id="BgCharcoal">Charcoal</string>
+
+    <!-- Yes/No -->
+    <string id="Yes">Yes</string>
+    <string id="No">No</string>
+
+    <!-- Metrics -->
+    <string id="MetricHR">Heart Rate</string>
+    <string id="MetricSteps">Steps</string>
+    <string id="MetricCalories">Calories</string>
+    <string id="MetricDistance">Distance</string>
+    <string id="MetricFloors">Floors</string>
+    <string id="MetricBattery">Battery</string>
+</strings>

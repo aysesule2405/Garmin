@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/furkantoprak/Dev/garmin/minimalist-face/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="1" lineNum="13" parent="globals/MinimalistView" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/bin/gen/006-B4433-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435472" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="3" lineNum="5" parent="globals/MinimalistApp" pc="268435492" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="325" parent="globals/MinimalistView" pc="268435504" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="326" parent="globals/MinimalistView" pc="268435507" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="327" parent="globals/MinimalistView" pc="268435519" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="328" parent="globals/MinimalistView" pc="268435536" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="330" parent="globals/MinimalistView" pc="268435553" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="331" parent="globals/MinimalistView" pc="268435570" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="332" parent="globals/MinimalistView" pc="268435576" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="333" parent="globals/MinimalistView" pc="268435586" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="334" parent="globals/MinimalistView" pc="268435606" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="4" lineNum="337" parent="globals/MinimalistView" pc="268435626" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="5" lineNum="44" parent="globals/MinimalistView" pc="268435632" symbol="onSettingsChanged"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="5" lineNum="45" parent="globals/MinimalistView" pc="268435634" symbol="onSettingsChanged"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="5" lineNum="46" parent="globals/MinimalistView" pc="268435641" symbol="onSettingsChanged"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="6" lineNum="123" parent="globals/MinimalistView" pc="268435653" symbol="&lt;globals/MinimalistView/&lt;&gt;drawBackground&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="6" lineNum="124" parent="globals/MinimalistView" pc="268435655" symbol="&lt;globals/MinimalistView/&lt;&gt;drawBackground&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="6" lineNum="125" parent="globals/MinimalistView" pc="268435675" symbol="&lt;globals/MinimalistView/&lt;&gt;drawBackground&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="7" lineNum="102" parent="globals/MinimalistView" pc="268435684" symbol="onExitSleep"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="7" lineNum="103" parent="globals/MinimalistView" pc="268435686" symbol="onExitSleep"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="7" lineNum="104" parent="globals/MinimalistView" pc="268435694" symbol="onExitSleep"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="8" lineNum="89" parent="globals/MinimalistView" pc="268435706" symbol="onLayout"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="8" lineNum="90" parent="globals/MinimalistView" pc="268435708" symbol="onLayout"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="8" lineNum="91" parent="globals/MinimalistView" pc="268435722" symbol="onLayout"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="8" lineNum="92" parent="globals/MinimalistView" pc="268435736" symbol="onLayout"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="8" lineNum="93" parent="globals/MinimalistView" pc="268435751" symbol="onLayout"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="8" lineNum="94" parent="globals/MinimalistView" pc="268435766" symbol="onLayout"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="9" lineNum="271" parent="globals/MinimalistView" pc="268435807" symbol="&lt;globals/MinimalistView/&lt;&gt;drawComplications&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="9" lineNum="272" parent="globals/MinimalistView" pc="268435810" symbol="&lt;globals/MinimalistView/&lt;&gt;drawComplications&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="9" lineNum="273" parent="globals/MinimalistView" pc="268435823" symbol="&lt;globals/MinimalistView/&lt;&gt;drawComplications&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="9" lineNum="274" parent="globals/MinimalistView" pc="268435852" symbol="&lt;globals/MinimalistView/&lt;&gt;drawComplications&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="10" lineNum="340" parent="globals/MinimalistView" pc="268435882" symbol="&lt;globals/MinimalistView/&lt;&gt;formatK&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="10" lineNum="341" parent="globals/MinimalistView" pc="268435884" symbol="&lt;globals/MinimalistView/&lt;&gt;formatK&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="10" lineNum="342" parent="globals/MinimalistView" pc="268435893" symbol="&lt;globals/MinimalistView/&lt;&gt;formatK&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="10" lineNum="344" parent="globals/MinimalistView" pc="268435924" symbol="&lt;globals/MinimalistView/&lt;&gt;formatK&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="49" parent="globals/MinimalistView" pc="268435932" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="51" parent="globals/MinimalistView" pc="268435935" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="52" parent="globals/MinimalistView" pc="268435954" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="59" parent="globals/MinimalistView" pc="268436000" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="60" parent="globals/MinimalistView" pc="268436023" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="60" parent="globals/MinimalistView" pc="268436038" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="61" parent="globals/MinimalistView" pc="268436044" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="62" parent="globals/MinimalistView" pc="268436051" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="63" parent="globals/MinimalistView" pc="268436062" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="66" parent="globals/MinimalistView" pc="268436074" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="67" parent="globals/MinimalistView" pc="268436093" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="68" parent="globals/MinimalistView" pc="268436100" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="69" parent="globals/MinimalistView" pc="268436123" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="69" parent="globals/MinimalistView" pc="268436138" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="70" parent="globals/MinimalistView" pc="268436144" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="73" parent="globals/MinimalistView" pc="268436156" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="74" parent="globals/MinimalistView" pc="268436175" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="76" parent="globals/MinimalistView" pc="268436203" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="77" parent="globals/MinimalistView" pc="268436222" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="80" parent="globals/MinimalistView" pc="268436251" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="81" parent="globals/MinimalistView" pc="268436270" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="84" parent="globals/MinimalistView" pc="268436300" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="85" parent="globals/MinimalistView" pc="268436319" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="11" lineNum="86" parent="globals/MinimalistView" pc="268436344" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="182" parent="globals/MinimalistView" pc="268436367" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="183" parent="globals/MinimalistView" pc="268436370" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="184" parent="globals/MinimalistView" pc="268436381" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="185" parent="globals/MinimalistView" pc="268436389" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="187" parent="globals/MinimalistView" pc="268436397" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="188" parent="globals/MinimalistView" pc="268436434" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="189" parent="globals/MinimalistView" pc="268436462" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="191" parent="globals/MinimalistView" pc="268436490" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="192" parent="globals/MinimalistView" pc="268436509" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="193" parent="globals/MinimalistView" pc="268436528" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="194" parent="globals/MinimalistView" pc="268436547" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="197" parent="globals/MinimalistView" pc="268436566" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="198" parent="globals/MinimalistView" pc="268436578" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="199" parent="globals/MinimalistView" pc="268436595" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="207" parent="globals/MinimalistView" pc="268436733" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="208" parent="globals/MinimalistView" pc="268436745" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="209" parent="globals/MinimalistView" pc="268436762" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="216" parent="globals/MinimalistView" pc="268436900" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="217" parent="globals/MinimalistView" pc="268436910" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="218" parent="globals/MinimalistView" pc="268436927" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="219" parent="globals/MinimalistView" pc="268436939" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="227" parent="globals/MinimalistView" pc="268437065" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="228" parent="globals/MinimalistView" pc="268437082" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="229" parent="globals/MinimalistView" pc="268437094" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="231" parent="globals/MinimalistView" pc="268437111" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="232" parent="globals/MinimalistView" pc="268437142" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="233" parent="globals/MinimalistView" pc="268437173" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="238" parent="globals/MinimalistView" pc="268437245" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="242" parent="globals/MinimalistView" pc="268437264" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="243" parent="globals/MinimalistView" pc="268437284" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="244" parent="globals/MinimalistView" pc="268437306" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="245" parent="globals/MinimalistView" pc="268437323" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="246" parent="globals/MinimalistView" pc="268437345" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="247" parent="globals/MinimalistView" pc="268437362" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="12" lineNum="248" parent="globals/MinimalistView" pc="268437379" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="13" lineNum="97" parent="globals/MinimalistView" pc="268437405" symbol="onEnterSleep"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="13" lineNum="98" parent="globals/MinimalistView" pc="268437407" symbol="onEnterSleep"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="13" lineNum="99" parent="globals/MinimalistView" pc="268437415" symbol="onEnterSleep"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="158" parent="globals/MinimalistView" pc="268437427" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="159" parent="globals/MinimalistView" pc="268437430" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="160" parent="globals/MinimalistView" pc="268437441" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="161" parent="globals/MinimalistView" pc="268437463" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="163" parent="globals/MinimalistView" pc="268437472" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="164" parent="globals/MinimalistView" pc="268437482" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="165" parent="globals/MinimalistView" pc="268437508" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="166" parent="globals/MinimalistView" pc="268437522" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="168" parent="globals/MinimalistView" pc="268437541" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="169" parent="globals/MinimalistView" pc="268437555" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="170" parent="globals/MinimalistView" pc="268437567" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="14" lineNum="177" parent="globals/MinimalistView" pc="268437703" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="15" lineNum="39" parent="globals/MinimalistView" pc="268437716" symbol="initialize"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="15" lineNum="40" parent="globals/MinimalistView" pc="268437718" symbol="initialize"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="15" lineNum="41" parent="globals/MinimalistView" pc="268437730" symbol="initialize"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="130" parent="globals/MinimalistView" pc="268437738" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="131" parent="globals/MinimalistView" pc="268437741" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="132" parent="globals/MinimalistView" pc="268437753" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="133" parent="globals/MinimalistView" pc="268437775" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="134" parent="globals/MinimalistView" pc="268437796" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="134" parent="globals/MinimalistView" pc="268437807" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="135" parent="globals/MinimalistView" pc="268437817" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="137" parent="globals/MinimalistView" pc="268437833" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="138" parent="globals/MinimalistView" pc="268437843" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="141" parent="globals/MinimalistView" pc="268437855" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="142" parent="globals/MinimalistView" pc="268437872" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="145" parent="globals/MinimalistView" pc="268437901" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="146" parent="globals/MinimalistView" pc="268437908" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="147" parent="globals/MinimalistView" pc="268437925" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="151" parent="globals/MinimalistView" pc="268437959" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="152" parent="globals/MinimalistView" pc="268437971" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="16" lineNum="153" parent="globals/MinimalistView" pc="268437988" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="107" parent="globals/MinimalistView" pc="268438014" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="108" parent="globals/MinimalistView" pc="268438017" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="109" parent="globals/MinimalistView" pc="268438028" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="111" parent="globals/MinimalistView" pc="268438043" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="113" parent="globals/MinimalistView" pc="268438055" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="114" parent="globals/MinimalistView" pc="268438066" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="115" parent="globals/MinimalistView" pc="268438077" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="116" parent="globals/MinimalistView" pc="268438088" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="117" parent="globals/MinimalistView" pc="268438099" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="17" lineNum="118" parent="globals/MinimalistView" pc="268438110" symbol="onUpdate"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="18" lineNum="254" parent="globals/MinimalistView" pc="268438124" symbol="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="18" lineNum="255" parent="globals/MinimalistView" pc="268438127" symbol="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="18" lineNum="256" parent="globals/MinimalistView" pc="268438152" symbol="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="18" lineNum="258" parent="globals/MinimalistView" pc="268438159" symbol="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="18" lineNum="259" parent="globals/MinimalistView" pc="268438173" symbol="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="18" lineNum="261" parent="globals/MinimalistView" pc="268438210" symbol="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="18" lineNum="262" parent="globals/MinimalistView" pc="268438226" symbol="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="278" parent="globals/MinimalistView" pc="268438264" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="279" parent="globals/MinimalistView" pc="268438267" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="280" parent="globals/MinimalistView" pc="268438274" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="281" parent="globals/MinimalistView" pc="268438281" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="283" parent="globals/MinimalistView" pc="268438293" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="284" parent="globals/MinimalistView" pc="268438300" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="285" parent="globals/MinimalistView" pc="268438307" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="286" parent="globals/MinimalistView" pc="268438318" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="287" parent="globals/MinimalistView" pc="268438326" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="288" parent="globals/MinimalistView" pc="268438333" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="289" parent="globals/MinimalistView" pc="268438355" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="290" parent="globals/MinimalistView" pc="268438370" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="291" parent="globals/MinimalistView" pc="268438378" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="292" parent="globals/MinimalistView" pc="268438385" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="293" parent="globals/MinimalistView" pc="268438407" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="294" parent="globals/MinimalistView" pc="268438419" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="295" parent="globals/MinimalistView" pc="268438427" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="296" parent="globals/MinimalistView" pc="268438434" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="297" parent="globals/MinimalistView" pc="268438456" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="298" parent="globals/MinimalistView" pc="268438482" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="299" parent="globals/MinimalistView" pc="268438490" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="300" parent="globals/MinimalistView" pc="268438497" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="301" parent="globals/MinimalistView" pc="268438519" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="303" parent="globals/MinimalistView" pc="268438531" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="304" parent="globals/MinimalistView" pc="268438538" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="308" parent="globals/MinimalistView" pc="268438574" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="309" parent="globals/MinimalistView" pc="268438590" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="310" parent="globals/MinimalistView" pc="268438602" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="313" parent="globals/MinimalistView" pc="268438626" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="314" parent="globals/MinimalistView" pc="268438643" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="318" parent="globals/MinimalistView" pc="268438665" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" id="19" lineNum="319" parent="globals/MinimalistView" pc="268438682" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="20" lineNum="12" parent="globals/MinimalistApp" pc="268438705" symbol="onStart"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="21" lineNum="23" parent="globals/MinimalistApp" pc="268438708" symbol="onSettingsChanged"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="21" lineNum="24" parent="globals/MinimalistApp" pc="268438710" symbol="onSettingsChanged"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="21" lineNum="25" parent="globals/MinimalistApp" pc="268438719" symbol="onSettingsChanged"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="22" lineNum="18" parent="globals/MinimalistApp" pc="268438735" symbol="getInitialView"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="22" lineNum="19" parent="globals/MinimalistApp" pc="268438737" symbol="getInitialView"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="22" lineNum="20" parent="globals/MinimalistApp" pc="268438762" symbol="getInitialView"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="23" lineNum="8" parent="globals/MinimalistApp" pc="268438775" symbol="initialize"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="23" lineNum="9" parent="globals/MinimalistApp" pc="268438777" symbol="initialize"/>
+        <entry filename="/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistApp.mc" id="24" lineNum="15" parent="globals/MinimalistApp" pc="268438790" symbol="onStop"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="46" symbol="MetricCalories"/>
+        <entry field="true" id="52" symbol="RightMetricTitle"/>
+        <entry id="21" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;drawComplications&gt;"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="8" symbol="&lt;globals/MinimalistView/&lt;&gt;_accentPrimary&gt;"/>
+        <entry id="28" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry id="20" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;drawBackground&gt;"/>
+        <entry field="true" id="41" symbol="ColorOcean"/>
+        <entry field="true" id="42" symbol="ColorRose"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="47" symbol="MetricDistance"/>
+        <entry id="8388647" module="true" symbol="UserProfile"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="35" symbol="BgColorTitle"/>
+        <entry field="true" id="33" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry field="true" id="49" symbol="MetricHR"/>
+        <entry id="4" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry field="true" id="44" symbol="LeftMetricTitle"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="53" symbol="ShowSecondsTitle"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="34" symbol="BgCharcoal"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="25" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="27" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;formatK&gt;"/>
+        <entry id="29" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="7" symbol="&lt;globals/MinimalistView/&lt;&gt;_accentDim&gt;"/>
+        <entry field="true" id="36" symbol="BgMidnight"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="16" symbol="&lt;globals/MinimalistView/&lt;&gt;_rightMetric&gt;"/>
+        <entry field="true" id="9" symbol="&lt;globals/MinimalistView/&lt;&gt;_bgColor&gt;"/>
+        <entry field="true" id="13" symbol="&lt;globals/MinimalistView/&lt;&gt;_isSleeping&gt;"/>
+        <entry field="true" id="17" symbol="&lt;globals/MinimalistView/&lt;&gt;_showSeconds&gt;"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry field="true" id="55" symbol="Yes"/>
+        <entry field="true" id="37" symbol="BgObsidian"/>
+        <entry field="true" id="39" symbol="ColorGold"/>
+        <entry id="26" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;"/>
+        <entry field="true" id="43" symbol="ColorSage"/>
+        <entry field="true" id="51" symbol="No"/>
+        <entry field="true" id="38" symbol="BgSlate"/>
+        <entry field="true" id="45" symbol="MetricBattery"/>
+        <entry field="true" id="40" symbol="ColorLavender"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="32" symbol="AccentColorTitle"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="24" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry id="23" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;"/>
+        <entry field="true" id="19" symbol="&lt;globals/MinimalistView/&lt;&gt;_w&gt;"/>
+        <entry field="true" id="31" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry field="true" id="15" symbol="&lt;globals/MinimalistView/&lt;&gt;_r&gt;"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="50" symbol="MetricSteps"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="12" symbol="&lt;globals/MinimalistView/&lt;&gt;_h&gt;"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry id="6" object="true" symbol="MinimalistView"/>
+        <entry field="true" id="48" symbol="MetricFloors"/>
+        <entry id="8391701" method="true" symbol="setAntiAlias"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="54" symbol="StepGoalTitle"/>
+        <entry field="true" id="30" symbol="&lt;globals/MinimalistApp/&lt;&gt;_view&gt;"/>
+        <entry id="5" object="true" symbol="MinimalistApp"/>
+        <entry field="true" id="18" symbol="&lt;globals/MinimalistView/&lt;&gt;_stepGoal&gt;"/>
+        <entry id="22" method="true" symbol="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;"/>
+        <entry field="true" id="11" symbol="&lt;globals/MinimalistView/&lt;&gt;_cy&gt;"/>
+        <entry field="true" id="10" symbol="&lt;globals/MinimalistView/&lt;&gt;_cx&gt;"/>
+        <entry field="true" id="14" symbol="&lt;globals/MinimalistView/&lt;&gt;_leftMetric&gt;"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435631" name="actInfo" stackId="1" startPc="268435507"/>
+        <entry endPc="268435631" name="it" stackId="2" startPc="268435507"/>
+        <entry endPc="268435622" name="sample" stackId="3" startPc="268435576"/>
+        <entry arg="true" endPc="268435683" name="dc" stackId="1" startPc="268435653"/>
+        <entry arg="true" endPc="268435806" name="dc" stackId="1" startPc="268435706"/>
+        <entry arg="true" endPc="268435881" name="dc" stackId="1" startPc="268435807"/>
+        <entry endPc="268435880" name="compOffset" stackId="2" startPc="268435810"/>
+        <entry arg="true" endPc="268435931" name="n" stackId="1" startPc="268435882"/>
+        <entry endPc="268436365" name="accentIdx" stackId="1" startPc="268435935"/>
+        <entry endPc="268436365" name="accentPalettes" stackId="2" startPc="268435935"/>
+        <entry endPc="268436365" name="ai" stackId="3" startPc="268435935"/>
+        <entry endPc="268436365" name="palette" stackId="4" startPc="268435935"/>
+        <entry endPc="268436365" name="bgIdx" stackId="5" startPc="268435935"/>
+        <entry endPc="268436365" name="bgColors" stackId="6" startPc="268435935"/>
+        <entry endPc="268436365" name="bi" stackId="7" startPc="268435935"/>
+        <entry endPc="268436365" name="lm" stackId="8" startPc="268435935"/>
+        <entry endPc="268436365" name="rm" stackId="9" startPc="268435935"/>
+        <entry endPc="268436365" name="ss" stackId="10" startPc="268435935"/>
+        <entry endPc="268436365" name="sg" stackId="11" startPc="268435935"/>
+        <entry endPc="268436365" name="sgNum" stackId="12" startPc="268435935"/>
+        <entry arg="true" endPc="268437404" name="dc" stackId="1" startPc="268436367"/>
+        <entry arg="true" endPc="268437404" name="clock" stackId="2" startPc="268436367"/>
+        <entry endPc="268437403" name="hours" stackId="3" startPc="268436370"/>
+        <entry endPc="268437403" name="minutes" stackId="4" startPc="268436370"/>
+        <entry endPc="268437403" name="seconds" stackId="5" startPc="268436370"/>
+        <entry endPc="268437403" name="hourAngle" stackId="6" startPc="268436370"/>
+        <entry endPc="268437403" name="minAngle" stackId="7" startPc="268436370"/>
+        <entry endPc="268437403" name="secAngle" stackId="8" startPc="268436370"/>
+        <entry endPc="268437403" name="hourLen" stackId="9" startPc="268436370"/>
+        <entry endPc="268437403" name="minLen" stackId="10" startPc="268436370"/>
+        <entry endPc="268437403" name="secLen" stackId="11" startPc="268436370"/>
+        <entry endPc="268437403" name="secTail" stackId="12" startPc="268436370"/>
+        <entry endPc="268437403" name="tipStart" stackId="13" startPc="268436370"/>
+        <entry endPc="268437260" name="txEnd" stackId="14" startPc="268437082"/>
+        <entry endPc="268437260" name="tyEnd" stackId="15" startPc="268437082"/>
+        <entry arg="true" endPc="268437715" name="dc" stackId="1" startPc="268437427"/>
+        <entry endPc="268437702" name="i" stackId="2" startPc="268437441"/>
+        <entry endPc="268437692" name="angleRad" stackId="3" startPc="268437441"/>
+        <entry endPc="268437692" name="isCardinal" stackId="4" startPc="268437441"/>
+        <entry endPc="268437692" name="outerR" stackId="5" startPc="268437441"/>
+        <entry endPc="268437692" name="innerR" stackId="6" startPc="268437441"/>
+        <entry endPc="268437692" name="penW" stackId="7" startPc="268437441"/>
+        <entry endPc="268437692" name="color" stackId="8" startPc="268437441"/>
+        <entry arg="true" endPc="268438013" name="dc" stackId="1" startPc="268437738"/>
+        <entry endPc="268438012" name="info" stackId="2" startPc="268437741"/>
+        <entry endPc="268438012" name="steps" stackId="3" startPc="268437741"/>
+        <entry endPc="268438012" name="frac" stackId="4" startPc="268437741"/>
+        <entry endPc="268438012" name="sweepDeg" stackId="5" startPc="268437741"/>
+        <entry endPc="268438012" name="arcR" stackId="6" startPc="268437741"/>
+        <entry arg="true" endPc="268438123" name="dc" stackId="1" startPc="268438014"/>
+        <entry endPc="268438122" name="clock" stackId="2" startPc="268438017"/>
+        <entry arg="true" endPc="268438263" name="dc" stackId="1" startPc="268438124"/>
+        <entry endPc="268438262" name="now" stackId="2" startPc="268438127"/>
+        <entry endPc="268438262" name="months" stackId="3" startPc="268438127"/>
+        <entry endPc="268438262" name="mon" stackId="4" startPc="268438127"/>
+        <entry endPc="268438262" name="dateStr" stackId="5" startPc="268438127"/>
+        <entry arg="true" endPc="268438704" name="dc" stackId="1" startPc="268438264"/>
+        <entry arg="true" endPc="268438704" name="x" stackId="2" startPc="268438264"/>
+        <entry arg="true" endPc="268438704" name="y" stackId="3" startPc="268438264"/>
+        <entry arg="true" endPc="268438704" name="id" stackId="4" startPc="268438264"/>
+        <entry endPc="268438703" name="label" stackId="5" startPc="268438267"/>
+        <entry endPc="268438703" name="value" stackId="6" startPc="268438267"/>
+        <entry endPc="268438703" name="info" stackId="7" startPc="268438267"/>
+        <entry endPc="268438366" name="s" stackId="8" startPc="268438326"/>
+        <entry endPc="268438415" name="c" stackId="9" startPc="268438378"/>
+        <entry endPc="268438478" name="d" stackId="10" startPc="268438427"/>
+        <entry endPc="268438527" name="f" stackId="11" startPc="268438490"/>
+    </localVars>
+    <deviceInfo deviceVersion="3cbcff5b61d759a7585c5fa7606e74c0bd5dfa74" partNumber="006-B4433-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MetricDistance"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AccentColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MetricBattery"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MetricSteps"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BgMidnight"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BgObsidian"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorSage"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StepGoalTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorGold"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MetricHR"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BgColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ShowSecondsTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Yes"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LeftMetricTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BgSlate"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BgCharcoal"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRose"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MetricFloors"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLavender"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="RightMetricTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MetricCalories"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorOcean"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="No"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/MinimalistView" offset="107" parentId="globals" symbolId="MinimalistView" type="class"/>
+        <dataEntry label="globals/Rez" offset="403" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/MinimalistApp" offset="447" parentId="globals" symbolId="MinimalistApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="536" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="571" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="MinimalistView" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435491" name="&lt;init&gt;" parent="Rez" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435503" name="&lt;init&gt;" parent="MinimalistApp" startPc="268435492">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435631" name="&lt;globals/MinimalistView/&lt;&gt;getHeartRateStr&gt;" parent="MinimalistView" startPc="268435504">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435652" name="onSettingsChanged" parent="MinimalistView" startPc="268435632">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435683" name="&lt;globals/MinimalistView/&lt;&gt;drawBackground&gt;" parent="MinimalistView" startPc="268435653">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435705" name="onExitSleep" parent="MinimalistView" startPc="268435684">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435806" name="onLayout" parent="MinimalistView" startPc="268435706">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435881" name="&lt;globals/MinimalistView/&lt;&gt;drawComplications&gt;" parent="MinimalistView" startPc="268435807">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435931" name="&lt;globals/MinimalistView/&lt;&gt;formatK&gt;" parent="MinimalistView" startPc="268435882">
+            <param id="n"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436366" name="&lt;globals/MinimalistView/&lt;&gt;loadSettings&gt;" parent="MinimalistView" startPc="268435932">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437404" name="&lt;globals/MinimalistView/&lt;&gt;drawHands&gt;" parent="MinimalistView" startPc="268436367">
+            <param id="dc"/>
+            <param id="clock"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437426" name="onEnterSleep" parent="MinimalistView" startPc="268437405">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437715" name="&lt;globals/MinimalistView/&lt;&gt;drawHourMarkers&gt;" parent="MinimalistView" startPc="268437427">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437737" name="initialize" parent="MinimalistView" startPc="268437716">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438013" name="&lt;globals/MinimalistView/&lt;&gt;drawStepArc&gt;" parent="MinimalistView" startPc="268437738">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438123" name="onUpdate" parent="MinimalistView" startPc="268438014">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438263" name="&lt;globals/MinimalistView/&lt;&gt;drawDate&gt;" parent="MinimalistView" startPc="268438124">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438704" name="&lt;globals/MinimalistView/&lt;&gt;drawMetricAt&gt;" parent="MinimalistView" startPc="268438264">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="id"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438707" name="onStart" parent="MinimalistApp" startPc="268438705">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438734" name="onSettingsChanged" parent="MinimalistApp" startPc="268438708">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438774" name="getInitialView" parent="MinimalistApp" startPc="268438735">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438789" name="initialize" parent="MinimalistApp" startPc="268438775">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438792" name="onStop" parent="MinimalistApp" startPc="268438790">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

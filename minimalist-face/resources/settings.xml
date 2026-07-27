@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <setting propertyKey="@Properties.AccentColor" title="@Strings.AccentColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ColorGold</listEntry>
+            <listEntry value="1">@Strings.ColorOcean</listEntry>
+            <listEntry value="2">@Strings.ColorRose</listEntry>
+            <listEntry value="3">@Strings.ColorSage</listEntry>
+            <listEntry value="4">@Strings.ColorLavender</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.BgColor" title="@Strings.BgColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.BgObsidian</listEntry>
+            <listEntry value="1">@Strings.BgMidnight</listEntry>
+            <listEntry value="2">@Strings.BgSlate</listEntry>
+            <listEntry value="3">@Strings.BgCharcoal</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.LeftMetric" title="@Strings.LeftMetricTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.MetricHR</listEntry>
+            <listEntry value="1">@Strings.MetricSteps</listEntry>
+            <listEntry value="2">@Strings.MetricCalories</listEntry>
+            <listEntry value="3">@Strings.MetricDistance</listEntry>
+            <listEntry value="4">@Strings.MetricFloors</listEntry>
+            <listEntry value="5">@Strings.MetricBattery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.RightMetric" title="@Strings.RightMetricTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.MetricHR</listEntry>
+            <listEntry value="1">@Strings.MetricSteps</listEntry>
+            <listEntry value="2">@Strings.MetricCalories</listEntry>
+            <listEntry value="3">@Strings.MetricDistance</listEntry>
+            <listEntry value="4">@Strings.MetricFloors</listEntry>
+            <listEntry value="5">@Strings.MetricBattery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.ShowSeconds" title="@Strings.ShowSecondsTitle">
+        <settingConfig type="list">
+            <listEntry value="1">@Strings.Yes</listEntry>
+            <listEntry value="0">@Strings.No</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.StepGoal" title="@Strings.StepGoalTitle">
+        <settingConfig type="list">
+            <listEntry value="5000">5,000</listEntry>
+            <listEntry value="7500">7,500</listEntry>
+            <listEntry value="8000">8,000</listEntry>
+            <listEntry value="10000">10,000</listEntry>
+            <listEntry value="12000">12,000</listEntry>
+            <listEntry value="15000">15,000</listEntry>
+            <listEntry value="20000">20,000</listEntry>
+        </settingConfig>
+    </setting>
+</settings>

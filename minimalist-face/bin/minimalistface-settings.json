@@ -1,0 +1,219 @@
+{
+  "settings" : [ {
+    "key" : "AccentColor",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "AccentColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorGold",
+      "value" : 0
+    }, {
+      "display" : "ColorOcean",
+      "value" : 1
+    }, {
+      "display" : "ColorRose",
+      "value" : 2
+    }, {
+      "display" : "ColorSage",
+      "value" : 3
+    }, {
+      "display" : "ColorLavender",
+      "value" : 4
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "BgColor",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "BgColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "BgObsidian",
+      "value" : 0
+    }, {
+      "display" : "BgMidnight",
+      "value" : 1
+    }, {
+      "display" : "BgSlate",
+      "value" : 2
+    }, {
+      "display" : "BgCharcoal",
+      "value" : 3
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "LeftMetric",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "LeftMetricTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "MetricHR",
+      "value" : 0
+    }, {
+      "display" : "MetricSteps",
+      "value" : 1
+    }, {
+      "display" : "MetricCalories",
+      "value" : 2
+    }, {
+      "display" : "MetricDistance",
+      "value" : 3
+    }, {
+      "display" : "MetricFloors",
+      "value" : 4
+    }, {
+      "display" : "MetricBattery",
+      "value" : 5
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "RightMetric",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "RightMetricTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "MetricHR",
+      "value" : 0
+    }, {
+      "display" : "MetricSteps",
+      "value" : 1
+    }, {
+      "display" : "MetricCalories",
+      "value" : 2
+    }, {
+      "display" : "MetricDistance",
+      "value" : 3
+    }, {
+      "display" : "MetricFloors",
+      "value" : 4
+    }, {
+      "display" : "MetricBattery",
+      "value" : 5
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "ShowSeconds",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "ShowSecondsTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "Yes",
+      "value" : 1
+    }, {
+      "display" : "No",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "StepGoal",
+    "valueType" : "number",
+    "defaultValue" : 10000,
+    "configTitle" : "StepGoalTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal0$",
+      "value" : 5000
+    }, {
+      "display" : "$literal1$",
+      "value" : 7500
+    }, {
+      "display" : "$literal2$",
+      "value" : 8000
+    }, {
+      "display" : "$literal3$",
+      "value" : 10000
+    }, {
+      "display" : "$literal4$",
+      "value" : 12000
+    }, {
+      "display" : "$literal5$",
+      "value" : 15000
+    }, {
+      "display" : "$literal6$",
+      "value" : 20000
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "RightMetricTitle" : "Right Complication",
+      "MetricDistance" : "Distance",
+      "Yes" : "Yes",
+      "MetricSteps" : "Steps",
+      "ColorSage" : "Sage",
+      "AppName" : "Minimalist",
+      "BgMidnight" : "Midnight",
+      "$literal0$" : "5,000",
+      "$literal2$" : "8,000",
+      "$literal4$" : "12,000",
+      "BgSlate" : "Slate",
+      "$literal6$" : "20,000",
+      "BgColorTitle" : "Background",
+      "BgCharcoal" : "Charcoal",
+      "AccentColorTitle" : "Accent Color",
+      "No" : "No",
+      "MetricHR" : "Heart Rate",
+      "MetricBattery" : "Battery",
+      "MetricCalories" : "Calories",
+      "BgObsidian" : "Obsidian",
+      "MetricFloors" : "Floors",
+      "$literal1$" : "7,500",
+      "ColorRose" : "Rose",
+      "$literal3$" : "10,000",
+      "LeftMetricTitle" : "Left Complication",
+      "ShowSecondsTitle" : "Show Seconds",
+      "$literal5$" : "15,000",
+      "StepGoalTitle" : "Step Goal",
+      "ColorLavender" : "Lavender",
+      "ColorOcean" : "Ocean",
+      "ColorGold" : "Gold"
+    }
+  }
+}

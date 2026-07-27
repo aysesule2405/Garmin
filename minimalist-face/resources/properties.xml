@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+    <!-- 0=Gold  1=Ocean  2=Rose  3=Sage  4=Lavender -->
+    <property id="AccentColor" type="number">0</property>
+    <!-- 0=Obsidian  1=Midnight  2=Slate  3=Charcoal -->
+    <property id="BgColor" type="number">0</property>
+    <!-- 0=HR  1=Steps  2=Calories  3=Distance  4=Floors  5=Battery -->
+    <property id="LeftMetric" type="number">0</property>
+    <property id="RightMetric" type="number">1</property>
+    <property id="ShowSeconds" type="number">1</property>
+    <property id="StepGoal" type="number">10000</property>
+</properties>

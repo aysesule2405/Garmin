@@ -1,0 +1,2609 @@
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [ActivityMonitor,5,14,29]; ]
+import Toybox.ActivityMonitor;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Activity,6,14,22]; ]
+import Toybox.Activity;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [UserProfile,7,14,25]; ]
+import Toybox.UserProfile;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [Time,8,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 9; @symbol_importdef<0> = [Toybox,9,7,13]; @symbol_importdef<1> = [Time,9,14,18]; @symbol_importdef<2> = [Gregorian,9,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 10; @symbol_importdef<0> = [Toybox,10,7,13]; @symbol_importdef<1> = [Math,10,14,18]; ]
+import Toybox.Math;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 11; @symbol_importdef<0> = [Toybox,11,7,13]; @symbol_importdef<1> = [Application,11,14,25]; ]
+import Toybox.Application;
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 13; @symbol_classdef = [MinimalistView,13,6,20]; @symbol_extends<0> = [WatchUi,13,29,36]; @symbol_extends<1> = [WatchFace,13,37,46]; ]
+class MinimalistView extends WatchUi.WatchFace {
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 13; ]
+    <init> {
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 13; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 15; @position = 16; @symbol_vardef = [_w,15,16,18]; @symbol_type<0> = [Number,15,24,30]; ]
+    private
+    var _w as Number = 0;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 16; @position = 16; @symbol_vardef = [_h,16,16,18]; @symbol_type<0> = [Number,16,24,30]; ]
+    private
+    var _h as Number = 0;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 17; @position = 16; @symbol_vardef = [_cx,17,16,19]; @symbol_type<0> = [Number,17,24,30]; ]
+    private
+    var _cx as Number = 0;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 18; @position = 16; @symbol_vardef = [_cy,18,16,19]; @symbol_type<0> = [Number,18,24,30]; ]
+    private
+    var _cy as Number = 0;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 19; @position = 16; @symbol_vardef = [_r,19,16,18]; @symbol_type<0> = [Number,19,24,30]; ]
+    private
+    var _r as Number = 0;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 20; @position = 16; @symbol_vardef = [_isSleeping,20,16,27]; @symbol_type<0> = [Boolean,20,31,38]; ]
+    private
+    var _isSleeping as Boolean = false;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 24; @position = 16; @symbol_vardef = [_accentPrimary,24,16,30]; @symbol_type<0> = [Number,24,34,40]; ]
+    private
+    var _accentPrimary as Number = 0xC9A84C;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 25; @position = 16; @symbol_vardef = [_accentDim,25,16,26]; @symbol_type<0> = [Number,25,34,40]; ]
+    private
+    var _accentDim as Number = 0x4A3A18;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 29; @position = 16; @symbol_vardef = [_bgColor,29,16,24]; @symbol_type<0> = [Number,29,28,34]; ]
+    private
+    var _bgColor as Number = 0x060608;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 33; @position = 16; @symbol_vardef = [_leftMetric,33,16,27]; @symbol_type<0> = [Number,33,32,38]; ]
+    private
+    var _leftMetric as Number = 0;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 34; @position = 16; @symbol_vardef = [_rightMetric,34,16,28]; @symbol_type<0> = [Number,34,32,38]; ]
+    private
+    var _rightMetric as Number = 1;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 36; @position = 16; @symbol_vardef = [_showSeconds,36,16,28]; @symbol_type<0> = [Boolean,36,32,39]; ]
+    private
+    var _showSeconds as Boolean = true;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 37; @position = 16; @symbol_vardef = [_stepGoal,37,16,25]; @symbol_type<0> = [Number,37,32,38]; ]
+    private
+    var _stepGoal as Number = 10000;
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 39; @symbol_functiondef = [initialize,39,13,23]; ]
+    function initialize() as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_39_26_42_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 40 8 ]
+        symbol [ WatchFace %tmp.2 40 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 40 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 41 8 ]
+        %tmp.4 = self;
+        symbol [ loadSettings %tmp.5 41 8 20 ];
+        %tmp.5 = getv function %tmp.4 :loadSettings;
+        invoke %tmp.4 %tmp.5();
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_39_26_42_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 44; @symbol_functiondef = [onSettingsChanged,44,13,30]; ]
+    function onSettingsChanged() as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_44_41_47_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 45 8 ]
+        %tmp.1 = self;
+        symbol [ loadSettings %tmp.2 45 8 20 ];
+        %tmp.2 = getv function %tmp.1 :loadSettings;
+        invoke %tmp.1 %tmp.2();
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 46 8 ]
+        symbol [ WatchUi %tmp.3 46 8 15 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.4 46 16 29 ];
+        %tmp.4 = getv function %tmp.3 :requestUpdate;
+        invoke %tmp.3 %tmp.4();
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_44_41_47_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 49; @symbol_functiondef = [loadSettings,49,21,33]; ]
+    private
+    function loadSettings() as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 51 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %accentIdx.1 = local;
+        symbol [ accentIdx %accentIdx.1 51 12 21 ];
+        symbol [ Application %tmp.1 51 24 35 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 51 36 46 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 51 47 55 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "AccentColor";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        lputv %accentIdx.1 %tmp.5;
+        symbol [ accentIdx %accentIdx.1 51 12 21 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 52 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %accentPalettes.2 = local;
+        symbol [ accentPalettes %accentPalettes.2 52 12 26 ];
+        %tmp.6 = newa 5;
+        %tmp.7 = newa 2;
+        %tmp.8 = 0xC9A84C;
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 0 %tmp.8;
+        %tmp.11 = 0x4A3A18;
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 1 %tmp.11;
+        %tmp.14 = dup %tmp.6;
+        %tmp.15 = aputv %tmp.14 0 %tmp.13;
+        %tmp.16 = newa 2;
+        %tmp.17 = 0x4BAEC9;
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 0 %tmp.17;
+        %tmp.20 = 0x193D47;
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 1 %tmp.20;
+        %tmp.23 = dup %tmp.15;
+        %tmp.24 = aputv %tmp.23 1 %tmp.22;
+        %tmp.25 = newa 2;
+        %tmp.26 = 0xC95E7B;
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 0 %tmp.26;
+        %tmp.29 = 0x47192A;
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 1 %tmp.29;
+        %tmp.32 = dup %tmp.24;
+        %tmp.33 = aputv %tmp.32 2 %tmp.31;
+        %tmp.34 = newa 2;
+        %tmp.35 = 0x5BB88A;
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 0 %tmp.35;
+        %tmp.38 = 0x1A4231;
+        %tmp.39 = dup %tmp.37;
+        %tmp.40 = aputv %tmp.39 1 %tmp.38;
+        %tmp.41 = dup %tmp.33;
+        %tmp.42 = aputv %tmp.41 3 %tmp.40;
+        %tmp.43 = newa 2;
+        %tmp.44 = 0x8B72C9;
+        %tmp.45 = dup %tmp.43;
+        %tmp.46 = aputv %tmp.45 0 %tmp.44;
+        %tmp.47 = 0x2E1F4A;
+        %tmp.48 = dup %tmp.46;
+        %tmp.49 = aputv %tmp.48 1 %tmp.47;
+        %tmp.50 = dup %tmp.42;
+        %tmp.51 = aputv %tmp.50 4 %tmp.49;
+        lputv %accentPalettes.2 %tmp.51;
+        symbol [ accentPalettes %accentPalettes.2 52 12 26 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 59 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %ai.3 = local;
+        symbol [ ai %ai.3 59 12 14 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_begin:
+        %tmp.52 = lgetv %accentIdx.1;
+        symbol [ accentIdx %tmp.52 59 18 27 ];
+        symbol [ Number %tmp.54 59 39 45 ];
+        %tmp.54 = getv ? :Number;
+        %tmp.55 = isa %tmp.52 %tmp.54;
+        bf %tmp.55 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_true:
+        %tmp.56 = lgetv %accentIdx.1;
+        symbol [ accentIdx %tmp.56 59 50 59 ];
+        %tmp.57 = as %tmp.56 { (Number) };
+        %tmp.58 = as %tmp.57 Number;
+        symbol [ Number %tmp.58 59 63 69 ];
+        push %tmp.58;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_else_false:
+        %tmp.59 = 0;
+        push %tmp.59;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_end:
+        %tmp.60 = phi [%tmp.55 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_begin] [%tmp.58 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_true] [%tmp.59 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_else_false] [%tmp.60 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_59_17_59_73_end];
+        lputv %ai.3 %tmp.60;
+        symbol [ ai %ai.3 59 12 14 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 60 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_8_60_41_if_stmt:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_12_60_28_begin:
+        %tmp.61 = lgetv %ai.3;
+        symbol [ ai %tmp.61 60 12 14 ];
+        %tmp.62 = 0;
+        %tmp.63 = lt %tmp.61 %tmp.62;
+        bt %tmp.63 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_8_60_41_if_true;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_22_60_28_false:
+        %tmp.64 = lgetv %ai.3;
+        symbol [ ai %tmp.64 60 22 24 ];
+        %tmp.65 = 5;
+        %tmp.66 = gte %tmp.64 %tmp.65;
+        push %tmp.66;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_22_60_28_end:
+        %tmp.67 = phi [%tmp.63 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_12_60_28_begin] [%tmp.66 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_22_60_28_false] [%tmp.67 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_22_60_28_end];
+        bf %tmp.67 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_8_60_41_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_8_60_41_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_31_60_41_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 60 33 ]
+        %tmp.68 = 0;
+        lputv %ai.3 %tmp.68;
+        symbol [ ai %ai.3 60 33 35 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_31_60_41_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_8_60_41_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_60_8_60_41_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 61 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %palette.4 = local;
+        symbol [ palette %palette.4 61 12 19 ];
+        %tmp.69 = lgetv %accentPalettes.2;
+        symbol [ accentPalettes %tmp.69 61 22 36 ];
+        %tmp.70 = lgetv %ai.3;
+        symbol [ ai %tmp.70 61 37 39 ];
+        %tmp.71 = agetv %tmp.69 %tmp.70;
+        %tmp.72 = as %tmp.71 Array<Number>;
+        symbol [ Array %tmp.72 61 44 49 ];
+        symbol [ Number %tmp.72 61 50 56 ];
+        lputv %palette.4 %tmp.72;
+        symbol [ palette %palette.4 61 12 19 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 62 8 ]
+        %tmp.73 = lgetv %palette.4;
+        symbol [ palette %tmp.73 62 25 32 ];
+        %tmp.74 = 0;
+        %tmp.75 = agetv %tmp.73 %tmp.74;
+        symbol [ _accentPrimary ? 62 8 22 ];
+        putv self :_accentPrimary %tmp.75;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 63 8 ]
+        %tmp.76 = lgetv %palette.4;
+        symbol [ palette %tmp.76 63 25 32 ];
+        %tmp.77 = 1;
+        %tmp.78 = agetv %tmp.76 %tmp.77;
+        symbol [ _accentDim ? 63 8 18 ];
+        putv self :_accentDim %tmp.78;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 66 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %bgIdx.5 = local;
+        symbol [ bgIdx %bgIdx.5 66 12 17 ];
+        symbol [ Application %tmp.79 66 20 31 ];
+        %tmp.79 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.80 66 32 42 ];
+        %tmp.80 = getv %tmp.79 :Properties;
+        symbol [ getValue %tmp.81 66 43 51 ];
+        %tmp.81 = getv function %tmp.80 :getValue;
+        %tmp.82 = "BgColor";
+        %tmp.83 = invoke %tmp.80 %tmp.81(%tmp.82);
+        lputv %bgIdx.5 %tmp.83;
+        symbol [ bgIdx %bgIdx.5 66 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 67 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %bgColors.6 = local;
+        symbol [ bgColors %bgColors.6 67 12 20 ];
+        %tmp.84 = newa 4;
+        %tmp.85 = 0x060608;
+        %tmp.86 = dup %tmp.84;
+        %tmp.87 = aputv %tmp.86 0 %tmp.85;
+        %tmp.88 = 0x0A0D14;
+        %tmp.89 = dup %tmp.87;
+        %tmp.90 = aputv %tmp.89 1 %tmp.88;
+        %tmp.91 = 0x141926;
+        %tmp.92 = dup %tmp.90;
+        %tmp.93 = aputv %tmp.92 2 %tmp.91;
+        %tmp.94 = 0x161618;
+        %tmp.95 = dup %tmp.93;
+        %tmp.96 = aputv %tmp.95 3 %tmp.94;
+        lputv %bgColors.6 %tmp.96;
+        symbol [ bgColors %bgColors.6 67 12 20 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 68 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %bi.7 = local;
+        symbol [ bi %bi.7 68 12 14 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_begin:
+        %tmp.97 = lgetv %bgIdx.5;
+        symbol [ bgIdx %tmp.97 68 18 23 ];
+        symbol [ Number %tmp.99 68 35 41 ];
+        %tmp.99 = getv ? :Number;
+        %tmp.100 = isa %tmp.97 %tmp.99;
+        bf %tmp.100 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_true:
+        %tmp.101 = lgetv %bgIdx.5;
+        symbol [ bgIdx %tmp.101 68 46 51 ];
+        %tmp.102 = as %tmp.101 { (Number) };
+        %tmp.103 = as %tmp.102 Number;
+        symbol [ Number %tmp.103 68 55 61 ];
+        push %tmp.103;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_else_false:
+        %tmp.104 = 0;
+        push %tmp.104;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_end:
+        %tmp.105 = phi [%tmp.100 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_begin] [%tmp.103 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_true] [%tmp.104 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_else_false] [%tmp.105 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_68_17_68_65_end];
+        lputv %bi.7 %tmp.105;
+        symbol [ bi %bi.7 68 12 14 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 69 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_8_69_41_if_stmt:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_12_69_28_begin:
+        %tmp.106 = lgetv %bi.7;
+        symbol [ bi %tmp.106 69 12 14 ];
+        %tmp.107 = 0;
+        %tmp.108 = lt %tmp.106 %tmp.107;
+        bt %tmp.108 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_8_69_41_if_true;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_22_69_28_false:
+        %tmp.109 = lgetv %bi.7;
+        symbol [ bi %tmp.109 69 22 24 ];
+        %tmp.110 = 4;
+        %tmp.111 = gte %tmp.109 %tmp.110;
+        push %tmp.111;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_22_69_28_end:
+        %tmp.112 = phi [%tmp.108 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_12_69_28_begin] [%tmp.111 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_22_69_28_false] [%tmp.112 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_22_69_28_end];
+        bf %tmp.112 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_8_69_41_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_8_69_41_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_31_69_41_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 69 33 ]
+        %tmp.113 = 0;
+        lputv %bi.7 %tmp.113;
+        symbol [ bi %bi.7 69 33 35 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_31_69_41_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_8_69_41_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_69_8_69_41_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 70 8 ]
+        %tmp.114 = lgetv %bgColors.6;
+        symbol [ bgColors %tmp.114 70 19 27 ];
+        %tmp.115 = lgetv %bi.7;
+        symbol [ bi %tmp.115 70 28 30 ];
+        %tmp.116 = agetv %tmp.114 %tmp.115;
+        symbol [ _bgColor ? 70 8 16 ];
+        putv self :_bgColor %tmp.116;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 73 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %lm.8 = local;
+        symbol [ lm %lm.8 73 12 14 ];
+        symbol [ Application %tmp.117 73 17 28 ];
+        %tmp.117 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.118 73 29 39 ];
+        %tmp.118 = getv %tmp.117 :Properties;
+        symbol [ getValue %tmp.119 73 40 48 ];
+        %tmp.119 = getv function %tmp.118 :getValue;
+        %tmp.120 = "LeftMetric";
+        %tmp.121 = invoke %tmp.118 %tmp.119(%tmp.120);
+        lputv %lm.8 %tmp.121;
+        symbol [ lm %lm.8 73 12 14 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 74 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_begin:
+        %tmp.122 = lgetv %lm.8;
+        symbol [ lm %tmp.122 74 23 25 ];
+        symbol [ Number %tmp.124 74 37 43 ];
+        %tmp.124 = getv ? :Number;
+        %tmp.125 = isa %tmp.122 %tmp.124;
+        bf %tmp.125 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_true:
+        %tmp.126 = lgetv %lm.8;
+        symbol [ lm %tmp.126 74 48 50 ];
+        %tmp.127 = as %tmp.126 { (Number) };
+        %tmp.128 = as %tmp.127 Number;
+        symbol [ Number %tmp.128 74 54 60 ];
+        push %tmp.128;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_else_false:
+        %tmp.129 = 0;
+        push %tmp.129;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_end:
+        %tmp.130 = phi [%tmp.125 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_begin] [%tmp.128 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_true] [%tmp.129 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_else_false] [%tmp.130 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_74_22_74_64_end];
+        symbol [ _leftMetric ? 74 8 19 ];
+        putv self :_leftMetric %tmp.130;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 76 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %rm.9 = local;
+        symbol [ rm %rm.9 76 12 14 ];
+        symbol [ Application %tmp.131 76 17 28 ];
+        %tmp.131 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.132 76 29 39 ];
+        %tmp.132 = getv %tmp.131 :Properties;
+        symbol [ getValue %tmp.133 76 40 48 ];
+        %tmp.133 = getv function %tmp.132 :getValue;
+        %tmp.134 = "RightMetric";
+        %tmp.135 = invoke %tmp.132 %tmp.133(%tmp.134);
+        lputv %rm.9 %tmp.135;
+        symbol [ rm %rm.9 76 12 14 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 77 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_begin:
+        %tmp.136 = lgetv %rm.9;
+        symbol [ rm %tmp.136 77 24 26 ];
+        symbol [ Number %tmp.138 77 38 44 ];
+        %tmp.138 = getv ? :Number;
+        %tmp.139 = isa %tmp.136 %tmp.138;
+        bf %tmp.139 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_true:
+        %tmp.140 = lgetv %rm.9;
+        symbol [ rm %tmp.140 77 49 51 ];
+        %tmp.141 = as %tmp.140 { (Number) };
+        %tmp.142 = as %tmp.141 Number;
+        symbol [ Number %tmp.142 77 55 61 ];
+        push %tmp.142;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_else_false:
+        %tmp.143 = 1;
+        push %tmp.143;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_end:
+        %tmp.144 = phi [%tmp.139 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_begin] [%tmp.142 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_true] [%tmp.143 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_else_false] [%tmp.144 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_77_23_77_65_end];
+        symbol [ _rightMetric ? 77 8 20 ];
+        putv self :_rightMetric %tmp.144;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 80 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %ss.10 = local;
+        symbol [ ss %ss.10 80 12 14 ];
+        symbol [ Application %tmp.145 80 17 28 ];
+        %tmp.145 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.146 80 29 39 ];
+        %tmp.146 = getv %tmp.145 :Properties;
+        symbol [ getValue %tmp.147 80 40 48 ];
+        %tmp.147 = getv function %tmp.146 :getValue;
+        %tmp.148 = "ShowSeconds";
+        %tmp.149 = invoke %tmp.146 %tmp.147(%tmp.148);
+        lputv %ss.10 %tmp.149;
+        symbol [ ss %ss.10 80 12 14 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 81 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_begin:
+        %tmp.150 = lgetv %ss.10;
+        symbol [ ss %tmp.150 81 24 26 ];
+        symbol [ Number %tmp.152 81 38 44 ];
+        %tmp.152 = getv ? :Number;
+        %tmp.153 = isa %tmp.150 %tmp.152;
+        bf %tmp.153 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_true:
+        %tmp.154 = lgetv %ss.10;
+        symbol [ ss %tmp.154 81 50 52 ];
+        %tmp.155 = as %tmp.154 { (Number) };
+        %tmp.156 = as %tmp.155 Number;
+        symbol [ Number %tmp.156 81 56 62 ];
+        %tmp.157 = 0;
+        %tmp.158 = ne %tmp.156 %tmp.157;
+        push %tmp.158;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_else_false:
+        %tmp.159 = true;
+        push %tmp.159;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_end:
+        %tmp.160 = phi [%tmp.153 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_begin] [%tmp.158 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_true] [%tmp.159 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_else_false] [%tmp.160 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_81_23_81_72_end];
+        symbol [ _showSeconds ? 81 8 20 ];
+        putv self :_showSeconds %tmp.160;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 84 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %sg.11 = local;
+        symbol [ sg %sg.11 84 12 14 ];
+        symbol [ Application %tmp.161 84 17 28 ];
+        %tmp.161 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.162 84 29 39 ];
+        %tmp.162 = getv %tmp.161 :Properties;
+        symbol [ getValue %tmp.163 84 40 48 ];
+        %tmp.163 = getv function %tmp.162 :getValue;
+        %tmp.164 = "StepGoal";
+        %tmp.165 = invoke %tmp.162 %tmp.163(%tmp.164);
+        lputv %sg.11 %tmp.165;
+        symbol [ sg %sg.11 84 12 14 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 85 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop" ]
+        %sgNum.12 = local;
+        symbol [ sgNum %sgNum.12 85 12 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_begin:
+        %tmp.166 = lgetv %sg.11;
+        symbol [ sg %tmp.166 85 21 23 ];
+        symbol [ Number %tmp.168 85 35 41 ];
+        %tmp.168 = getv ? :Number;
+        %tmp.169 = isa %tmp.166 %tmp.168;
+        bf %tmp.169 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_true:
+        %tmp.170 = lgetv %sg.11;
+        symbol [ sg %tmp.170 85 46 48 ];
+        %tmp.171 = as %tmp.170 { (Number) };
+        %tmp.172 = as %tmp.171 Number;
+        symbol [ Number %tmp.172 85 52 58 ];
+        push %tmp.172;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_else_false:
+        %tmp.173 = 10000;
+        push %tmp.173;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_end:
+        %tmp.174 = phi [%tmp.169 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_begin] [%tmp.172 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_true] [%tmp.173 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_else_false] [%tmp.174 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_85_20_85_62_end];
+        lputv %sgNum.12 %tmp.174;
+        symbol [ sgNum %sgNum.12 85 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 86 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_begin:
+        %tmp.175 = lgetv %sgNum.12;
+        symbol [ sgNum %tmp.175 86 21 26 ];
+        %tmp.176 = 0;
+        %tmp.177 = gt %tmp.175 %tmp.176;
+        bf %tmp.177 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_true:
+        %tmp.178 = lgetv %sgNum.12;
+        symbol [ sgNum %tmp.178 86 34 39 ];
+        push %tmp.178;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_else_false:
+        %tmp.179 = 10000;
+        push %tmp.179;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_end:
+        %tmp.180 = phi [%tmp.177 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_begin] [%tmp.178 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_true] [%tmp.179 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_else_false] [%tmp.180 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_86_20_86_42_end];
+        symbol [ _stepGoal ? 86 8 17 ];
+        putv self :_stepGoal %tmp.180;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_49_44_87_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 89; @symbol_functiondef = [onLayout,89,13,21]; @symbol_param<0> = [dc,89,22,24]; @symbol_param<0>_type<0> = [Dc,89,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_89_40_95_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 90 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 90 14 16 ];
+        symbol [ getWidth %tmp.2 90 17 25 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ _w ? 90 8 10 ];
+        putv self :_w %tmp.3;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 91 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 91 14 16 ];
+        symbol [ getHeight %tmp.5 91 17 26 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ _h ? 91 8 10 ];
+        putv self :_h %tmp.6;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 92 8 ]
+        symbol [ _w %tmp.8 92 14 16 ];
+        %tmp.8 = getv ? :_w;
+        %tmp.9 = 2;
+        %tmp.10 = div %tmp.8 %tmp.9;
+        symbol [ _cx ? 92 8 11 ];
+        putv self :_cx %tmp.10;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 93 8 ]
+        symbol [ _h %tmp.12 93 14 16 ];
+        %tmp.12 = getv ? :_h;
+        %tmp.13 = 2;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        symbol [ _cy ? 93 8 11 ];
+        putv self :_cy %tmp.14;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 94 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_begin:
+        symbol [ _w %tmp.16 94 15 17 ];
+        %tmp.16 = getv ? :_w;
+        symbol [ _h %tmp.18 94 20 22 ];
+        %tmp.18 = getv ? :_h;
+        %tmp.19 = lt %tmp.16 %tmp.18;
+        bf %tmp.19 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_true:
+        symbol [ _w %tmp.21 94 25 27 ];
+        %tmp.21 = getv ? :_w;
+        push %tmp.21;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_else_false:
+        symbol [ _h %tmp.23 94 30 32 ];
+        %tmp.23 = getv ? :_h;
+        push %tmp.23;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_end:
+        %tmp.24 = phi [%tmp.19 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_begin] [%tmp.21 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_true] [%tmp.23 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_else_false] [%tmp.24 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_94_15_94_30_end];
+        %tmp.25 = 2;
+        %tmp.26 = div %tmp.24 %tmp.25;
+        %tmp.27 = 2;
+        %tmp.28 = sub %tmp.26 %tmp.27;
+        symbol [ _r ? 94 8 10 ];
+        putv self :_r %tmp.28;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_89_40_95_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 97; @symbol_functiondef = [onEnterSleep,97,13,25]; ]
+    function onEnterSleep() as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_97_36_100_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 98 8 ]
+        %tmp.1 = true;
+        symbol [ _isSleeping ? 98 8 19 ];
+        putv self :_isSleeping %tmp.1;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 99 8 ]
+        symbol [ WatchUi %tmp.2 99 8 15 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 99 16 29 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_97_36_100_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 102; @symbol_functiondef = [onExitSleep,102,13,24]; ]
+    function onExitSleep() as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_102_35_105_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 103 8 ]
+        %tmp.1 = false;
+        symbol [ _isSleeping ? 103 8 19 ];
+        putv self :_isSleeping %tmp.1;
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 104 8 ]
+        symbol [ WatchUi %tmp.2 104 8 15 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 104 16 29 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_102_35_105_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 107; @symbol_functiondef = [onUpdate,107,13,21]; @symbol_param<0> = [dc,107,22,24]; @symbol_param<0>_type<0> = [Dc,107,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_107_40_119_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 108 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_108_8_110_8_if_stmt:
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 108 12 14 ];
+        %tmp.3 = const :setAntiAlias;
+        symbol [ setAntiAlias %tmp.3 108 20 32 const ];
+        %tmp.4 = canhazplz %tmp.1 %tmp.3;
+        bf %tmp.4 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_108_8_110_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_108_8_110_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_108_34_110_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 109 12 ]
+        %tmp.5 = lgetv %dc;
+        symbol [ dc %tmp.5 109 12 14 ];
+        %tmp.6 = as %tmp.5 { (interface { var setAntiAlias; }) };
+        symbol [ setAntiAlias %tmp.7 109 15 27 ];
+        %tmp.7 = getv function %tmp.6 :setAntiAlias;
+        %tmp.8 = true;
+        invoke %tmp.6 %tmp.7(%tmp.8);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_108_34_110_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_108_8_110_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_108_8_110_8_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 111 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_107_40_119_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_107_40_119_4_stop" ]
+        %clock.1 = local;
+        symbol [ clock %clock.1 111 12 17 ];
+        symbol [ System %tmp.9 111 20 26 ];
+        %tmp.9 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.10 111 27 39 ];
+        %tmp.10 = getv function %tmp.9 :getClockTime;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %clock.1 %tmp.11;
+        symbol [ clock %clock.1 111 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 113 8 ]
+        %tmp.12 = self;
+        symbol [ drawBackground %tmp.13 113 8 22 ];
+        %tmp.13 = getv function %tmp.12 :drawBackground;
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 113 23 25 ];
+        invoke %tmp.12 %tmp.13(%tmp.14);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 114 8 ]
+        %tmp.15 = self;
+        symbol [ drawStepArc %tmp.16 114 8 19 ];
+        %tmp.16 = getv function %tmp.15 :drawStepArc;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 114 20 22 ];
+        invoke %tmp.15 %tmp.16(%tmp.17);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 115 8 ]
+        %tmp.18 = self;
+        symbol [ drawHourMarkers %tmp.19 115 8 23 ];
+        %tmp.19 = getv function %tmp.18 :drawHourMarkers;
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 115 24 26 ];
+        invoke %tmp.18 %tmp.19(%tmp.20);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 116 8 ]
+        %tmp.21 = self;
+        symbol [ drawComplications %tmp.22 116 8 25 ];
+        %tmp.22 = getv function %tmp.21 :drawComplications;
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 116 26 28 ];
+        invoke %tmp.21 %tmp.22(%tmp.23);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 117 8 ]
+        %tmp.24 = self;
+        symbol [ drawDate %tmp.25 117 8 16 ];
+        %tmp.25 = getv function %tmp.24 :drawDate;
+        %tmp.26 = lgetv %dc;
+        symbol [ dc %tmp.26 117 17 19 ];
+        invoke %tmp.24 %tmp.25(%tmp.26);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 118 8 ]
+        %tmp.27 = self;
+        symbol [ drawHands %tmp.28 118 8 17 ];
+        %tmp.28 = getv function %tmp.27 :drawHands;
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 118 18 20 ];
+        %tmp.30 = lgetv %clock.1;
+        symbol [ clock %tmp.30 118 22 27 ];
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.30);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_107_40_119_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 123; @symbol_functiondef = [drawBackground,123,21,35]; @symbol_param<0> = [dc,123,36,38]; @symbol_param<0>_type<0> = [Dc,123,42,44]; ]
+    private
+    function drawBackground(dc as Dc) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_123_54_126_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 124 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 124 8 10 ];
+        symbol [ setColor %tmp.2 124 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ _bgColor %tmp.4 124 20 28 ];
+        %tmp.4 = getv ? :_bgColor;
+        symbol [ _bgColor %tmp.6 124 30 38 ];
+        %tmp.6 = getv ? :_bgColor;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 125 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 125 8 10 ];
+        symbol [ clear %tmp.8 125 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_123_54_126_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 130; @symbol_functiondef = [drawStepArc,130,21,32]; @symbol_param<0> = [dc,130,33,35]; @symbol_param<0>_type<0> = [Dc,130,39,41]; ]
+    private
+    function drawStepArc(dc as Dc) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 131 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 131 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 131 19 34 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 131 35 42 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 131 12 16 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 132 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_stop" ]
+        %steps.2 = local;
+        symbol [ steps %steps.2 132 12 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 132 21 25 ];
+        symbol [ steps %tmp.5 132 26 31 ];
+        %tmp.5 = getv %tmp.4 :steps;
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_true:
+        %tmp.8 = lgetv %info.1;
+        symbol [ info %tmp.8 132 43 47 ];
+        symbol [ steps %tmp.9 132 48 53 ];
+        %tmp.9 = getv %tmp.8 :steps;
+        %tmp.10 = as %tmp.9 Number;
+        symbol [ Number %tmp.10 132 57 63 ];
+        push %tmp.10;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_else_false:
+        %tmp.11 = 0;
+        push %tmp.11;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_end:
+        %tmp.12 = phi [%tmp.7 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_begin] [%tmp.10 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_true] [%tmp.11 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_else_false] [%tmp.12 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_132_20_132_66_end];
+        lputv %steps.2 %tmp.12;
+        symbol [ steps %steps.2 132 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 133 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_stop" ]
+        %frac.3 = local;
+        symbol [ frac %frac.3 133 12 16 ];
+        %tmp.13 = lgetv %steps.2;
+        symbol [ steps %tmp.13 133 19 24 ];
+        symbol [ toFloat %tmp.14 133 25 32 ];
+        %tmp.14 = getv function %tmp.13 :toFloat;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        symbol [ _stepGoal %tmp.17 133 37 46 ];
+        %tmp.17 = getv ? :_stepGoal;
+        symbol [ toFloat %tmp.18 133 47 54 ];
+        %tmp.18 = getv function %tmp.17 :toFloat;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = div %tmp.15 %tmp.19;
+        lputv %frac.3 %tmp.20;
+        symbol [ frac %frac.3 133 12 16 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 134 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_134_8_134_38_if_stmt:
+        %tmp.21 = lgetv %frac.3;
+        symbol [ frac %tmp.21 134 12 16 ];
+        %tmp.22 = 1.0;
+        %tmp.23 = gt %tmp.21 %tmp.22;
+        bf %tmp.23 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_134_8_134_38_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_134_8_134_38_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_134_24_134_38_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 134 26 ]
+        %tmp.24 = 1.0;
+        lputv %frac.3 %tmp.24;
+        symbol [ frac %frac.3 134 26 30 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_134_24_134_38_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_134_8_134_38_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_134_8_134_38_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 135 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_stop" ]
+        %sweepDeg.4 = local;
+        symbol [ sweepDeg %sweepDeg.4 135 12 20 ];
+        %tmp.25 = lgetv %frac.3;
+        symbol [ frac %tmp.25 135 24 28 ];
+        %tmp.26 = 360.0;
+        %tmp.27 = mul %tmp.25 %tmp.26;
+        symbol [ toNumber %tmp.28 135 38 46 ];
+        %tmp.28 = getv function %tmp.27 :toNumber;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        lputv %sweepDeg.4 %tmp.29;
+        symbol [ sweepDeg %sweepDeg.4 135 12 20 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 137 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_stop" ]
+        %arcR.5 = local;
+        symbol [ arcR %arcR.5 137 12 16 ];
+        symbol [ _r %tmp.31 137 19 21 ];
+        %tmp.31 = getv ? :_r;
+        %tmp.32 = 7;
+        %tmp.33 = sub %tmp.31 %tmp.32;
+        lputv %arcR.5 %tmp.33;
+        symbol [ arcR %arcR.5 137 12 16 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 138 8 ]
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 138 8 10 ];
+        symbol [ setPenWidth %tmp.35 138 11 22 ];
+        %tmp.35 = getv function %tmp.34 :setPenWidth;
+        %tmp.36 = 3;
+        invoke %tmp.34 %tmp.35(%tmp.36);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 141 8 ]
+        %tmp.37 = lgetv %dc;
+        symbol [ dc %tmp.37 141 8 10 ];
+        symbol [ setColor %tmp.38 141 11 19 ];
+        %tmp.38 = getv function %tmp.37 :setColor;
+        symbol [ _accentDim %tmp.40 141 20 30 ];
+        %tmp.40 = getv ? :_accentDim;
+        symbol [ Graphics %tmp.41 141 32 40 ];
+        %tmp.41 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.42 141 41 58 ];
+        %tmp.42 = getv %tmp.41 :COLOR_TRANSPARENT;
+        invoke %tmp.37 %tmp.38(%tmp.40, %tmp.42);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 142 8 ]
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 142 8 10 ];
+        symbol [ drawArc %tmp.44 142 11 18 ];
+        %tmp.44 = getv function %tmp.43 :drawArc;
+        symbol [ _cx %tmp.46 142 19 22 ];
+        %tmp.46 = getv ? :_cx;
+        symbol [ _cy %tmp.48 142 24 27 ];
+        %tmp.48 = getv ? :_cy;
+        %tmp.49 = lgetv %arcR.5;
+        symbol [ arcR %tmp.49 142 29 33 ];
+        symbol [ Graphics %tmp.50 142 35 43 ];
+        %tmp.50 = getm $.Toybox.Graphics;
+        symbol [ ARC_CLOCKWISE %tmp.51 142 44 57 ];
+        %tmp.51 = getv %tmp.50 :ARC_CLOCKWISE;
+        %tmp.52 = 90;
+        %tmp.53 = 90;
+        %tmp.54 = 359;
+        %tmp.55 = sub %tmp.53 %tmp.54;
+        invoke %tmp.43 %tmp.44(%tmp.46, %tmp.48, %tmp.49, %tmp.51, %tmp.52, %tmp.55);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 145 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_145_8_148_8_if_stmt:
+        %tmp.56 = lgetv %sweepDeg.4;
+        symbol [ sweepDeg %tmp.56 145 12 20 ];
+        %tmp.57 = 0;
+        %tmp.58 = gt %tmp.56 %tmp.57;
+        bf %tmp.58 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_145_8_148_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_145_8_148_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_145_26_148_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 146 12 ]
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 146 12 14 ];
+        symbol [ setColor %tmp.60 146 15 23 ];
+        %tmp.60 = getv function %tmp.59 :setColor;
+        symbol [ _accentPrimary %tmp.62 146 24 38 ];
+        %tmp.62 = getv ? :_accentPrimary;
+        symbol [ Graphics %tmp.63 146 40 48 ];
+        %tmp.63 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.64 146 49 66 ];
+        %tmp.64 = getv %tmp.63 :COLOR_TRANSPARENT;
+        invoke %tmp.59 %tmp.60(%tmp.62, %tmp.64);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 147 12 ]
+        %tmp.65 = lgetv %dc;
+        symbol [ dc %tmp.65 147 12 14 ];
+        symbol [ drawArc %tmp.66 147 15 22 ];
+        %tmp.66 = getv function %tmp.65 :drawArc;
+        symbol [ _cx %tmp.68 147 23 26 ];
+        %tmp.68 = getv ? :_cx;
+        symbol [ _cy %tmp.70 147 28 31 ];
+        %tmp.70 = getv ? :_cy;
+        %tmp.71 = lgetv %arcR.5;
+        symbol [ arcR %tmp.71 147 33 37 ];
+        symbol [ Graphics %tmp.72 147 39 47 ];
+        %tmp.72 = getm $.Toybox.Graphics;
+        symbol [ ARC_CLOCKWISE %tmp.73 147 48 61 ];
+        %tmp.73 = getv %tmp.72 :ARC_CLOCKWISE;
+        %tmp.74 = 90;
+        %tmp.75 = 90;
+        %tmp.76 = lgetv %sweepDeg.4;
+        symbol [ sweepDeg %tmp.76 147 72 80 ];
+        %tmp.77 = sub %tmp.75 %tmp.76;
+        invoke %tmp.65 %tmp.66(%tmp.68, %tmp.70, %tmp.71, %tmp.73, %tmp.74, %tmp.77);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_145_26_148_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_145_8_148_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_145_8_148_8_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 151 8 ]
+        %tmp.78 = lgetv %dc;
+        symbol [ dc %tmp.78 151 8 10 ];
+        symbol [ setPenWidth %tmp.79 151 11 22 ];
+        %tmp.79 = getv function %tmp.78 :setPenWidth;
+        %tmp.80 = 1;
+        invoke %tmp.78 %tmp.79(%tmp.80);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 152 8 ]
+        %tmp.81 = lgetv %dc;
+        symbol [ dc %tmp.81 152 8 10 ];
+        symbol [ setColor %tmp.82 152 11 19 ];
+        %tmp.82 = getv function %tmp.81 :setColor;
+        symbol [ _accentPrimary %tmp.84 152 20 34 ];
+        %tmp.84 = getv ? :_accentPrimary;
+        symbol [ Graphics %tmp.85 152 36 44 ];
+        %tmp.85 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.86 152 45 62 ];
+        %tmp.86 = getv %tmp.85 :COLOR_TRANSPARENT;
+        invoke %tmp.81 %tmp.82(%tmp.84, %tmp.86);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 153 8 ]
+        %tmp.87 = lgetv %dc;
+        symbol [ dc %tmp.87 153 8 10 ];
+        symbol [ fillCircle %tmp.88 153 11 21 ];
+        %tmp.88 = getv function %tmp.87 :fillCircle;
+        symbol [ _cx %tmp.90 153 22 25 ];
+        %tmp.90 = getv ? :_cx;
+        symbol [ _cy %tmp.92 153 27 30 ];
+        %tmp.92 = getv ? :_cy;
+        %tmp.93 = lgetv %arcR.5;
+        symbol [ arcR %tmp.93 153 33 37 ];
+        %tmp.94 = sub %tmp.92 %tmp.93;
+        %tmp.95 = 3;
+        invoke %tmp.87 %tmp.88(%tmp.90, %tmp.94, %tmp.95);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_130_51_154_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 158; @symbol_functiondef = [drawHourMarkers,158,21,36]; @symbol_param<0> = [dc,158,37,39]; @symbol_param<0>_type<0> = [Dc,158,43,45]; ]
+    private
+    function drawHourMarkers(dc as Dc) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_158_55_178_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 159 8 ]
+        for @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_test @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_incr @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_init:
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_begin" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 159 17 18 ];
+        %tmp.1 = 0;
+        lputv %i.1 %tmp.1;
+        symbol [ i %i.1 159 17 18 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_test:
+        %tmp.2 = lgetv %i.1;
+        symbol [ i %tmp.2 159 24 25 ];
+        %tmp.3 = 12;
+        %tmp.4 = lt %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_begin:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 160 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_stop" ]
+        %angleRad.2 = local;
+        symbol [ angleRad %angleRad.2 160 16 24 ];
+        %tmp.5 = lgetv %i.1;
+        symbol [ i %tmp.5 160 28 29 ];
+        %tmp.6 = 30;
+        %tmp.7 = mul %tmp.5 %tmp.6;
+        %tmp.8 = 90;
+        %tmp.9 = sub %tmp.7 %tmp.8;
+        symbol [ Math %tmp.10 160 43 47 ];
+        %tmp.10 = getm $.Toybox.Math;
+        symbol [ PI %tmp.11 160 48 50 ];
+        %tmp.11 = getv %tmp.10 :PI;
+        %tmp.12 = mul %tmp.9 %tmp.11;
+        %tmp.13 = 180.0;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        lputv %angleRad.2 %tmp.14;
+        symbol [ angleRad %angleRad.2 160 16 24 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 161 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_stop" ]
+        %isCardinal.3 = local;
+        symbol [ isCardinal %isCardinal.3 161 16 26 ];
+        %tmp.15 = lgetv %i.1;
+        symbol [ i %tmp.15 161 30 31 ];
+        %tmp.16 = 3;
+        %tmp.17 = mod %tmp.15 %tmp.16;
+        %tmp.18 = 0;
+        %tmp.19 = eq %tmp.17 %tmp.18;
+        lputv %isCardinal.3 %tmp.19;
+        symbol [ isCardinal %isCardinal.3 161 16 26 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 163 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_stop" ]
+        %outerR.4 = local;
+        symbol [ outerR %outerR.4 163 16 22 ];
+        symbol [ _r %tmp.21 163 26 28 ];
+        %tmp.21 = getv ? :_r;
+        %tmp.22 = 13;
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        lputv %outerR.4 %tmp.23;
+        symbol [ outerR %outerR.4 163 16 22 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 164 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_stop" ]
+        %innerR.5 = local;
+        symbol [ innerR %innerR.5 164 16 22 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_begin:
+        %tmp.24 = lgetv %isCardinal.3;
+        symbol [ isCardinal %tmp.24 164 26 36 ];
+        bf %tmp.24 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_true:
+        symbol [ _r %tmp.26 164 39 41 ];
+        %tmp.26 = getv ? :_r;
+        %tmp.27 = 26;
+        %tmp.28 = sub %tmp.26 %tmp.27;
+        push %tmp.28;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_else_false:
+        symbol [ _r %tmp.30 164 49 51 ];
+        %tmp.30 = getv ? :_r;
+        %tmp.31 = 18;
+        %tmp.32 = sub %tmp.30 %tmp.31;
+        push %tmp.32;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_end:
+        %tmp.33 = phi [%tmp.24 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_begin] [%tmp.28 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_true] [%tmp.32 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_else_false] [%tmp.33 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_164_26_164_54_end];
+        lputv %innerR.5 %tmp.33;
+        symbol [ innerR %innerR.5 164 16 22 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 165 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_stop" ]
+        %penW.6 = local;
+        symbol [ penW %penW.6 165 16 20 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_begin:
+        %tmp.34 = lgetv %isCardinal.3;
+        symbol [ isCardinal %tmp.34 165 26 36 ];
+        bf %tmp.34 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_true:
+        %tmp.35 = 3;
+        push %tmp.35;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_else_false:
+        %tmp.36 = 1;
+        push %tmp.36;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_end:
+        %tmp.37 = phi [%tmp.34 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_begin] [%tmp.35 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_true] [%tmp.36 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_else_false] [%tmp.37 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_165_26_165_43_end];
+        lputv %penW.6 %tmp.37;
+        symbol [ penW %penW.6 165 16 20 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 166 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_stop" ]
+        %color.7 = local;
+        symbol [ color %color.7 166 16 21 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_begin:
+        %tmp.38 = lgetv %isCardinal.3;
+        symbol [ isCardinal %tmp.38 166 26 36 ];
+        bf %tmp.38 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_true:
+        symbol [ _accentPrimary %tmp.40 166 39 53 ];
+        %tmp.40 = getv ? :_accentPrimary;
+        push %tmp.40;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_else_false:
+        %tmp.41 = 0x303034;
+        push %tmp.41;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_end:
+        %tmp.42 = phi [%tmp.38 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_begin] [%tmp.40 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_true] [%tmp.41 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_else_false] [%tmp.42 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_166_26_166_56_end];
+        lputv %color.7 %tmp.42;
+        symbol [ color %color.7 166 16 21 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 168 12 ]
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 168 12 14 ];
+        symbol [ setColor %tmp.44 168 15 23 ];
+        %tmp.44 = getv function %tmp.43 :setColor;
+        %tmp.45 = lgetv %color.7;
+        symbol [ color %tmp.45 168 24 29 ];
+        symbol [ Graphics %tmp.46 168 31 39 ];
+        %tmp.46 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.47 168 40 57 ];
+        %tmp.47 = getv %tmp.46 :COLOR_TRANSPARENT;
+        invoke %tmp.43 %tmp.44(%tmp.45, %tmp.47);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 169 12 ]
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 169 12 14 ];
+        symbol [ setPenWidth %tmp.49 169 15 26 ];
+        %tmp.49 = getv function %tmp.48 :setPenWidth;
+        %tmp.50 = lgetv %penW.6;
+        symbol [ penW %tmp.50 169 27 31 ];
+        invoke %tmp.48 %tmp.49(%tmp.50);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 170 12 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 170 12 14 ];
+        symbol [ drawLine %tmp.52 170 15 23 ];
+        %tmp.52 = getv function %tmp.51 :drawLine;
+        symbol [ _cx %tmp.54 171 17 20 ];
+        %tmp.54 = getv ? :_cx;
+        %tmp.55 = lgetv %innerR.5;
+        symbol [ innerR %tmp.55 171 23 29 ];
+        symbol [ Math %tmp.56 171 32 36 ];
+        %tmp.56 = getm $.Toybox.Math;
+        symbol [ cos %tmp.57 171 37 40 ];
+        %tmp.57 = getv function %tmp.56 :cos;
+        %tmp.58 = lgetv %angleRad.2;
+        symbol [ angleRad %tmp.58 171 41 49 ];
+        %tmp.59 = invoke %tmp.56 %tmp.57(%tmp.58);
+        %tmp.60 = mul %tmp.55 %tmp.59;
+        %tmp.61 = add %tmp.54 %tmp.60;
+        symbol [ toNumber %tmp.62 171 52 60 ];
+        %tmp.62 = getv function %tmp.61 :toNumber;
+        %tmp.63 = invoke %tmp.61 %tmp.62();
+        symbol [ _cy %tmp.65 172 17 20 ];
+        %tmp.65 = getv ? :_cy;
+        %tmp.66 = lgetv %innerR.5;
+        symbol [ innerR %tmp.66 172 23 29 ];
+        symbol [ Math %tmp.67 172 32 36 ];
+        %tmp.67 = getm $.Toybox.Math;
+        symbol [ sin %tmp.68 172 37 40 ];
+        %tmp.68 = getv function %tmp.67 :sin;
+        %tmp.69 = lgetv %angleRad.2;
+        symbol [ angleRad %tmp.69 172 41 49 ];
+        %tmp.70 = invoke %tmp.67 %tmp.68(%tmp.69);
+        %tmp.71 = mul %tmp.66 %tmp.70;
+        %tmp.72 = add %tmp.65 %tmp.71;
+        symbol [ toNumber %tmp.73 172 52 60 ];
+        %tmp.73 = getv function %tmp.72 :toNumber;
+        %tmp.74 = invoke %tmp.72 %tmp.73();
+        symbol [ _cx %tmp.76 173 17 20 ];
+        %tmp.76 = getv ? :_cx;
+        %tmp.77 = lgetv %outerR.4;
+        symbol [ outerR %tmp.77 173 23 29 ];
+        symbol [ Math %tmp.78 173 32 36 ];
+        %tmp.78 = getm $.Toybox.Math;
+        symbol [ cos %tmp.79 173 37 40 ];
+        %tmp.79 = getv function %tmp.78 :cos;
+        %tmp.80 = lgetv %angleRad.2;
+        symbol [ angleRad %tmp.80 173 41 49 ];
+        %tmp.81 = invoke %tmp.78 %tmp.79(%tmp.80);
+        %tmp.82 = mul %tmp.77 %tmp.81;
+        %tmp.83 = add %tmp.76 %tmp.82;
+        symbol [ toNumber %tmp.84 173 52 60 ];
+        %tmp.84 = getv function %tmp.83 :toNumber;
+        %tmp.85 = invoke %tmp.83 %tmp.84();
+        symbol [ _cy %tmp.87 174 17 20 ];
+        %tmp.87 = getv ? :_cy;
+        %tmp.88 = lgetv %outerR.4;
+        symbol [ outerR %tmp.88 174 23 29 ];
+        symbol [ Math %tmp.89 174 32 36 ];
+        %tmp.89 = getm $.Toybox.Math;
+        symbol [ sin %tmp.90 174 37 40 ];
+        %tmp.90 = getv function %tmp.89 :sin;
+        %tmp.91 = lgetv %angleRad.2;
+        symbol [ angleRad %tmp.91 174 41 49 ];
+        %tmp.92 = invoke %tmp.89 %tmp.90(%tmp.91);
+        %tmp.93 = mul %tmp.88 %tmp.92;
+        %tmp.94 = add %tmp.87 %tmp.93;
+        symbol [ toNumber %tmp.95 174 52 60 ];
+        %tmp.95 = getv function %tmp.94 :toNumber;
+        %tmp.96 = invoke %tmp.94 %tmp.95();
+        invoke %tmp.51 %tmp.52(%tmp.63, %tmp.74, %tmp.85, %tmp.96);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_37_176_8_stop:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_incr:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 159 ]
+        %tmp.99 = lgetv %i.1;
+        symbol [ i %tmp.99 159 32 33 ];
+        %tmp.100 = add %tmp.99 1;
+        lputv %i.1 %tmp.100;
+        symbol [ i %i.1 159 32 33 ];
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_test;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_159_8_176_8_for_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 177 8 ]
+        %tmp.101 = lgetv %dc;
+        symbol [ dc %tmp.101 177 8 10 ];
+        symbol [ setPenWidth %tmp.102 177 11 22 ];
+        %tmp.102 = getv function %tmp.101 :setPenWidth;
+        %tmp.103 = 1;
+        invoke %tmp.101 %tmp.102(%tmp.103);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_158_55_178_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 182; @symbol_functiondef = [drawHands,182,21,30]; @symbol_param<0> = [dc,182,31,33]; @symbol_param<0>_type<0> = [Dc,182,37,39]; @symbol_param<1> = [clock,182,41,46]; @symbol_param<1>_type<0> = [System,182,50,56]; @symbol_param<1>_type<1> = [ClockTime,182,57,66]; ]
+    private
+    function drawHands(dc as Dc, clock as System.ClockTime) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 183 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %hours.1 = local;
+        symbol [ hours %hours.1 183 12 17 ];
+        %tmp.1 = lgetv %clock;
+        symbol [ clock %tmp.1 183 22 27 ];
+        symbol [ hour %tmp.2 183 28 32 ];
+        %tmp.2 = getv %tmp.1 :hour;
+        %tmp.3 = 12;
+        %tmp.4 = mod %tmp.2 %tmp.3;
+        lputv %hours.1 %tmp.4;
+        symbol [ hours %hours.1 183 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 184 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %minutes.2 = local;
+        symbol [ minutes %minutes.2 184 12 19 ];
+        %tmp.5 = lgetv %clock;
+        symbol [ clock %tmp.5 184 22 27 ];
+        symbol [ min %tmp.6 184 28 31 ];
+        %tmp.6 = getv %tmp.5 :min;
+        lputv %minutes.2 %tmp.6;
+        symbol [ minutes %minutes.2 184 12 19 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 185 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %seconds.3 = local;
+        symbol [ seconds %seconds.3 185 12 19 ];
+        %tmp.7 = lgetv %clock;
+        symbol [ clock %tmp.7 185 22 27 ];
+        symbol [ sec %tmp.8 185 28 31 ];
+        %tmp.8 = getv %tmp.7 :sec;
+        lputv %seconds.3 %tmp.8;
+        symbol [ seconds %seconds.3 185 12 19 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 187 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %hourAngle.4 = local;
+        symbol [ hourAngle %hourAngle.4 187 12 21 ];
+        %tmp.9 = lgetv %hours.1;
+        symbol [ hours %tmp.9 187 25 30 ];
+        %tmp.10 = 30.0;
+        %tmp.11 = mul %tmp.9 %tmp.10;
+        %tmp.12 = lgetv %minutes.2;
+        symbol [ minutes %tmp.12 187 40 47 ];
+        %tmp.13 = 0.5;
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        %tmp.15 = add %tmp.11 %tmp.14;
+        %tmp.16 = 90.0;
+        %tmp.17 = sub %tmp.15 %tmp.16;
+        symbol [ Math %tmp.18 187 64 68 ];
+        %tmp.18 = getm $.Toybox.Math;
+        symbol [ PI %tmp.19 187 69 71 ];
+        %tmp.19 = getv %tmp.18 :PI;
+        %tmp.20 = mul %tmp.17 %tmp.19;
+        %tmp.21 = 180.0;
+        %tmp.22 = div %tmp.20 %tmp.21;
+        lputv %hourAngle.4 %tmp.22;
+        symbol [ hourAngle %hourAngle.4 187 12 21 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 188 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %minAngle.5 = local;
+        symbol [ minAngle %minAngle.5 188 12 20 ];
+        %tmp.23 = lgetv %minutes.2;
+        symbol [ minutes %tmp.23 188 25 32 ];
+        %tmp.24 = 6.0;
+        %tmp.25 = mul %tmp.23 %tmp.24;
+        %tmp.26 = 90.0;
+        %tmp.27 = sub %tmp.25 %tmp.26;
+        symbol [ Math %tmp.28 188 49 53 ];
+        %tmp.28 = getm $.Toybox.Math;
+        symbol [ PI %tmp.29 188 54 56 ];
+        %tmp.29 = getv %tmp.28 :PI;
+        %tmp.30 = mul %tmp.27 %tmp.29;
+        %tmp.31 = 180.0;
+        %tmp.32 = div %tmp.30 %tmp.31;
+        lputv %minAngle.5 %tmp.32;
+        symbol [ minAngle %minAngle.5 188 12 20 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 189 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %secAngle.6 = local;
+        symbol [ secAngle %secAngle.6 189 12 20 ];
+        %tmp.33 = lgetv %seconds.3;
+        symbol [ seconds %tmp.33 189 25 32 ];
+        %tmp.34 = 6.0;
+        %tmp.35 = mul %tmp.33 %tmp.34;
+        %tmp.36 = 90.0;
+        %tmp.37 = sub %tmp.35 %tmp.36;
+        symbol [ Math %tmp.38 189 49 53 ];
+        %tmp.38 = getm $.Toybox.Math;
+        symbol [ PI %tmp.39 189 54 56 ];
+        %tmp.39 = getv %tmp.38 :PI;
+        %tmp.40 = mul %tmp.37 %tmp.39;
+        %tmp.41 = 180.0;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        lputv %secAngle.6 %tmp.42;
+        symbol [ secAngle %secAngle.6 189 12 20 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 191 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %hourLen.7 = local;
+        symbol [ hourLen %hourLen.7 191 12 19 ];
+        symbol [ _r %tmp.44 191 23 25 ];
+        %tmp.44 = getv ? :_r;
+        %tmp.45 = 48;
+        %tmp.46 = mul %tmp.44 %tmp.45;
+        %tmp.47 = 100;
+        %tmp.48 = div %tmp.46 %tmp.47;
+        symbol [ toNumber %tmp.49 191 38 46 ];
+        %tmp.49 = getv function %tmp.48 :toNumber;
+        %tmp.50 = invoke %tmp.48 %tmp.49();
+        lputv %hourLen.7 %tmp.50;
+        symbol [ hourLen %hourLen.7 191 12 19 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 192 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %minLen.8 = local;
+        symbol [ minLen %minLen.8 192 12 18 ];
+        symbol [ _r %tmp.52 192 23 25 ];
+        %tmp.52 = getv ? :_r;
+        %tmp.53 = 70;
+        %tmp.54 = mul %tmp.52 %tmp.53;
+        %tmp.55 = 100;
+        %tmp.56 = div %tmp.54 %tmp.55;
+        symbol [ toNumber %tmp.57 192 38 46 ];
+        %tmp.57 = getv function %tmp.56 :toNumber;
+        %tmp.58 = invoke %tmp.56 %tmp.57();
+        lputv %minLen.8 %tmp.58;
+        symbol [ minLen %minLen.8 192 12 18 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 193 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %secLen.9 = local;
+        symbol [ secLen %secLen.9 193 12 18 ];
+        symbol [ _r %tmp.60 193 23 25 ];
+        %tmp.60 = getv ? :_r;
+        %tmp.61 = 80;
+        %tmp.62 = mul %tmp.60 %tmp.61;
+        %tmp.63 = 100;
+        %tmp.64 = div %tmp.62 %tmp.63;
+        symbol [ toNumber %tmp.65 193 38 46 ];
+        %tmp.65 = getv function %tmp.64 :toNumber;
+        %tmp.66 = invoke %tmp.64 %tmp.65();
+        lputv %secLen.9 %tmp.66;
+        symbol [ secLen %secLen.9 193 12 18 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 194 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %secTail.10 = local;
+        symbol [ secTail %secTail.10 194 12 19 ];
+        symbol [ _r %tmp.68 194 23 25 ];
+        %tmp.68 = getv ? :_r;
+        %tmp.69 = 20;
+        %tmp.70 = mul %tmp.68 %tmp.69;
+        %tmp.71 = 100;
+        %tmp.72 = div %tmp.70 %tmp.71;
+        symbol [ toNumber %tmp.73 194 38 46 ];
+        %tmp.73 = getv function %tmp.72 :toNumber;
+        %tmp.74 = invoke %tmp.72 %tmp.73();
+        lputv %secTail.10 %tmp.74;
+        symbol [ secTail %secTail.10 194 12 19 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 197 8 ]
+        %tmp.75 = lgetv %dc;
+        symbol [ dc %tmp.75 197 8 10 ];
+        symbol [ setPenWidth %tmp.76 197 11 22 ];
+        %tmp.76 = getv function %tmp.75 :setPenWidth;
+        %tmp.77 = 2;
+        invoke %tmp.75 %tmp.76(%tmp.77);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 198 8 ]
+        %tmp.78 = lgetv %dc;
+        symbol [ dc %tmp.78 198 8 10 ];
+        symbol [ setColor %tmp.79 198 11 19 ];
+        %tmp.79 = getv function %tmp.78 :setColor;
+        %tmp.80 = 0xCCCCCC;
+        symbol [ Graphics %tmp.81 198 30 38 ];
+        %tmp.81 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.82 198 39 56 ];
+        %tmp.82 = getv %tmp.81 :COLOR_TRANSPARENT;
+        invoke %tmp.78 %tmp.79(%tmp.80, %tmp.82);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 199 8 ]
+        %tmp.83 = lgetv %dc;
+        symbol [ dc %tmp.83 199 8 10 ];
+        symbol [ drawLine %tmp.84 199 11 19 ];
+        %tmp.84 = getv function %tmp.83 :drawLine;
+        symbol [ _cx %tmp.86 200 13 16 ];
+        %tmp.86 = getv ? :_cx;
+        %tmp.87 = lgetv %minLen.8;
+        symbol [ minLen %tmp.87 200 19 25 ];
+        %tmp.88 = 0.10;
+        %tmp.89 = mul %tmp.87 %tmp.88;
+        symbol [ Math %tmp.90 200 35 39 ];
+        %tmp.90 = getm $.Toybox.Math;
+        symbol [ cos %tmp.91 200 40 43 ];
+        %tmp.91 = getv function %tmp.90 :cos;
+        %tmp.92 = lgetv %minAngle.5;
+        symbol [ minAngle %tmp.92 200 44 52 ];
+        %tmp.93 = invoke %tmp.90 %tmp.91(%tmp.92);
+        %tmp.94 = mul %tmp.89 %tmp.93;
+        %tmp.95 = sub %tmp.86 %tmp.94;
+        symbol [ toNumber %tmp.96 200 55 63 ];
+        %tmp.96 = getv function %tmp.95 :toNumber;
+        %tmp.97 = invoke %tmp.95 %tmp.96();
+        symbol [ _cy %tmp.99 201 13 16 ];
+        %tmp.99 = getv ? :_cy;
+        %tmp.100 = lgetv %minLen.8;
+        symbol [ minLen %tmp.100 201 19 25 ];
+        %tmp.101 = 0.10;
+        %tmp.102 = mul %tmp.100 %tmp.101;
+        symbol [ Math %tmp.103 201 35 39 ];
+        %tmp.103 = getm $.Toybox.Math;
+        symbol [ sin %tmp.104 201 40 43 ];
+        %tmp.104 = getv function %tmp.103 :sin;
+        %tmp.105 = lgetv %minAngle.5;
+        symbol [ minAngle %tmp.105 201 44 52 ];
+        %tmp.106 = invoke %tmp.103 %tmp.104(%tmp.105);
+        %tmp.107 = mul %tmp.102 %tmp.106;
+        %tmp.108 = sub %tmp.99 %tmp.107;
+        symbol [ toNumber %tmp.109 201 55 63 ];
+        %tmp.109 = getv function %tmp.108 :toNumber;
+        %tmp.110 = invoke %tmp.108 %tmp.109();
+        symbol [ _cx %tmp.112 202 13 16 ];
+        %tmp.112 = getv ? :_cx;
+        %tmp.113 = lgetv %minLen.8;
+        symbol [ minLen %tmp.113 202 19 25 ];
+        symbol [ Math %tmp.114 202 28 32 ];
+        %tmp.114 = getm $.Toybox.Math;
+        symbol [ cos %tmp.115 202 33 36 ];
+        %tmp.115 = getv function %tmp.114 :cos;
+        %tmp.116 = lgetv %minAngle.5;
+        symbol [ minAngle %tmp.116 202 37 45 ];
+        %tmp.117 = invoke %tmp.114 %tmp.115(%tmp.116);
+        %tmp.118 = mul %tmp.113 %tmp.117;
+        %tmp.119 = add %tmp.112 %tmp.118;
+        symbol [ toNumber %tmp.120 202 48 56 ];
+        %tmp.120 = getv function %tmp.119 :toNumber;
+        %tmp.121 = invoke %tmp.119 %tmp.120();
+        symbol [ _cy %tmp.123 203 13 16 ];
+        %tmp.123 = getv ? :_cy;
+        %tmp.124 = lgetv %minLen.8;
+        symbol [ minLen %tmp.124 203 19 25 ];
+        symbol [ Math %tmp.125 203 28 32 ];
+        %tmp.125 = getm $.Toybox.Math;
+        symbol [ sin %tmp.126 203 33 36 ];
+        %tmp.126 = getv function %tmp.125 :sin;
+        %tmp.127 = lgetv %minAngle.5;
+        symbol [ minAngle %tmp.127 203 37 45 ];
+        %tmp.128 = invoke %tmp.125 %tmp.126(%tmp.127);
+        %tmp.129 = mul %tmp.124 %tmp.128;
+        %tmp.130 = add %tmp.123 %tmp.129;
+        symbol [ toNumber %tmp.131 203 48 56 ];
+        %tmp.131 = getv function %tmp.130 :toNumber;
+        %tmp.132 = invoke %tmp.130 %tmp.131();
+        invoke %tmp.83 %tmp.84(%tmp.97, %tmp.110, %tmp.121, %tmp.132);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 207 8 ]
+        %tmp.133 = lgetv %dc;
+        symbol [ dc %tmp.133 207 8 10 ];
+        symbol [ setPenWidth %tmp.134 207 11 22 ];
+        %tmp.134 = getv function %tmp.133 :setPenWidth;
+        %tmp.135 = 4;
+        invoke %tmp.133 %tmp.134(%tmp.135);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 208 8 ]
+        %tmp.136 = lgetv %dc;
+        symbol [ dc %tmp.136 208 8 10 ];
+        symbol [ setColor %tmp.137 208 11 19 ];
+        %tmp.137 = getv function %tmp.136 :setColor;
+        %tmp.138 = 0xCCCCCC;
+        symbol [ Graphics %tmp.139 208 30 38 ];
+        %tmp.139 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.140 208 39 56 ];
+        %tmp.140 = getv %tmp.139 :COLOR_TRANSPARENT;
+        invoke %tmp.136 %tmp.137(%tmp.138, %tmp.140);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 209 8 ]
+        %tmp.141 = lgetv %dc;
+        symbol [ dc %tmp.141 209 8 10 ];
+        symbol [ drawLine %tmp.142 209 11 19 ];
+        %tmp.142 = getv function %tmp.141 :drawLine;
+        symbol [ _cx %tmp.144 210 13 16 ];
+        %tmp.144 = getv ? :_cx;
+        %tmp.145 = lgetv %hourLen.7;
+        symbol [ hourLen %tmp.145 210 19 26 ];
+        %tmp.146 = 0.12;
+        %tmp.147 = mul %tmp.145 %tmp.146;
+        symbol [ Math %tmp.148 210 36 40 ];
+        %tmp.148 = getm $.Toybox.Math;
+        symbol [ cos %tmp.149 210 41 44 ];
+        %tmp.149 = getv function %tmp.148 :cos;
+        %tmp.150 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.150 210 45 54 ];
+        %tmp.151 = invoke %tmp.148 %tmp.149(%tmp.150);
+        %tmp.152 = mul %tmp.147 %tmp.151;
+        %tmp.153 = sub %tmp.144 %tmp.152;
+        symbol [ toNumber %tmp.154 210 57 65 ];
+        %tmp.154 = getv function %tmp.153 :toNumber;
+        %tmp.155 = invoke %tmp.153 %tmp.154();
+        symbol [ _cy %tmp.157 211 13 16 ];
+        %tmp.157 = getv ? :_cy;
+        %tmp.158 = lgetv %hourLen.7;
+        symbol [ hourLen %tmp.158 211 19 26 ];
+        %tmp.159 = 0.12;
+        %tmp.160 = mul %tmp.158 %tmp.159;
+        symbol [ Math %tmp.161 211 36 40 ];
+        %tmp.161 = getm $.Toybox.Math;
+        symbol [ sin %tmp.162 211 41 44 ];
+        %tmp.162 = getv function %tmp.161 :sin;
+        %tmp.163 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.163 211 45 54 ];
+        %tmp.164 = invoke %tmp.161 %tmp.162(%tmp.163);
+        %tmp.165 = mul %tmp.160 %tmp.164;
+        %tmp.166 = sub %tmp.157 %tmp.165;
+        symbol [ toNumber %tmp.167 211 57 65 ];
+        %tmp.167 = getv function %tmp.166 :toNumber;
+        %tmp.168 = invoke %tmp.166 %tmp.167();
+        symbol [ _cx %tmp.170 212 13 16 ];
+        %tmp.170 = getv ? :_cx;
+        %tmp.171 = lgetv %hourLen.7;
+        symbol [ hourLen %tmp.171 212 19 26 ];
+        symbol [ Math %tmp.172 212 29 33 ];
+        %tmp.172 = getm $.Toybox.Math;
+        symbol [ cos %tmp.173 212 34 37 ];
+        %tmp.173 = getv function %tmp.172 :cos;
+        %tmp.174 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.174 212 38 47 ];
+        %tmp.175 = invoke %tmp.172 %tmp.173(%tmp.174);
+        %tmp.176 = mul %tmp.171 %tmp.175;
+        %tmp.177 = add %tmp.170 %tmp.176;
+        symbol [ toNumber %tmp.178 212 50 58 ];
+        %tmp.178 = getv function %tmp.177 :toNumber;
+        %tmp.179 = invoke %tmp.177 %tmp.178();
+        symbol [ _cy %tmp.181 213 13 16 ];
+        %tmp.181 = getv ? :_cy;
+        %tmp.182 = lgetv %hourLen.7;
+        symbol [ hourLen %tmp.182 213 19 26 ];
+        symbol [ Math %tmp.183 213 29 33 ];
+        %tmp.183 = getm $.Toybox.Math;
+        symbol [ sin %tmp.184 213 34 37 ];
+        %tmp.184 = getv function %tmp.183 :sin;
+        %tmp.185 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.185 213 38 47 ];
+        %tmp.186 = invoke %tmp.183 %tmp.184(%tmp.185);
+        %tmp.187 = mul %tmp.182 %tmp.186;
+        %tmp.188 = add %tmp.181 %tmp.187;
+        symbol [ toNumber %tmp.189 213 50 58 ];
+        %tmp.189 = getv function %tmp.188 :toNumber;
+        %tmp.190 = invoke %tmp.188 %tmp.189();
+        invoke %tmp.141 %tmp.142(%tmp.155, %tmp.168, %tmp.179, %tmp.190);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 216 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop" ]
+        %tipStart.11 = local;
+        symbol [ tipStart %tipStart.11 216 12 20 ];
+        %tmp.191 = lgetv %hourLen.7;
+        symbol [ hourLen %tmp.191 216 23 30 ];
+        %tmp.192 = 62;
+        %tmp.193 = mul %tmp.191 %tmp.192;
+        %tmp.194 = 100;
+        %tmp.195 = div %tmp.193 %tmp.194;
+        lputv %tipStart.11 %tmp.195;
+        symbol [ tipStart %tipStart.11 216 12 20 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 217 8 ]
+        %tmp.196 = lgetv %dc;
+        symbol [ dc %tmp.196 217 8 10 ];
+        symbol [ setColor %tmp.197 217 11 19 ];
+        %tmp.197 = getv function %tmp.196 :setColor;
+        symbol [ _accentPrimary %tmp.199 217 20 34 ];
+        %tmp.199 = getv ? :_accentPrimary;
+        symbol [ Graphics %tmp.200 217 36 44 ];
+        %tmp.200 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.201 217 45 62 ];
+        %tmp.201 = getv %tmp.200 :COLOR_TRANSPARENT;
+        invoke %tmp.196 %tmp.197(%tmp.199, %tmp.201);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 218 8 ]
+        %tmp.202 = lgetv %dc;
+        symbol [ dc %tmp.202 218 8 10 ];
+        symbol [ setPenWidth %tmp.203 218 11 22 ];
+        %tmp.203 = getv function %tmp.202 :setPenWidth;
+        %tmp.204 = 4;
+        invoke %tmp.202 %tmp.203(%tmp.204);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 219 8 ]
+        %tmp.205 = lgetv %dc;
+        symbol [ dc %tmp.205 219 8 10 ];
+        symbol [ drawLine %tmp.206 219 11 19 ];
+        %tmp.206 = getv function %tmp.205 :drawLine;
+        symbol [ _cx %tmp.208 220 13 16 ];
+        %tmp.208 = getv ? :_cx;
+        %tmp.209 = lgetv %tipStart.11;
+        symbol [ tipStart %tmp.209 220 19 27 ];
+        symbol [ Math %tmp.210 220 30 34 ];
+        %tmp.210 = getm $.Toybox.Math;
+        symbol [ cos %tmp.211 220 35 38 ];
+        %tmp.211 = getv function %tmp.210 :cos;
+        %tmp.212 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.212 220 39 48 ];
+        %tmp.213 = invoke %tmp.210 %tmp.211(%tmp.212);
+        %tmp.214 = mul %tmp.209 %tmp.213;
+        %tmp.215 = add %tmp.208 %tmp.214;
+        symbol [ toNumber %tmp.216 220 51 59 ];
+        %tmp.216 = getv function %tmp.215 :toNumber;
+        %tmp.217 = invoke %tmp.215 %tmp.216();
+        symbol [ _cy %tmp.219 221 13 16 ];
+        %tmp.219 = getv ? :_cy;
+        %tmp.220 = lgetv %tipStart.11;
+        symbol [ tipStart %tmp.220 221 19 27 ];
+        symbol [ Math %tmp.221 221 30 34 ];
+        %tmp.221 = getm $.Toybox.Math;
+        symbol [ sin %tmp.222 221 35 38 ];
+        %tmp.222 = getv function %tmp.221 :sin;
+        %tmp.223 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.223 221 39 48 ];
+        %tmp.224 = invoke %tmp.221 %tmp.222(%tmp.223);
+        %tmp.225 = mul %tmp.220 %tmp.224;
+        %tmp.226 = add %tmp.219 %tmp.225;
+        symbol [ toNumber %tmp.227 221 51 59 ];
+        %tmp.227 = getv function %tmp.226 :toNumber;
+        %tmp.228 = invoke %tmp.226 %tmp.227();
+        symbol [ _cx %tmp.230 222 13 16 ];
+        %tmp.230 = getv ? :_cx;
+        %tmp.231 = lgetv %hourLen.7;
+        symbol [ hourLen %tmp.231 222 19 26 ];
+        symbol [ Math %tmp.232 222 29 33 ];
+        %tmp.232 = getm $.Toybox.Math;
+        symbol [ cos %tmp.233 222 34 37 ];
+        %tmp.233 = getv function %tmp.232 :cos;
+        %tmp.234 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.234 222 38 47 ];
+        %tmp.235 = invoke %tmp.232 %tmp.233(%tmp.234);
+        %tmp.236 = mul %tmp.231 %tmp.235;
+        %tmp.237 = add %tmp.230 %tmp.236;
+        symbol [ toNumber %tmp.238 222 50 58 ];
+        %tmp.238 = getv function %tmp.237 :toNumber;
+        %tmp.239 = invoke %tmp.237 %tmp.238();
+        symbol [ _cy %tmp.241 223 13 16 ];
+        %tmp.241 = getv ? :_cy;
+        %tmp.242 = lgetv %hourLen.7;
+        symbol [ hourLen %tmp.242 223 19 26 ];
+        symbol [ Math %tmp.243 223 29 33 ];
+        %tmp.243 = getm $.Toybox.Math;
+        symbol [ sin %tmp.244 223 34 37 ];
+        %tmp.244 = getv function %tmp.243 :sin;
+        %tmp.245 = lgetv %hourAngle.4;
+        symbol [ hourAngle %tmp.245 223 38 47 ];
+        %tmp.246 = invoke %tmp.243 %tmp.244(%tmp.245);
+        %tmp.247 = mul %tmp.242 %tmp.246;
+        %tmp.248 = add %tmp.241 %tmp.247;
+        symbol [ toNumber %tmp.249 223 50 58 ];
+        %tmp.249 = getv function %tmp.248 :toNumber;
+        %tmp.250 = invoke %tmp.248 %tmp.249();
+        invoke %tmp.205 %tmp.206(%tmp.217, %tmp.228, %tmp.239, %tmp.250);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 227 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_8_239_8_if_stmt:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_12_227_28_begin:
+        symbol [ _isSleeping %tmp.252 227 13 24 ];
+        %tmp.252 = getv ? :_isSleeping;
+        %tmp.253 = not %tmp.252;
+        bf %tmp.253 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_8_239_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_28_227_28_true:
+        symbol [ _showSeconds %tmp.255 227 28 40 ];
+        %tmp.255 = getv ? :_showSeconds;
+        push %tmp.255;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_28_227_28_end:
+        %tmp.256 = phi [%tmp.253 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_12_227_28_begin] [%tmp.255 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_28_227_28_true] [%tmp.256 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_28_227_28_end];
+        bf %tmp.256 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_8_239_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_8_239_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_42_239_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 228 12 ]
+        %tmp.257 = lgetv %dc;
+        symbol [ dc %tmp.257 228 12 14 ];
+        symbol [ setPenWidth %tmp.258 228 15 26 ];
+        %tmp.258 = getv function %tmp.257 :setPenWidth;
+        %tmp.259 = 1;
+        invoke %tmp.257 %tmp.258(%tmp.259);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 229 12 ]
+        %tmp.260 = lgetv %dc;
+        symbol [ dc %tmp.260 229 12 14 ];
+        symbol [ setColor %tmp.261 229 15 23 ];
+        %tmp.261 = getv function %tmp.260 :setColor;
+        symbol [ _accentPrimary %tmp.263 229 24 38 ];
+        %tmp.263 = getv ? :_accentPrimary;
+        symbol [ Graphics %tmp.264 229 40 48 ];
+        %tmp.264 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.265 229 49 66 ];
+        %tmp.265 = getv %tmp.264 :COLOR_TRANSPARENT;
+        invoke %tmp.260 %tmp.261(%tmp.263, %tmp.265);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 231 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_42_239_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_42_239_8_stop" ]
+        %txEnd.12 = local;
+        symbol [ txEnd %txEnd.12 231 16 21 ];
+        symbol [ _cx %tmp.267 231 25 28 ];
+        %tmp.267 = getv ? :_cx;
+        %tmp.268 = lgetv %secTail.10;
+        symbol [ secTail %tmp.268 231 31 38 ];
+        symbol [ Math %tmp.269 231 41 45 ];
+        %tmp.269 = getm $.Toybox.Math;
+        symbol [ cos %tmp.270 231 46 49 ];
+        %tmp.270 = getv function %tmp.269 :cos;
+        %tmp.271 = lgetv %secAngle.6;
+        symbol [ secAngle %tmp.271 231 50 58 ];
+        %tmp.272 = invoke %tmp.269 %tmp.270(%tmp.271);
+        %tmp.273 = mul %tmp.268 %tmp.272;
+        %tmp.274 = sub %tmp.267 %tmp.273;
+        symbol [ toNumber %tmp.275 231 61 69 ];
+        %tmp.275 = getv function %tmp.274 :toNumber;
+        %tmp.276 = invoke %tmp.274 %tmp.275();
+        lputv %txEnd.12 %tmp.276;
+        symbol [ txEnd %txEnd.12 231 16 21 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 232 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_42_239_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_42_239_8_stop" ]
+        %tyEnd.13 = local;
+        symbol [ tyEnd %tyEnd.13 232 16 21 ];
+        symbol [ _cy %tmp.278 232 25 28 ];
+        %tmp.278 = getv ? :_cy;
+        %tmp.279 = lgetv %secTail.10;
+        symbol [ secTail %tmp.279 232 31 38 ];
+        symbol [ Math %tmp.280 232 41 45 ];
+        %tmp.280 = getm $.Toybox.Math;
+        symbol [ sin %tmp.281 232 46 49 ];
+        %tmp.281 = getv function %tmp.280 :sin;
+        %tmp.282 = lgetv %secAngle.6;
+        symbol [ secAngle %tmp.282 232 50 58 ];
+        %tmp.283 = invoke %tmp.280 %tmp.281(%tmp.282);
+        %tmp.284 = mul %tmp.279 %tmp.283;
+        %tmp.285 = sub %tmp.278 %tmp.284;
+        symbol [ toNumber %tmp.286 232 61 69 ];
+        %tmp.286 = getv function %tmp.285 :toNumber;
+        %tmp.287 = invoke %tmp.285 %tmp.286();
+        lputv %tyEnd.13 %tmp.287;
+        symbol [ tyEnd %tyEnd.13 232 16 21 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 233 12 ]
+        %tmp.288 = lgetv %dc;
+        symbol [ dc %tmp.288 233 12 14 ];
+        symbol [ drawLine %tmp.289 233 15 23 ];
+        %tmp.289 = getv function %tmp.288 :drawLine;
+        %tmp.290 = lgetv %txEnd.12;
+        symbol [ txEnd %tmp.290 234 16 21 ];
+        %tmp.291 = lgetv %tyEnd.13;
+        symbol [ tyEnd %tmp.291 234 23 28 ];
+        symbol [ _cx %tmp.293 235 17 20 ];
+        %tmp.293 = getv ? :_cx;
+        %tmp.294 = lgetv %secLen.9;
+        symbol [ secLen %tmp.294 235 23 29 ];
+        symbol [ Math %tmp.295 235 32 36 ];
+        %tmp.295 = getm $.Toybox.Math;
+        symbol [ cos %tmp.296 235 37 40 ];
+        %tmp.296 = getv function %tmp.295 :cos;
+        %tmp.297 = lgetv %secAngle.6;
+        symbol [ secAngle %tmp.297 235 41 49 ];
+        %tmp.298 = invoke %tmp.295 %tmp.296(%tmp.297);
+        %tmp.299 = mul %tmp.294 %tmp.298;
+        %tmp.300 = add %tmp.293 %tmp.299;
+        symbol [ toNumber %tmp.301 235 52 60 ];
+        %tmp.301 = getv function %tmp.300 :toNumber;
+        %tmp.302 = invoke %tmp.300 %tmp.301();
+        symbol [ _cy %tmp.304 236 17 20 ];
+        %tmp.304 = getv ? :_cy;
+        %tmp.305 = lgetv %secLen.9;
+        symbol [ secLen %tmp.305 236 23 29 ];
+        symbol [ Math %tmp.306 236 32 36 ];
+        %tmp.306 = getm $.Toybox.Math;
+        symbol [ sin %tmp.307 236 37 40 ];
+        %tmp.307 = getv function %tmp.306 :sin;
+        %tmp.308 = lgetv %secAngle.6;
+        symbol [ secAngle %tmp.308 236 41 49 ];
+        %tmp.309 = invoke %tmp.306 %tmp.307(%tmp.308);
+        %tmp.310 = mul %tmp.305 %tmp.309;
+        %tmp.311 = add %tmp.304 %tmp.310;
+        symbol [ toNumber %tmp.312 236 52 60 ];
+        %tmp.312 = getv function %tmp.311 :toNumber;
+        %tmp.313 = invoke %tmp.311 %tmp.312();
+        invoke %tmp.288 %tmp.289(%tmp.290, %tmp.291, %tmp.302, %tmp.313);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 238 12 ]
+        %tmp.314 = lgetv %dc;
+        symbol [ dc %tmp.314 238 12 14 ];
+        symbol [ fillCircle %tmp.315 238 15 25 ];
+        %tmp.315 = getv function %tmp.314 :fillCircle;
+        %tmp.316 = lgetv %txEnd.12;
+        symbol [ txEnd %tmp.316 238 26 31 ];
+        %tmp.317 = lgetv %tyEnd.13;
+        symbol [ tyEnd %tmp.317 238 33 38 ];
+        %tmp.318 = 3;
+        invoke %tmp.314 %tmp.315(%tmp.316, %tmp.317, %tmp.318);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_42_239_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_8_239_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_227_8_239_8_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 242 8 ]
+        %tmp.319 = lgetv %dc;
+        symbol [ dc %tmp.319 242 8 10 ];
+        symbol [ setColor %tmp.320 242 11 19 ];
+        %tmp.320 = getv function %tmp.319 :setColor;
+        symbol [ _bgColor %tmp.322 242 20 28 ];
+        %tmp.322 = getv ? :_bgColor;
+        symbol [ _bgColor %tmp.324 242 30 38 ];
+        %tmp.324 = getv ? :_bgColor;
+        invoke %tmp.319 %tmp.320(%tmp.322, %tmp.324);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 243 8 ]
+        %tmp.325 = lgetv %dc;
+        symbol [ dc %tmp.325 243 8 10 ];
+        symbol [ fillCircle %tmp.326 243 11 21 ];
+        %tmp.326 = getv function %tmp.325 :fillCircle;
+        symbol [ _cx %tmp.328 243 22 25 ];
+        %tmp.328 = getv ? :_cx;
+        symbol [ _cy %tmp.330 243 27 30 ];
+        %tmp.330 = getv ? :_cy;
+        %tmp.331 = 7;
+        invoke %tmp.325 %tmp.326(%tmp.328, %tmp.330, %tmp.331);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 244 8 ]
+        %tmp.332 = lgetv %dc;
+        symbol [ dc %tmp.332 244 8 10 ];
+        symbol [ setColor %tmp.333 244 11 19 ];
+        %tmp.333 = getv function %tmp.332 :setColor;
+        %tmp.334 = 0xC0C0C0;
+        symbol [ Graphics %tmp.335 244 30 38 ];
+        %tmp.335 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.336 244 39 56 ];
+        %tmp.336 = getv %tmp.335 :COLOR_TRANSPARENT;
+        invoke %tmp.332 %tmp.333(%tmp.334, %tmp.336);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 245 8 ]
+        %tmp.337 = lgetv %dc;
+        symbol [ dc %tmp.337 245 8 10 ];
+        symbol [ fillCircle %tmp.338 245 11 21 ];
+        %tmp.338 = getv function %tmp.337 :fillCircle;
+        symbol [ _cx %tmp.340 245 22 25 ];
+        %tmp.340 = getv ? :_cx;
+        symbol [ _cy %tmp.342 245 27 30 ];
+        %tmp.342 = getv ? :_cy;
+        %tmp.343 = 5;
+        invoke %tmp.337 %tmp.338(%tmp.340, %tmp.342, %tmp.343);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 246 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_8_249_8_if_stmt:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_12_246_28_begin:
+        symbol [ _isSleeping %tmp.345 246 13 24 ];
+        %tmp.345 = getv ? :_isSleeping;
+        %tmp.346 = not %tmp.345;
+        bf %tmp.346 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_8_249_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_28_246_28_true:
+        symbol [ _showSeconds %tmp.348 246 28 40 ];
+        %tmp.348 = getv ? :_showSeconds;
+        push %tmp.348;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_28_246_28_end:
+        %tmp.349 = phi [%tmp.346 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_12_246_28_begin] [%tmp.348 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_28_246_28_true] [%tmp.349 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_28_246_28_end];
+        bf %tmp.349 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_8_249_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_8_249_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_42_249_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 247 12 ]
+        %tmp.350 = lgetv %dc;
+        symbol [ dc %tmp.350 247 12 14 ];
+        symbol [ setColor %tmp.351 247 15 23 ];
+        %tmp.351 = getv function %tmp.350 :setColor;
+        symbol [ _accentPrimary %tmp.353 247 24 38 ];
+        %tmp.353 = getv ? :_accentPrimary;
+        symbol [ Graphics %tmp.354 247 40 48 ];
+        %tmp.354 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.355 247 49 66 ];
+        %tmp.355 = getv %tmp.354 :COLOR_TRANSPARENT;
+        invoke %tmp.350 %tmp.351(%tmp.353, %tmp.355);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 248 12 ]
+        %tmp.356 = lgetv %dc;
+        symbol [ dc %tmp.356 248 12 14 ];
+        symbol [ fillCircle %tmp.357 248 15 25 ];
+        %tmp.357 = getv function %tmp.356 :fillCircle;
+        symbol [ _cx %tmp.359 248 26 29 ];
+        %tmp.359 = getv ? :_cx;
+        symbol [ _cy %tmp.361 248 31 34 ];
+        %tmp.361 = getv ? :_cy;
+        %tmp.362 = 3;
+        invoke %tmp.356 %tmp.357(%tmp.359, %tmp.361, %tmp.362);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_42_249_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_8_249_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_246_8_249_8_if_end:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_182_76_250_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 254; @symbol_functiondef = [drawDate,254,21,29]; @symbol_param<0> = [dc,254,30,32]; @symbol_param<0>_type<0> = [Dc,254,36,38]; ]
+    private
+    function drawDate(dc as Dc) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 255 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 255 12 15 ];
+        symbol [ Gregorian %tmp.1 255 18 27 ];
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.2 255 28 32 ];
+        %tmp.2 = getv function %tmp.1 :info;
+        symbol [ Time %tmp.3 255 33 37 ];
+        %tmp.3 = getm $.Toybox.Time;
+        symbol [ now %tmp.4 255 38 41 ];
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        symbol [ Time %tmp.6 255 45 49 ];
+        %tmp.6 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.7 255 50 62 ];
+        %tmp.7 = getv %tmp.6 :FORMAT_SHORT;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        lputv %now.1 %tmp.8;
+        symbol [ now %now.1 255 12 15 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 256 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_stop" ]
+        %months.2 = local;
+        symbol [ months %months.2 256 12 18 ];
+        %tmp.9 = newa 12;
+        %tmp.10 = "JAN";
+        %tmp.11 = dup %tmp.9;
+        %tmp.12 = aputv %tmp.11 0 %tmp.10;
+        %tmp.13 = "FEB";
+        %tmp.14 = dup %tmp.12;
+        %tmp.15 = aputv %tmp.14 1 %tmp.13;
+        %tmp.16 = "MAR";
+        %tmp.17 = dup %tmp.15;
+        %tmp.18 = aputv %tmp.17 2 %tmp.16;
+        %tmp.19 = "APR";
+        %tmp.20 = dup %tmp.18;
+        %tmp.21 = aputv %tmp.20 3 %tmp.19;
+        %tmp.22 = "MAY";
+        %tmp.23 = dup %tmp.21;
+        %tmp.24 = aputv %tmp.23 4 %tmp.22;
+        %tmp.25 = "JUN";
+        %tmp.26 = dup %tmp.24;
+        %tmp.27 = aputv %tmp.26 5 %tmp.25;
+        %tmp.28 = "JUL";
+        %tmp.29 = dup %tmp.27;
+        %tmp.30 = aputv %tmp.29 6 %tmp.28;
+        %tmp.31 = "AUG";
+        %tmp.32 = dup %tmp.30;
+        %tmp.33 = aputv %tmp.32 7 %tmp.31;
+        %tmp.34 = "SEP";
+        %tmp.35 = dup %tmp.33;
+        %tmp.36 = aputv %tmp.35 8 %tmp.34;
+        %tmp.37 = "OCT";
+        %tmp.38 = dup %tmp.36;
+        %tmp.39 = aputv %tmp.38 9 %tmp.37;
+        %tmp.40 = "NOV";
+        %tmp.41 = dup %tmp.39;
+        %tmp.42 = aputv %tmp.41 10 %tmp.40;
+        %tmp.43 = "DEC";
+        %tmp.44 = dup %tmp.42;
+        %tmp.45 = aputv %tmp.44 11 %tmp.43;
+        lputv %months.2 %tmp.45;
+        symbol [ months %months.2 256 12 18 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 258 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_stop" ]
+        %mon.3 = local;
+        symbol [ mon %mon.3 258 12 15 ];
+        %tmp.46 = lgetv %months.2;
+        symbol [ months %tmp.46 258 18 24 ];
+        %tmp.47 = lgetv %now.1;
+        symbol [ now %tmp.47 258 25 28 ];
+        symbol [ month %tmp.48 258 29 34 ];
+        %tmp.48 = getv %tmp.47 :month;
+        %tmp.49 = 1;
+        %tmp.50 = sub %tmp.48 %tmp.49;
+        %tmp.51 = agetv %tmp.46 %tmp.50;
+        %tmp.52 = as %tmp.51 String;
+        symbol [ String %tmp.52 258 43 49 ];
+        lputv %mon.3 %tmp.52;
+        symbol [ mon %mon.3 258 12 15 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 259 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_stop" ]
+        %dateStr.4 = local;
+        symbol [ dateStr %dateStr.4 259 12 19 ];
+        symbol [ Lang %tmp.53 259 22 26 ];
+        %tmp.53 = getm $.Toybox.Lang;
+        symbol [ format %tmp.54 259 27 33 ];
+        %tmp.54 = getv function %tmp.53 :format;
+        %tmp.55 = "$1$ $2$";
+        %tmp.56 = newa 2;
+        %tmp.57 = lgetv %mon.3;
+        symbol [ mon %tmp.57 259 46 49 ];
+        %tmp.58 = dup %tmp.56;
+        %tmp.59 = aputv %tmp.58 0 %tmp.57;
+        %tmp.60 = lgetv %now.1;
+        symbol [ now %tmp.60 259 51 54 ];
+        symbol [ day %tmp.61 259 55 58 ];
+        %tmp.61 = getv %tmp.60 :day;
+        %tmp.62 = dup %tmp.59;
+        %tmp.63 = aputv %tmp.62 1 %tmp.61;
+        %tmp.64 = invoke %tmp.53 %tmp.54(%tmp.55, %tmp.63);
+        lputv %dateStr.4 %tmp.64;
+        symbol [ dateStr %dateStr.4 259 12 19 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 261 8 ]
+        %tmp.65 = lgetv %dc;
+        symbol [ dc %tmp.65 261 8 10 ];
+        symbol [ setColor %tmp.66 261 11 19 ];
+        %tmp.66 = getv function %tmp.65 :setColor;
+        %tmp.67 = 0x686870;
+        symbol [ Graphics %tmp.68 261 30 38 ];
+        %tmp.68 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.69 261 39 56 ];
+        %tmp.69 = getv %tmp.68 :COLOR_TRANSPARENT;
+        invoke %tmp.65 %tmp.66(%tmp.67, %tmp.69);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 262 8 ]
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 262 8 10 ];
+        symbol [ drawText %tmp.71 262 11 19 ];
+        %tmp.71 = getv function %tmp.70 :drawText;
+        symbol [ _cx %tmp.73 263 12 15 ];
+        %tmp.73 = getv ? :_cx;
+        symbol [ _cy %tmp.75 263 17 20 ];
+        %tmp.75 = getv ? :_cy;
+        symbol [ _r %tmp.77 263 23 25 ];
+        %tmp.77 = getv ? :_r;
+        %tmp.78 = 53;
+        %tmp.79 = mul %tmp.77 %tmp.78;
+        %tmp.80 = 100;
+        %tmp.81 = div %tmp.79 %tmp.80;
+        %tmp.82 = add %tmp.75 %tmp.81;
+        symbol [ Graphics %tmp.83 264 12 20 ];
+        %tmp.83 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.84 264 21 31 ];
+        %tmp.84 = getv %tmp.83 :FONT_XTINY;
+        %tmp.85 = lgetv %dateStr.4;
+        symbol [ dateStr %tmp.85 264 33 40 ];
+        symbol [ Graphics %tmp.86 265 12 20 ];
+        %tmp.86 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.87 265 21 40 ];
+        %tmp.87 = getv %tmp.86 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.88 265 43 51 ];
+        %tmp.88 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.89 265 52 72 ];
+        %tmp.89 = getv %tmp.88 :TEXT_JUSTIFY_VCENTER;
+        %tmp.90 = bitor %tmp.87 %tmp.89;
+        invoke %tmp.70 %tmp.71(%tmp.73, %tmp.82, %tmp.84, %tmp.85, %tmp.90);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_254_48_267_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 271; @symbol_functiondef = [drawComplications,271,21,38]; @symbol_param<0> = [dc,271,39,41]; @symbol_param<0>_type<0> = [Dc,271,45,47]; ]
+    private
+    function drawComplications(dc as Dc) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_271_57_275_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 272 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_271_57_275_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_271_57_275_4_stop" ]
+        %compOffset.1 = local;
+        symbol [ compOffset %compOffset.1 272 12 22 ];
+        symbol [ _r %tmp.2 272 25 27 ];
+        %tmp.2 = getv ? :_r;
+        %tmp.3 = 50;
+        %tmp.4 = mul %tmp.2 %tmp.3;
+        %tmp.5 = 100;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %compOffset.1 %tmp.6;
+        symbol [ compOffset %compOffset.1 272 12 22 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 273 8 ]
+        %tmp.7 = self;
+        symbol [ drawMetricAt %tmp.8 273 8 20 ];
+        %tmp.8 = getv function %tmp.7 :drawMetricAt;
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 273 21 23 ];
+        symbol [ _cx %tmp.11 273 25 28 ];
+        %tmp.11 = getv ? :_cx;
+        %tmp.12 = lgetv %compOffset.1;
+        symbol [ compOffset %tmp.12 273 31 41 ];
+        %tmp.13 = sub %tmp.11 %tmp.12;
+        symbol [ _cy %tmp.15 273 43 46 ];
+        %tmp.15 = getv ? :_cy;
+        symbol [ _leftMetric %tmp.17 273 48 59 ];
+        %tmp.17 = getv ? :_leftMetric;
+        invoke %tmp.7 %tmp.8(%tmp.9, %tmp.13, %tmp.15, %tmp.17);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 274 8 ]
+        %tmp.18 = self;
+        symbol [ drawMetricAt %tmp.19 274 8 20 ];
+        %tmp.19 = getv function %tmp.18 :drawMetricAt;
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 274 21 23 ];
+        symbol [ _cx %tmp.22 274 25 28 ];
+        %tmp.22 = getv ? :_cx;
+        %tmp.23 = lgetv %compOffset.1;
+        symbol [ compOffset %tmp.23 274 31 41 ];
+        %tmp.24 = add %tmp.22 %tmp.23;
+        symbol [ _cy %tmp.26 274 43 46 ];
+        %tmp.26 = getv ? :_cy;
+        symbol [ _rightMetric %tmp.28 274 48 60 ];
+        %tmp.28 = getv ? :_rightMetric;
+        invoke %tmp.18 %tmp.19(%tmp.20, %tmp.24, %tmp.26, %tmp.28);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_271_57_275_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 278; @symbol_functiondef = [drawMetricAt,278,21,33]; @symbol_param<0> = [dc,278,34,36]; @symbol_param<0>_type<0> = [Dc,278,40,42]; @symbol_param<1> = [x,278,44,45]; @symbol_param<1>_type<0> = [Number,278,49,55]; @symbol_param<2> = [y,278,57,58]; @symbol_param<2>_type<0> = [Number,278,62,68]; @symbol_param<3> = [id,278,70,72]; @symbol_param<3>_type<0> = [Number,278,76,82]; ]
+    private
+    function drawMetricAt(dc as Dc, x as Number, y as Number, id as Number) as Void {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_278_92_321_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 279 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_278_92_321_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_278_92_321_4_stop" ]
+        %label.1 = local;
+        symbol [ label %label.1 279 12 17 ];
+        %tmp.1 = "--";
+        lputv %label.1 %tmp.1;
+        symbol [ label %label.1 279 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 280 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_278_92_321_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_278_92_321_4_stop" ]
+        %value.2 = local;
+        symbol [ value %value.2 280 12 17 ];
+        %tmp.2 = "--";
+        lputv %value.2 %tmp.2;
+        symbol [ value %value.2 280 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 281 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_278_92_321_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_278_92_321_4_stop" ]
+        %info.3 = local;
+        symbol [ info %info.3 281 12 16 ];
+        symbol [ ActivityMonitor %tmp.3 281 19 34 ];
+        %tmp.3 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.4 281 35 42 ];
+        %tmp.4 = getv function %tmp.3 :getInfo;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        lputv %info.3 %tmp.5;
+        symbol [ info %info.3 281 12 16 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 283 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_283_8_305_8_if_stmt:
+        %tmp.6 = lgetv %id;
+        symbol [ id %tmp.6 283 12 14 ];
+        %tmp.7 = 0;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        bf %tmp.8 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_283_8_305_8_if_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_283_8_305_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_283_21_286_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 284 12 ]
+        %tmp.9 = "HR";
+        lputv %label.1 %tmp.9;
+        symbol [ label %label.1 284 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 285 12 ]
+        %tmp.10 = self;
+        symbol [ getHeartRateStr %tmp.11 285 20 35 ];
+        %tmp.11 = getv function %tmp.10 :getHeartRateStr;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        lputv %value.2 %tmp.12;
+        symbol [ value %value.2 285 12 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_283_21_286_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_283_8_305_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_283_8_305_8_if_false:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 286 15 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_15_305_8_if_stmt:
+        %tmp.13 = lgetv %id;
+        symbol [ id %tmp.13 286 19 21 ];
+        %tmp.14 = 1;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_15_305_8_if_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_15_305_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_28_290_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 287 12 ]
+        %tmp.16 = "STP";
+        lputv %label.1 %tmp.16;
+        symbol [ label %label.1 287 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 288 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_28_290_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_28_290_8_stop" ]
+        %s.4 = local;
+        symbol [ s %s.4 288 16 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_begin:
+        %tmp.17 = lgetv %info.3;
+        symbol [ info %tmp.17 288 21 25 ];
+        symbol [ steps %tmp.18 288 26 31 ];
+        %tmp.18 = getv %tmp.17 :steps;
+        %tmp.19 = null;
+        %tmp.20 = ne %tmp.18 %tmp.19;
+        bf %tmp.20 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_true:
+        %tmp.21 = lgetv %info.3;
+        symbol [ info %tmp.21 288 43 47 ];
+        symbol [ steps %tmp.22 288 48 53 ];
+        %tmp.22 = getv %tmp.21 :steps;
+        %tmp.23 = as %tmp.22 Number;
+        symbol [ Number %tmp.23 288 57 63 ];
+        push %tmp.23;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_else_false:
+        %tmp.24 = 0;
+        push %tmp.24;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_end:
+        %tmp.25 = phi [%tmp.20 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_begin] [%tmp.23 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_true] [%tmp.24 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_else_false] [%tmp.25 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_288_20_288_66_end];
+        lputv %s.4 %tmp.25;
+        symbol [ s %s.4 288 16 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 289 12 ]
+        %tmp.26 = self;
+        symbol [ formatK %tmp.27 289 20 27 ];
+        %tmp.27 = getv function %tmp.26 :formatK;
+        %tmp.28 = lgetv %s.4;
+        symbol [ s %tmp.28 289 28 29 ];
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        lputv %value.2 %tmp.29;
+        symbol [ value %value.2 289 12 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_28_290_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_15_305_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_15_305_8_if_false:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 290 15 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_15_305_8_if_stmt:
+        %tmp.30 = lgetv %id;
+        symbol [ id %tmp.30 290 19 21 ];
+        %tmp.31 = 2;
+        %tmp.32 = eq %tmp.30 %tmp.31;
+        bf %tmp.32 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_15_305_8_if_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_15_305_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_28_294_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 291 12 ]
+        %tmp.33 = "CAL";
+        lputv %label.1 %tmp.33;
+        symbol [ label %label.1 291 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 292 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_28_294_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_28_294_8_stop" ]
+        %c.5 = local;
+        symbol [ c %c.5 292 16 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_begin:
+        %tmp.34 = lgetv %info.3;
+        symbol [ info %tmp.34 292 21 25 ];
+        symbol [ calories %tmp.35 292 26 34 ];
+        %tmp.35 = getv %tmp.34 :calories;
+        %tmp.36 = null;
+        %tmp.37 = ne %tmp.35 %tmp.36;
+        bf %tmp.37 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_true:
+        %tmp.38 = lgetv %info.3;
+        symbol [ info %tmp.38 292 46 50 ];
+        symbol [ calories %tmp.39 292 51 59 ];
+        %tmp.39 = getv %tmp.38 :calories;
+        %tmp.40 = as %tmp.39 Number;
+        symbol [ Number %tmp.40 292 63 69 ];
+        push %tmp.40;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_else_false:
+        %tmp.41 = 0;
+        push %tmp.41;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_end:
+        %tmp.42 = phi [%tmp.37 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_begin] [%tmp.40 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_true] [%tmp.41 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_else_false] [%tmp.42 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_292_20_292_72_end];
+        lputv %c.5 %tmp.42;
+        symbol [ c %c.5 292 16 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 293 12 ]
+        %tmp.43 = lgetv %c.5;
+        symbol [ c %tmp.43 293 20 21 ];
+        symbol [ toString %tmp.44 293 22 30 ];
+        %tmp.44 = getv function %tmp.43 :toString;
+        %tmp.45 = invoke %tmp.43 %tmp.44();
+        lputv %value.2 %tmp.45;
+        symbol [ value %value.2 293 12 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_28_294_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_15_305_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_15_305_8_if_false:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 294 15 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_15_305_8_if_stmt:
+        %tmp.46 = lgetv %id;
+        symbol [ id %tmp.46 294 19 21 ];
+        %tmp.47 = 3;
+        %tmp.48 = eq %tmp.46 %tmp.47;
+        bf %tmp.48 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_15_305_8_if_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_15_305_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_28_298_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 295 12 ]
+        %tmp.49 = "KM";
+        lputv %label.1 %tmp.49;
+        symbol [ label %label.1 295 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 296 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_28_298_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_28_298_8_stop" ]
+        %d.6 = local;
+        symbol [ d %d.6 296 16 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_begin:
+        %tmp.50 = lgetv %info.3;
+        symbol [ info %tmp.50 296 21 25 ];
+        symbol [ distance %tmp.51 296 26 34 ];
+        %tmp.51 = getv %tmp.50 :distance;
+        %tmp.52 = null;
+        %tmp.53 = ne %tmp.51 %tmp.52;
+        bf %tmp.53 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_true:
+        %tmp.54 = lgetv %info.3;
+        symbol [ info %tmp.54 296 46 50 ];
+        symbol [ distance %tmp.55 296 51 59 ];
+        %tmp.55 = getv %tmp.54 :distance;
+        %tmp.56 = as %tmp.55 Number;
+        symbol [ Number %tmp.56 296 63 69 ];
+        push %tmp.56;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_else_false:
+        %tmp.57 = 0;
+        push %tmp.57;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_end:
+        %tmp.58 = phi [%tmp.53 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_begin] [%tmp.56 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_true] [%tmp.57 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_else_false] [%tmp.58 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_296_20_296_72_end];
+        lputv %d.6 %tmp.58;
+        symbol [ d %d.6 296 16 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 297 12 ]
+        %tmp.59 = lgetv %d.6;
+        symbol [ d %tmp.59 297 21 22 ];
+        %tmp.60 = 100000.0;
+        %tmp.61 = div %tmp.59 %tmp.60;
+        symbol [ format %tmp.62 297 35 41 ];
+        %tmp.62 = getv function %tmp.61 :format;
+        %tmp.63 = "%.1f";
+        %tmp.64 = invoke %tmp.61 %tmp.62(%tmp.63);
+        lputv %value.2 %tmp.64;
+        symbol [ value %value.2 297 12 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_28_298_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_15_305_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_15_305_8_if_false:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 298 15 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_15_305_8_if_stmt:
+        %tmp.65 = lgetv %id;
+        symbol [ id %tmp.65 298 19 21 ];
+        %tmp.66 = 4;
+        %tmp.67 = eq %tmp.65 %tmp.66;
+        bf %tmp.67 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_15_305_8_if_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_15_305_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_28_302_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 299 12 ]
+        %tmp.68 = "FLR";
+        lputv %label.1 %tmp.68;
+        symbol [ label %label.1 299 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 300 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_28_302_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_28_302_8_stop" ]
+        %f.7 = local;
+        symbol [ f %f.7 300 16 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_begin:
+        %tmp.69 = lgetv %info.3;
+        symbol [ info %tmp.69 300 21 25 ];
+        symbol [ floorsClimbed %tmp.70 300 26 39 ];
+        %tmp.70 = getv %tmp.69 :floorsClimbed;
+        %tmp.71 = null;
+        %tmp.72 = ne %tmp.70 %tmp.71;
+        bf %tmp.72 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_else_false;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_true:
+        %tmp.73 = lgetv %info.3;
+        symbol [ info %tmp.73 300 51 55 ];
+        symbol [ floorsClimbed %tmp.74 300 56 69 ];
+        %tmp.74 = getv %tmp.73 :floorsClimbed;
+        %tmp.75 = as %tmp.74 Number;
+        symbol [ Number %tmp.75 300 73 79 ];
+        push %tmp.75;
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_else_false:
+        %tmp.76 = 0;
+        push %tmp.76;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_end:
+        %tmp.77 = phi [%tmp.72 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_begin] [%tmp.75 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_true] [%tmp.76 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_else_false] [%tmp.77 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_300_20_300_82_end];
+        lputv %f.7 %tmp.77;
+        symbol [ f %f.7 300 16 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 301 12 ]
+        %tmp.78 = lgetv %f.7;
+        symbol [ f %tmp.78 301 20 21 ];
+        symbol [ toString %tmp.79 301 22 30 ];
+        %tmp.79 = getv function %tmp.78 :toString;
+        %tmp.80 = invoke %tmp.78 %tmp.79();
+        lputv %value.2 %tmp.80;
+        symbol [ value %value.2 301 12 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_28_302_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_15_305_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_15_305_8_if_else_false:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_302_15_305_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 303 12 ]
+        %tmp.81 = "BAT";
+        lputv %label.1 %tmp.81;
+        symbol [ label %label.1 303 12 17 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 304 12 ]
+        symbol [ System %tmp.82 304 20 26 ];
+        %tmp.82 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.83 304 27 41 ];
+        %tmp.83 = getv function %tmp.82 :getSystemStats;
+        %tmp.84 = invoke %tmp.82 %tmp.83();
+        symbol [ battery %tmp.85 304 44 51 ];
+        %tmp.85 = getv %tmp.84 :battery;
+        symbol [ format %tmp.86 304 52 58 ];
+        %tmp.86 = getv function %tmp.85 :format;
+        %tmp.87 = "%d";
+        %tmp.88 = invoke %tmp.85 %tmp.86(%tmp.87);
+        %tmp.89 = "%";
+        %tmp.90 = add %tmp.88 %tmp.89;
+        lputv %value.2 %tmp.90;
+        symbol [ value %value.2 304 12 17 ];
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_302_15_305_8_stop:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_298_15_305_8_if_end:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_294_15_305_8_if_end:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_290_15_305_8_if_end:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_286_15_305_8_if_end:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_283_8_305_8_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 308 8 ]
+        %tmp.91 = lgetv %dc;
+        symbol [ dc %tmp.91 308 8 10 ];
+        symbol [ setColor %tmp.92 308 11 19 ];
+        %tmp.92 = getv function %tmp.91 :setColor;
+        %tmp.93 = 0x252528;
+        symbol [ Graphics %tmp.94 308 30 38 ];
+        %tmp.94 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.95 308 39 56 ];
+        %tmp.95 = getv %tmp.94 :COLOR_TRANSPARENT;
+        invoke %tmp.91 %tmp.92(%tmp.93, %tmp.95);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 309 8 ]
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 309 8 10 ];
+        symbol [ setPenWidth %tmp.97 309 11 22 ];
+        %tmp.97 = getv function %tmp.96 :setPenWidth;
+        %tmp.98 = 1;
+        invoke %tmp.96 %tmp.97(%tmp.98);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 310 8 ]
+        %tmp.99 = lgetv %dc;
+        symbol [ dc %tmp.99 310 8 10 ];
+        symbol [ drawLine %tmp.100 310 11 19 ];
+        %tmp.100 = getv function %tmp.99 :drawLine;
+        %tmp.101 = lgetv %x;
+        symbol [ x %tmp.101 310 20 21 ];
+        %tmp.102 = 16;
+        %tmp.103 = sub %tmp.101 %tmp.102;
+        %tmp.104 = lgetv %y;
+        symbol [ y %tmp.104 310 28 29 ];
+        %tmp.105 = lgetv %x;
+        symbol [ x %tmp.105 310 31 32 ];
+        %tmp.106 = 16;
+        %tmp.107 = add %tmp.105 %tmp.106;
+        %tmp.108 = lgetv %y;
+        symbol [ y %tmp.108 310 39 40 ];
+        invoke %tmp.99 %tmp.100(%tmp.103, %tmp.104, %tmp.107, %tmp.108);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 313 8 ]
+        %tmp.109 = lgetv %dc;
+        symbol [ dc %tmp.109 313 8 10 ];
+        symbol [ setColor %tmp.110 313 11 19 ];
+        %tmp.110 = getv function %tmp.109 :setColor;
+        symbol [ _accentPrimary %tmp.112 313 20 34 ];
+        %tmp.112 = getv ? :_accentPrimary;
+        symbol [ Graphics %tmp.113 313 36 44 ];
+        %tmp.113 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.114 313 45 62 ];
+        %tmp.114 = getv %tmp.113 :COLOR_TRANSPARENT;
+        invoke %tmp.109 %tmp.110(%tmp.112, %tmp.114);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 314 8 ]
+        %tmp.115 = lgetv %dc;
+        symbol [ dc %tmp.115 314 8 10 ];
+        symbol [ drawText %tmp.116 314 11 19 ];
+        %tmp.116 = getv function %tmp.115 :drawText;
+        %tmp.117 = lgetv %x;
+        symbol [ x %tmp.117 314 20 21 ];
+        %tmp.118 = lgetv %y;
+        symbol [ y %tmp.118 314 23 24 ];
+        %tmp.119 = 10;
+        %tmp.120 = sub %tmp.118 %tmp.119;
+        symbol [ Graphics %tmp.121 314 31 39 ];
+        %tmp.121 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.122 314 40 50 ];
+        %tmp.122 = getv %tmp.121 :FONT_XTINY;
+        %tmp.123 = lgetv %label.1;
+        symbol [ label %tmp.123 314 52 57 ];
+        symbol [ Graphics %tmp.124 315 20 28 ];
+        %tmp.124 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.125 315 29 48 ];
+        %tmp.125 = getv %tmp.124 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.126 315 51 59 ];
+        %tmp.126 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.127 315 60 80 ];
+        %tmp.127 = getv %tmp.126 :TEXT_JUSTIFY_VCENTER;
+        %tmp.128 = bitor %tmp.125 %tmp.127;
+        invoke %tmp.115 %tmp.116(%tmp.117, %tmp.120, %tmp.122, %tmp.123, %tmp.128);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 318 8 ]
+        %tmp.129 = lgetv %dc;
+        symbol [ dc %tmp.129 318 8 10 ];
+        symbol [ setColor %tmp.130 318 11 19 ];
+        %tmp.130 = getv function %tmp.129 :setColor;
+        %tmp.131 = 0xC0C0C0;
+        symbol [ Graphics %tmp.132 318 30 38 ];
+        %tmp.132 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.133 318 39 56 ];
+        %tmp.133 = getv %tmp.132 :COLOR_TRANSPARENT;
+        invoke %tmp.129 %tmp.130(%tmp.131, %tmp.133);
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 319 8 ]
+        %tmp.134 = lgetv %dc;
+        symbol [ dc %tmp.134 319 8 10 ];
+        symbol [ drawText %tmp.135 319 11 19 ];
+        %tmp.135 = getv function %tmp.134 :drawText;
+        %tmp.136 = lgetv %x;
+        symbol [ x %tmp.136 319 20 21 ];
+        %tmp.137 = lgetv %y;
+        symbol [ y %tmp.137 319 23 24 ];
+        %tmp.138 = 10;
+        %tmp.139 = add %tmp.137 %tmp.138;
+        symbol [ Graphics %tmp.140 319 31 39 ];
+        %tmp.140 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.141 319 40 50 ];
+        %tmp.141 = getv %tmp.140 :FONT_XTINY;
+        %tmp.142 = lgetv %value.2;
+        symbol [ value %tmp.142 319 52 57 ];
+        symbol [ Graphics %tmp.143 320 20 28 ];
+        %tmp.143 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.144 320 29 48 ];
+        %tmp.144 = getv %tmp.143 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.145 320 51 59 ];
+        %tmp.145 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.146 320 60 80 ];
+        %tmp.146 = getv %tmp.145 :TEXT_JUSTIFY_VCENTER;
+        %tmp.147 = bitor %tmp.144 %tmp.146;
+        invoke %tmp.134 %tmp.135(%tmp.136, %tmp.139, %tmp.141, %tmp.142, %tmp.147);
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_278_92_321_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 325; @symbol_functiondef = [getHeartRateStr,325,21,36]; @symbol_return<0> = [String,325,42,48]; ]
+    private
+    function getHeartRateStr() as String {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_325_49_338_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 326 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_325_49_338_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_325_49_338_4_stop" ]
+        %actInfo.1 = local;
+        symbol [ actInfo %actInfo.1 326 12 19 ];
+        symbol [ Activity %tmp.1 326 22 30 ];
+        %tmp.1 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.2 326 31 46 ];
+        %tmp.2 = getv function %tmp.1 :getActivityInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %actInfo.1 %tmp.3;
+        symbol [ actInfo %actInfo.1 326 12 19 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 327 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_8_329_8_if_stmt:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_12_327_59_begin:
+        %tmp.4 = lgetv %actInfo.1;
+        symbol [ actInfo %tmp.4 327 12 19 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_8_329_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_31_327_59_true:
+        %tmp.7 = lgetv %actInfo.1;
+        symbol [ actInfo %tmp.7 327 31 38 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ currentHeartRate %tmp.9 327 39 55 ];
+        %tmp.9 = getv %tmp.8 :currentHeartRate;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        push %tmp.11;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_31_327_59_end:
+        %tmp.12 = phi [%tmp.6 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_12_327_59_begin] [%tmp.11 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_31_327_59_true] [%tmp.12 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_31_327_59_end];
+        bf %tmp.12 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_8_329_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_8_329_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_65_329_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 328 12 ]
+        %tmp.13 = lgetv %actInfo.1;
+        symbol [ actInfo %tmp.13 328 19 26 ];
+        %tmp.14 = as %tmp.13 { (!Null) };
+        symbol [ currentHeartRate %tmp.15 328 27 43 ];
+        %tmp.15 = getv %tmp.14 :currentHeartRate;
+        symbol [ toString %tmp.16 328 44 52 ];
+        %tmp.16 = getv function %tmp.15 :toString;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        ret %tmp.17;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_65_329_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_8_329_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_327_8_329_8_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 330 8 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_325_49_338_4_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_325_49_338_4_stop" ]
+        %it.2 = local;
+        symbol [ it %it.2 330 12 14 ];
+        symbol [ ActivityMonitor %tmp.18 330 17 32 ];
+        %tmp.18 = getm $.Toybox.ActivityMonitor;
+        symbol [ getHeartRateHistory %tmp.19 330 33 52 ];
+        %tmp.19 = getv function %tmp.18 :getHeartRateHistory;
+        %tmp.20 = 1;
+        %tmp.21 = true;
+        %tmp.22 = invoke %tmp.18 %tmp.19(%tmp.20, %tmp.21);
+        lputv %it.2 %tmp.22;
+        symbol [ it %it.2 330 12 14 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 331 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_8_336_8_if_stmt:
+        %tmp.23 = lgetv %it.2;
+        symbol [ it %tmp.23 331 12 14 ];
+        %tmp.24 = null;
+        %tmp.25 = ne %tmp.23 %tmp.24;
+        bf %tmp.25 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_8_336_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_8_336_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_24_336_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 332 12 ]
+        [ "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_24_336_8_start" "_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_24_336_8_stop" ]
+        %sample.3 = local;
+        symbol [ sample %sample.3 332 16 22 ];
+        %tmp.26 = lgetv %it.2;
+        symbol [ it %tmp.26 332 25 27 ];
+        %tmp.27 = as %tmp.26 { (!Null) };
+        symbol [ next %tmp.28 332 28 32 ];
+        %tmp.28 = getv function %tmp.27 :next;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        lputv %sample.3 %tmp.29;
+        symbol [ sample %sample.3 332 16 22 ];
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 333 12 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_12_335_12_if_stmt:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_16_333_70_begin:
+        %tmp.30 = lgetv %sample.3;
+        symbol [ sample %tmp.30 333 16 22 ];
+        %tmp.31 = null;
+        %tmp.32 = ne %tmp.30 %tmp.31;
+        bf %tmp.32 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_12_335_12_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_34_333_70_true:
+        %tmp.33 = lgetv %sample.3;
+        symbol [ sample %tmp.33 333 34 40 ];
+        %tmp.34 = as %tmp.33 { (!Null) };
+        symbol [ heartRate %tmp.35 333 41 50 ];
+        %tmp.35 = getv %tmp.34 :heartRate;
+        symbol [ ActivityMonitor %tmp.36 333 54 69 ];
+        %tmp.36 = getm $.Toybox.ActivityMonitor;
+        symbol [ INVALID_HR_SAMPLE %tmp.37 333 70 87 ];
+        %tmp.37 = getv %tmp.36 :INVALID_HR_SAMPLE;
+        %tmp.38 = ne %tmp.35 %tmp.37;
+        push %tmp.38;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_34_333_70_end:
+        %tmp.39 = phi [%tmp.32 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_16_333_70_begin] [%tmp.38 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_34_333_70_true] [%tmp.39 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_34_333_70_end];
+        bf %tmp.39 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_12_335_12_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_12_335_12_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_89_335_12_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 334 16 ]
+        %tmp.40 = lgetv %sample.3;
+        symbol [ sample %tmp.40 334 23 29 ];
+        %tmp.41 = as %tmp.40 { (!Null) };
+        symbol [ heartRate %tmp.42 334 30 39 ];
+        %tmp.42 = getv %tmp.41 :heartRate;
+        symbol [ toString %tmp.43 334 40 48 ];
+        %tmp.43 = getv function %tmp.42 :toString;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        ret %tmp.44;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_89_335_12_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_12_335_12_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_333_12_335_12_if_end:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_24_336_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_8_336_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_331_8_336_8_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 337 8 ]
+        %tmp.45 = "--";
+        ret %tmp.45;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_325_49_338_4_stop:
+    }
+    [ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 340; @symbol_functiondef = [formatK,340,21,28]; @symbol_param<0> = [n,340,29,30]; @symbol_param<0>_type<0> = [Number,340,34,40]; @symbol_return<0> = [String,340,45,51]; ]
+    private
+    function formatK(n as Number) as String {
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_340_52_345_4_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 341 8 ]
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_341_8_343_8_if_stmt:
+        %tmp.1 = lgetv %n;
+        symbol [ n %tmp.1 341 12 13 ];
+        %tmp.2 = 10000;
+        %tmp.3 = gte %tmp.1 %tmp.2;
+        bf %tmp.3 @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_341_8_343_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_341_8_343_8_if_true:
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_341_24_343_8_start:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 342 12 ]
+        %tmp.4 = lgetv %n;
+        symbol [ n %tmp.4 342 20 21 ];
+        %tmp.5 = 1000.0;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        symbol [ format %tmp.7 342 32 38 ];
+        %tmp.7 = getv function %tmp.6 :format;
+        %tmp.8 = "%.1f";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        %tmp.10 = "k";
+        %tmp.11 = add %tmp.9 %tmp.10;
+        ret %tmp.11;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_341_24_343_8_stop:
+        goto @_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_341_8_343_8_if_end;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_341_8_343_8_if_end:
+[ "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc" 344 8 ]
+        %tmp.12 = lgetv %n;
+        symbol [ n %tmp.12 344 15 16 ];
+        symbol [ toString %tmp.13 344 17 25 ];
+        %tmp.13 = getv function %tmp.12 :toString;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        ret %tmp.14;
+_Users_furkantoprak_Dev_garmin_minimalist_face_source_MinimalistView_mc_340_52_345_4_stop:
+    }
+}
+[ @file = "/Users/furkantoprak/Dev/garmin/minimalist-face/source/MinimalistView.mc"; @line = 1; ]
+<init> {
+}
