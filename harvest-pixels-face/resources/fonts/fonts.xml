@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <fonts>
+        <font id="PixelFontLarge" filename="pixel7_large.fnt" />
+        <font id="PixelFontSmall" filename="pixel7_small.fnt" />
+    </fonts>
+</resources>

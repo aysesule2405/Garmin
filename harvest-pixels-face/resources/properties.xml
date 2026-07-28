@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+    <!-- 0=Auto  1=Spring  2=Summer  3=Autumn  4=Winter -->
+    <property id="Season" type="number">0</property>
+    <!-- 0=Steps  1=Heart Rate  2=Calories -->
+    <property id="Stat" type="number">0</property>
+    <property id="StepGoal" type="number">10000</property>
+</properties>

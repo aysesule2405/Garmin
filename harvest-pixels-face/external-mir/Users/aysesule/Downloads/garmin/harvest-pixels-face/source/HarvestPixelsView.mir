@@ -1,0 +1,2673 @@
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Activity,1,14,22]; ]
+import Toybox.Activity;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [ActivityMonitor,2,14,29]; ]
+import Toybox.ActivityMonitor;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Application,3,14,25]; ]
+import Toybox.Application;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Graphics,4,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Lang,5,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [System,6,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Time,7,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [Time,8,14,18]; @symbol_importdef<2> = [Gregorian,8,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 9; @symbol_importdef<0> = [Toybox,9,7,13]; @symbol_importdef<1> = [WatchUi,9,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 12; @position = 6; @symbol_constdef = [SEASON_AUTO,12,6,17]; ]
+const SEASON_AUTO = 0;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 13; @position = 6; @symbol_constdef = [SEASON_SPRING,13,6,19]; ]
+const SEASON_SPRING = 1;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 14; @position = 6; @symbol_constdef = [SEASON_SUMMER,14,6,19]; ]
+const SEASON_SUMMER = 2;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 15; @position = 6; @symbol_constdef = [SEASON_AUTUMN,15,6,19]; ]
+const SEASON_AUTUMN = 3;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 16; @position = 6; @symbol_constdef = [SEASON_WINTER,16,6,19]; ]
+const SEASON_WINTER = 4;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 19; @position = 6; @symbol_constdef = [STAT_STEPS,19,6,16]; ]
+const STAT_STEPS = 0;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 20; @position = 6; @symbol_constdef = [STAT_HR,20,6,13]; ]
+const STAT_HR = 1;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 21; @position = 6; @symbol_constdef = [STAT_CALORIES,21,6,19]; ]
+const STAT_CALORIES = 2;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 25; @position = 6; @symbol_constdef = [GRID,25,6,10]; ]
+const GRID = 48;
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 27; @symbol_classdef = [HarvestPixelsView,27,6,23]; @symbol_extends<0> = [WatchUi,27,32,39]; @symbol_extends<1> = [WatchFace,27,40,49]; ]
+class HarvestPixelsView extends WatchUi.WatchFace {
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 27; ]
+    <init> {
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 27; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 29; @position = 16; @symbol_vardef = [_w,29,16,18]; @symbol_type<0> = [Number,29,22,28]; ]
+    private
+    var _w as Number = 0;
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 30; @position = 16; @symbol_vardef = [_h,30,16,18]; @symbol_type<0> = [Number,30,22,28]; ]
+    private
+    var _h as Number = 0;
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 31; @position = 16; @symbol_vardef = [_isSleeping,31,16,27]; @symbol_type<0> = [Boolean,31,31,38]; ]
+    private
+    var _isSleeping as Boolean = false;
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 33; @position = 16; @symbol_vardef = [_seasonSetting,33,16,30]; @symbol_type<0> = [Number,33,34,40]; ]
+    private
+    var _seasonSetting as Number = 0;
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 34; @position = 16; @symbol_vardef = [_statSetting,34,16,28]; @symbol_type<0> = [Number,34,32,38]; ]
+    private
+    var _statSetting as Number = 0;
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 35; @position = 16; @symbol_vardef = [_stepGoal,35,16,25]; @symbol_type<0> = [Number,35,29,35]; ]
+    private
+    var _stepGoal as Number = 10000;
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 37; @position = 16; @symbol_vardef = [_fontLarge,37,16,26]; @symbol_type<0> = [WatchUi,37,30,37]; @symbol_type<1> = [FontResource,37,38,50]; ]
+    private
+    var _fontLarge as WatchUi.FontResource or Null;
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 38; @position = 16; @symbol_vardef = [_fontSmall,38,16,26]; @symbol_type<0> = [WatchUi,38,30,37]; @symbol_type<1> = [FontResource,38,38,50]; ]
+    private
+    var _fontSmall as WatchUi.FontResource or Null;
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 40; @symbol_functiondef = [initialize,40,13,23]; ]
+    function initialize() as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_40_26_47_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 41 8 ]
+        symbol [ WatchFace %tmp.2 41 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 41 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 42 8 ]
+        %tmp.4 = self;
+        symbol [ loadSettings %tmp.5 42 8 20 ];
+        %tmp.5 = getv function %tmp.4 :loadSettings;
+        invoke %tmp.4 %tmp.5();
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 45 8 ]
+        symbol [ WatchUi %tmp.6 45 21 28 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.7 45 29 41 ];
+        %tmp.7 = getv function %tmp.6 :loadResource;
+        symbol [ Rez %tmp.9 45 42 45 ];
+        %tmp.9 = getv ? :Rez;
+        symbol [ Fonts %tmp.10 45 46 51 ];
+        %tmp.10 = getv %tmp.9 :Fonts;
+        symbol [ PixelFontLarge %tmp.11 45 52 66 ];
+        %tmp.11 = getv %tmp.10 :PixelFontLarge;
+        %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+        %tmp.13 = as %tmp.12 WatchUi.FontResource;
+        symbol [ WatchUi %tmp.13 45 71 78 ];
+        symbol [ FontResource %tmp.13 45 79 91 ];
+        symbol [ _fontLarge ? 45 8 18 ];
+        putv self :_fontLarge %tmp.13;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 46 8 ]
+        symbol [ WatchUi %tmp.14 46 21 28 ];
+        %tmp.14 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.15 46 29 41 ];
+        %tmp.15 = getv function %tmp.14 :loadResource;
+        symbol [ Rez %tmp.17 46 42 45 ];
+        %tmp.17 = getv ? :Rez;
+        symbol [ Fonts %tmp.18 46 46 51 ];
+        %tmp.18 = getv %tmp.17 :Fonts;
+        symbol [ PixelFontSmall %tmp.19 46 52 66 ];
+        %tmp.19 = getv %tmp.18 :PixelFontSmall;
+        %tmp.20 = invoke %tmp.14 %tmp.15(%tmp.19);
+        %tmp.21 = as %tmp.20 WatchUi.FontResource;
+        symbol [ WatchUi %tmp.21 46 71 78 ];
+        symbol [ FontResource %tmp.21 46 79 91 ];
+        symbol [ _fontSmall ? 46 8 18 ];
+        putv self :_fontSmall %tmp.21;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_40_26_47_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 49; @symbol_functiondef = [onSettingsChanged,49,13,30]; ]
+    function onSettingsChanged() as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_49_41_52_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 50 8 ]
+        %tmp.1 = self;
+        symbol [ loadSettings %tmp.2 50 8 20 ];
+        %tmp.2 = getv function %tmp.1 :loadSettings;
+        invoke %tmp.1 %tmp.2();
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 51 8 ]
+        symbol [ WatchUi %tmp.3 51 8 15 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.4 51 16 29 ];
+        %tmp.4 = getv function %tmp.3 :requestUpdate;
+        invoke %tmp.3 %tmp.4();
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_49_41_52_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 54; @symbol_functiondef = [loadSettings,54,21,33]; ]
+    private
+    function loadSettings() as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 55 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_stop" ]
+        %season.1 = local;
+        symbol [ season %season.1 55 12 18 ];
+        symbol [ Application %tmp.1 55 21 32 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.2 55 33 43 ];
+        %tmp.2 = getv %tmp.1 :Properties;
+        symbol [ getValue %tmp.3 55 44 52 ];
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "Season";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        lputv %season.1 %tmp.5;
+        symbol [ season %season.1 55 12 18 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 56 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_begin:
+        %tmp.6 = lgetv %season.1;
+        symbol [ season %tmp.6 56 26 32 ];
+        symbol [ Number %tmp.8 56 44 50 ];
+        %tmp.8 = getv ? :Number;
+        %tmp.9 = isa %tmp.6 %tmp.8;
+        bf %tmp.9 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_true:
+        %tmp.10 = lgetv %season.1;
+        symbol [ season %tmp.10 56 54 60 ];
+        %tmp.11 = as %tmp.10 { (Number) };
+        push %tmp.11;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_else_false:
+        symbol [ SEASON_AUTO %tmp.13 56 63 74 ];
+        %tmp.13 = getv ? :SEASON_AUTO;
+        push %tmp.13;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_end:
+        %tmp.14 = phi [%tmp.9 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_begin] [%tmp.11 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_true] [%tmp.13 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_else_false] [%tmp.14 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_56_25_56_63_end];
+        symbol [ _seasonSetting ? 56 8 22 ];
+        putv self :_seasonSetting %tmp.14;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 58 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_stop" ]
+        %stat.2 = local;
+        symbol [ stat %stat.2 58 12 16 ];
+        symbol [ Application %tmp.15 58 19 30 ];
+        %tmp.15 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.16 58 31 41 ];
+        %tmp.16 = getv %tmp.15 :Properties;
+        symbol [ getValue %tmp.17 58 42 50 ];
+        %tmp.17 = getv function %tmp.16 :getValue;
+        %tmp.18 = "Stat";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        lputv %stat.2 %tmp.19;
+        symbol [ stat %stat.2 58 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 59 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_begin:
+        %tmp.20 = lgetv %stat.2;
+        symbol [ stat %tmp.20 59 24 28 ];
+        symbol [ Number %tmp.22 59 40 46 ];
+        %tmp.22 = getv ? :Number;
+        %tmp.23 = isa %tmp.20 %tmp.22;
+        bf %tmp.23 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_true:
+        %tmp.24 = lgetv %stat.2;
+        symbol [ stat %tmp.24 59 50 54 ];
+        %tmp.25 = as %tmp.24 { (Number) };
+        push %tmp.25;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_else_false:
+        symbol [ STAT_STEPS %tmp.27 59 57 67 ];
+        %tmp.27 = getv ? :STAT_STEPS;
+        push %tmp.27;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_end:
+        %tmp.28 = phi [%tmp.23 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_begin] [%tmp.25 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_true] [%tmp.27 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_else_false] [%tmp.28 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_59_23_59_57_end];
+        symbol [ _statSetting ? 59 8 20 ];
+        putv self :_statSetting %tmp.28;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 61 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_stop" ]
+        %goal.3 = local;
+        symbol [ goal %goal.3 61 12 16 ];
+        symbol [ Application %tmp.29 61 19 30 ];
+        %tmp.29 = getm $.Toybox.Application;
+        symbol [ Properties %tmp.30 61 31 41 ];
+        %tmp.30 = getv %tmp.29 :Properties;
+        symbol [ getValue %tmp.31 61 42 50 ];
+        %tmp.31 = getv function %tmp.30 :getValue;
+        %tmp.32 = "StepGoal";
+        %tmp.33 = invoke %tmp.30 %tmp.31(%tmp.32);
+        lputv %goal.3 %tmp.33;
+        symbol [ goal %goal.3 61 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 62 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_stop" ]
+        %goalNumber.4 = local;
+        symbol [ goalNumber %goalNumber.4 62 12 22 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_begin:
+        %tmp.34 = lgetv %goal.3;
+        symbol [ goal %tmp.34 62 26 30 ];
+        symbol [ Number %tmp.36 62 42 48 ];
+        %tmp.36 = getv ? :Number;
+        %tmp.37 = isa %tmp.34 %tmp.36;
+        bf %tmp.37 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_true:
+        %tmp.38 = lgetv %goal.3;
+        symbol [ goal %tmp.38 62 52 56 ];
+        %tmp.39 = as %tmp.38 { (Number) };
+        push %tmp.39;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_else_false:
+        %tmp.40 = 10000;
+        push %tmp.40;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_end:
+        %tmp.41 = phi [%tmp.37 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_begin] [%tmp.39 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_true] [%tmp.40 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_else_false] [%tmp.41 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_62_25_62_59_end];
+        lputv %goalNumber.4 %tmp.41;
+        symbol [ goalNumber %goalNumber.4 62 12 22 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 63 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_begin:
+        %tmp.42 = lgetv %goalNumber.4;
+        symbol [ goalNumber %tmp.42 63 21 31 ];
+        %tmp.43 = 0;
+        %tmp.44 = gt %tmp.42 %tmp.43;
+        bf %tmp.44 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_true:
+        %tmp.45 = lgetv %goalNumber.4;
+        symbol [ goalNumber %tmp.45 63 39 49 ];
+        push %tmp.45;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_else_false:
+        %tmp.46 = 10000;
+        push %tmp.46;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_end:
+        %tmp.47 = phi [%tmp.44 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_begin] [%tmp.45 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_true] [%tmp.46 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_else_false] [%tmp.47 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_63_20_63_52_end];
+        symbol [ _stepGoal ? 63 8 17 ];
+        putv self :_stepGoal %tmp.47;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_54_44_64_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 66; @symbol_functiondef = [onLayout,66,13,21]; @symbol_param<0> = [dc,66,22,24]; @symbol_param<0>_type<0> = [Dc,66,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_66_40_69_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 67 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 67 13 15 ];
+        symbol [ getWidth %tmp.2 67 16 24 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ _w ? 67 8 10 ];
+        putv self :_w %tmp.3;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 68 8 ]
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 68 13 15 ];
+        symbol [ getHeight %tmp.5 68 16 25 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ _h ? 68 8 10 ];
+        putv self :_h %tmp.6;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_66_40_69_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 71; @symbol_functiondef = [onEnterSleep,71,13,25]; ]
+    function onEnterSleep() as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_71_36_74_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 72 8 ]
+        %tmp.1 = true;
+        symbol [ _isSleeping ? 72 8 19 ];
+        putv self :_isSleeping %tmp.1;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 73 8 ]
+        symbol [ WatchUi %tmp.2 73 8 15 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 73 16 29 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_71_36_74_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 76; @symbol_functiondef = [onExitSleep,76,13,24]; ]
+    function onExitSleep() as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_76_35_79_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 77 8 ]
+        %tmp.1 = false;
+        symbol [ _isSleeping ? 77 8 19 ];
+        putv self :_isSleeping %tmp.1;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 78 8 ]
+        symbol [ WatchUi %tmp.2 78 8 15 ];
+        %tmp.2 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.3 78 16 29 ];
+        %tmp.3 = getv function %tmp.2 :requestUpdate;
+        invoke %tmp.2 %tmp.3();
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_76_35_79_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 81; @symbol_functiondef = [onUpdate,81,13,21]; @symbol_param<0> = [dc,81,22,24]; @symbol_param<0>_type<0> = [Dc,81,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_81_40_94_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 83 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_83_8_85_8_if_stmt:
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 83 12 14 ];
+        %tmp.3 = const :setAntiAlias;
+        symbol [ setAntiAlias %tmp.3 83 20 32 const ];
+        %tmp.4 = canhazplz %tmp.1 %tmp.3;
+        bf %tmp.4 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_83_8_85_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_83_8_85_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_83_34_85_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 84 12 ]
+        %tmp.5 = lgetv %dc;
+        symbol [ dc %tmp.5 84 12 14 ];
+        %tmp.6 = as %tmp.5 { (interface { var setAntiAlias; }) };
+        symbol [ setAntiAlias %tmp.7 84 15 27 ];
+        %tmp.7 = getv function %tmp.6 :setAntiAlias;
+        %tmp.8 = false;
+        invoke %tmp.6 %tmp.7(%tmp.8);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_83_34_85_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_83_8_85_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_83_8_85_8_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 87 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 87 8 10 ];
+        symbol [ setColor %tmp.10 87 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Graphics %tmp.11 87 20 28 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.12 87 29 40 ];
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        symbol [ Graphics %tmp.13 87 42 50 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.14 87 51 62 ];
+        %tmp.14 = getv %tmp.13 :COLOR_BLACK;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 88 8 ]
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 88 8 10 ];
+        symbol [ clear %tmp.16 88 11 16 ];
+        %tmp.16 = getv function %tmp.15 :clear;
+        invoke %tmp.15 %tmp.16();
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 90 8 ]
+        %tmp.17 = self;
+        symbol [ drawClockTower %tmp.18 90 8 22 ];
+        %tmp.18 = getv function %tmp.17 :drawClockTower;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 90 23 25 ];
+        invoke %tmp.17 %tmp.18(%tmp.19);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 91 8 ]
+        %tmp.20 = self;
+        symbol [ drawDay %tmp.21 91 8 15 ];
+        %tmp.21 = getv function %tmp.20 :drawDay;
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 91 16 18 ];
+        invoke %tmp.20 %tmp.21(%tmp.22);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 92 8 ]
+        %tmp.23 = self;
+        symbol [ drawTime %tmp.24 92 8 16 ];
+        %tmp.24 = getv function %tmp.23 :drawTime;
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 92 17 19 ];
+        invoke %tmp.23 %tmp.24(%tmp.25);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 93 8 ]
+        %tmp.26 = self;
+        symbol [ drawSelectedData %tmp.27 93 8 24 ];
+        %tmp.27 = getv function %tmp.26 :drawSelectedData;
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 93 25 27 ];
+        invoke %tmp.26 %tmp.27(%tmp.28);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_81_40_94_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 98; @symbol_functiondef = [canvasSize,98,21,31]; @symbol_return<0> = [Number,98,37,43]; ]
+    private
+    function canvasSize() as Number {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_98_44_100_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 99 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_begin:
+        symbol [ _w %tmp.2 99 16 18 ];
+        %tmp.2 = getv ? :_w;
+        symbol [ _h %tmp.4 99 21 23 ];
+        %tmp.4 = getv ? :_h;
+        %tmp.5 = lt %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_true:
+        symbol [ _w %tmp.7 99 27 29 ];
+        %tmp.7 = getv ? :_w;
+        push %tmp.7;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_else_false:
+        symbol [ _h %tmp.9 99 32 34 ];
+        %tmp.9 = getv ? :_h;
+        push %tmp.9;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_end:
+        %tmp.10 = phi [%tmp.5 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_begin] [%tmp.7 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_true] [%tmp.9 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_else_false] [%tmp.10 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_99_15_99_32_end];
+        ret %tmp.10;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_98_44_100_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 102; @symbol_functiondef = [gridX,102,21,26]; @symbol_param<0> = [col,102,27,30]; @symbol_param<0>_type<0> = [Numeric,102,34,41]; @symbol_return<0> = [Number,102,46,52]; ]
+    private
+    function gridX(col as Numeric) as Number {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_102_53_106_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 103 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_102_53_106_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_102_53_106_4_stop" ]
+        %size.1 = local;
+        symbol [ size %size.1 103 12 16 ];
+        %tmp.1 = self;
+        symbol [ canvasSize %tmp.2 103 19 29 ];
+        %tmp.2 = getv function %tmp.1 :canvasSize;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %size.1 %tmp.3;
+        symbol [ size %size.1 103 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 104 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_102_53_106_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_102_53_106_4_stop" ]
+        %offset.2 = local;
+        symbol [ offset %offset.2 104 12 18 ];
+        symbol [ _w %tmp.5 104 22 24 ];
+        %tmp.5 = getv ? :_w;
+        %tmp.6 = lgetv %size.1;
+        symbol [ size %tmp.6 104 27 31 ];
+        %tmp.7 = sub %tmp.5 %tmp.6;
+        %tmp.8 = 2;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        lputv %offset.2 %tmp.9;
+        symbol [ offset %offset.2 104 12 18 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 105 8 ]
+        %tmp.10 = lgetv %offset.2;
+        symbol [ offset %tmp.10 105 16 22 ];
+        %tmp.11 = lgetv %col;
+        symbol [ col %tmp.11 105 26 29 ];
+        %tmp.12 = lgetv %size.1;
+        symbol [ size %tmp.12 105 32 36 ];
+        symbol [ toFloat %tmp.13 105 37 44 ];
+        %tmp.13 = getv function %tmp.12 :toFloat;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = mul %tmp.11 %tmp.14;
+        symbol [ GRID %tmp.17 105 49 53 ];
+        %tmp.17 = getv ? :GRID;
+        %tmp.18 = div %tmp.15 %tmp.17;
+        %tmp.19 = add %tmp.10 %tmp.18;
+        symbol [ toNumber %tmp.20 105 56 64 ];
+        %tmp.20 = getv function %tmp.19 :toNumber;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        ret %tmp.21;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_102_53_106_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 108; @symbol_functiondef = [gridY,108,21,26]; @symbol_param<0> = [row,108,27,30]; @symbol_param<0>_type<0> = [Numeric,108,34,41]; @symbol_return<0> = [Number,108,46,52]; ]
+    private
+    function gridY(row as Numeric) as Number {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_108_53_112_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 109 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_108_53_112_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_108_53_112_4_stop" ]
+        %size.1 = local;
+        symbol [ size %size.1 109 12 16 ];
+        %tmp.1 = self;
+        symbol [ canvasSize %tmp.2 109 19 29 ];
+        %tmp.2 = getv function %tmp.1 :canvasSize;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %size.1 %tmp.3;
+        symbol [ size %size.1 109 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 110 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_108_53_112_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_108_53_112_4_stop" ]
+        %offset.2 = local;
+        symbol [ offset %offset.2 110 12 18 ];
+        symbol [ _h %tmp.5 110 22 24 ];
+        %tmp.5 = getv ? :_h;
+        %tmp.6 = lgetv %size.1;
+        symbol [ size %tmp.6 110 27 31 ];
+        %tmp.7 = sub %tmp.5 %tmp.6;
+        %tmp.8 = 2;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        lputv %offset.2 %tmp.9;
+        symbol [ offset %offset.2 110 12 18 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 111 8 ]
+        %tmp.10 = lgetv %offset.2;
+        symbol [ offset %tmp.10 111 16 22 ];
+        %tmp.11 = lgetv %row;
+        symbol [ row %tmp.11 111 26 29 ];
+        %tmp.12 = lgetv %size.1;
+        symbol [ size %tmp.12 111 32 36 ];
+        symbol [ toFloat %tmp.13 111 37 44 ];
+        %tmp.13 = getv function %tmp.12 :toFloat;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        %tmp.15 = mul %tmp.11 %tmp.14;
+        symbol [ GRID %tmp.17 111 49 53 ];
+        %tmp.17 = getv ? :GRID;
+        %tmp.18 = div %tmp.15 %tmp.17;
+        %tmp.19 = add %tmp.10 %tmp.18;
+        symbol [ toNumber %tmp.20 111 56 64 ];
+        %tmp.20 = getv function %tmp.19 :toNumber;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        ret %tmp.21;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_108_53_112_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 114; @symbol_functiondef = [px,114,21,23]; @symbol_param<0> = [dc,115,8,10]; @symbol_param<0>_type<0> = [Dc,115,14,16]; @symbol_param<1> = [col,116,8,11]; @symbol_param<1>_type<0> = [Numeric,116,15,22]; @symbol_param<2> = [row,117,8,11]; @symbol_param<2>_type<0> = [Numeric,117,15,22]; @symbol_param<3> = [colSpan,118,8,15]; @symbol_param<3>_type<0> = [Number,118,19,25]; @symbol_param<4> = [rowSpan,119,8,15]; @symbol_param<4>_type<0> = [Number,119,19,25]; @symbol_param<5> = [color,120,8,13]; @symbol_param<5>_type<0> = [Number,120,17,23]; ]
+    private
+    function px(dc as Dc, col as Numeric, row as Numeric, colSpan as Number, rowSpan as Number, color as Number) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 122 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_stop" ]
+        %x.1 = local;
+        symbol [ x %x.1 122 12 13 ];
+        %tmp.1 = self;
+        symbol [ gridX %tmp.2 122 16 21 ];
+        %tmp.2 = getv function %tmp.1 :gridX;
+        %tmp.3 = lgetv %col;
+        symbol [ col %tmp.3 122 22 25 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %x.1 %tmp.4;
+        symbol [ x %x.1 122 12 13 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 123 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_stop" ]
+        %y.2 = local;
+        symbol [ y %y.2 123 12 13 ];
+        %tmp.5 = self;
+        symbol [ gridY %tmp.6 123 16 21 ];
+        %tmp.6 = getv function %tmp.5 :gridY;
+        %tmp.7 = lgetv %row;
+        symbol [ row %tmp.7 123 22 25 ];
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        lputv %y.2 %tmp.8;
+        symbol [ y %y.2 123 12 13 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 124 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_stop" ]
+        %x2.3 = local;
+        symbol [ x2 %x2.3 124 12 14 ];
+        %tmp.9 = self;
+        symbol [ gridX %tmp.10 124 17 22 ];
+        %tmp.10 = getv function %tmp.9 :gridX;
+        %tmp.11 = lgetv %col;
+        symbol [ col %tmp.11 124 23 26 ];
+        %tmp.12 = lgetv %colSpan;
+        symbol [ colSpan %tmp.12 124 29 36 ];
+        %tmp.13 = add %tmp.11 %tmp.12;
+        %tmp.14 = invoke %tmp.9 %tmp.10(%tmp.13);
+        lputv %x2.3 %tmp.14;
+        symbol [ x2 %x2.3 124 12 14 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 125 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_stop" ]
+        %y2.4 = local;
+        symbol [ y2 %y2.4 125 12 14 ];
+        %tmp.15 = self;
+        symbol [ gridY %tmp.16 125 17 22 ];
+        %tmp.16 = getv function %tmp.15 :gridY;
+        %tmp.17 = lgetv %row;
+        symbol [ row %tmp.17 125 23 26 ];
+        %tmp.18 = lgetv %rowSpan;
+        symbol [ rowSpan %tmp.18 125 29 36 ];
+        %tmp.19 = add %tmp.17 %tmp.18;
+        %tmp.20 = invoke %tmp.15 %tmp.16(%tmp.19);
+        lputv %y2.4 %tmp.20;
+        symbol [ y2 %y2.4 125 12 14 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 126 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 126 8 10 ];
+        symbol [ setColor %tmp.22 126 11 19 ];
+        %tmp.22 = getv function %tmp.21 :setColor;
+        %tmp.23 = lgetv %color;
+        symbol [ color %tmp.23 126 20 25 ];
+        symbol [ Graphics %tmp.24 126 27 35 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.25 126 36 53 ];
+        %tmp.25 = getv %tmp.24 :COLOR_TRANSPARENT;
+        invoke %tmp.21 %tmp.22(%tmp.23, %tmp.25);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 127 8 ]
+        %tmp.26 = lgetv %dc;
+        symbol [ dc %tmp.26 127 8 10 ];
+        symbol [ fillRectangle %tmp.27 127 11 24 ];
+        %tmp.27 = getv function %tmp.26 :fillRectangle;
+        %tmp.28 = lgetv %x.1;
+        symbol [ x %tmp.28 127 25 26 ];
+        %tmp.29 = lgetv %y.2;
+        symbol [ y %tmp.29 127 28 29 ];
+        %tmp.30 = lgetv %x2.3;
+        symbol [ x2 %tmp.30 127 31 33 ];
+        %tmp.31 = lgetv %x.1;
+        symbol [ x %tmp.31 127 36 37 ];
+        %tmp.32 = sub %tmp.30 %tmp.31;
+        %tmp.33 = lgetv %y2.4;
+        symbol [ y2 %tmp.33 127 39 41 ];
+        %tmp.34 = lgetv %y.2;
+        symbol [ y %tmp.34 127 44 45 ];
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.32, %tmp.35);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_121_14_128_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 130; @symbol_functiondef = [drawTextAt,130,21,31]; @symbol_param<0> = [dc,131,8,10]; @symbol_param<0>_type<0> = [Dc,131,14,16]; @symbol_param<1> = [col,132,8,11]; @symbol_param<1>_type<0> = [Numeric,132,15,22]; @symbol_param<2> = [row,133,8,11]; @symbol_param<2>_type<0> = [Numeric,133,15,22]; @symbol_param<3> = [font,134,8,12]; @symbol_param<3>_type<0> = [WatchUi,134,16,23]; @symbol_param<3>_type<1> = [FontResource,134,24,36]; @symbol_param<4> = [text,135,8,12]; @symbol_param<4>_type<0> = [String,135,16,22]; @symbol_param<5> = [color,136,8,13]; @symbol_param<5>_type<0> = [Number,136,17,23]; ]
+    private
+    function drawTextAt(dc as Dc, col as Numeric, row as Numeric, font as WatchUi.FontResource or Null, text as String, color as Number) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_137_14_146_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 138 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 138 8 10 ];
+        symbol [ setColor %tmp.2 138 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 138 20 25 ];
+        symbol [ Graphics %tmp.4 138 27 35 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.5 138 36 53 ];
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 139 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 139 8 10 ];
+        symbol [ drawText %tmp.7 139 11 19 ];
+        %tmp.7 = getv function %tmp.6 :drawText;
+        %tmp.8 = self;
+        symbol [ gridX %tmp.9 140 12 17 ];
+        %tmp.9 = getv function %tmp.8 :gridX;
+        %tmp.10 = lgetv %col;
+        symbol [ col %tmp.10 140 18 21 ];
+        %tmp.11 = invoke %tmp.8 %tmp.9(%tmp.10);
+        %tmp.12 = self;
+        symbol [ gridY %tmp.13 141 12 17 ];
+        %tmp.13 = getv function %tmp.12 :gridY;
+        %tmp.14 = lgetv %row;
+        symbol [ row %tmp.14 141 18 21 ];
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        %tmp.16 = lgetv %font;
+        symbol [ font %tmp.16 142 12 16 ];
+        %tmp.17 = lgetv %text;
+        symbol [ text %tmp.17 143 12 16 ];
+        symbol [ Graphics %tmp.18 144 12 20 ];
+        %tmp.18 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.19 144 21 40 ];
+        %tmp.19 = getv %tmp.18 :TEXT_JUSTIFY_CENTER;
+        symbol [ Graphics %tmp.20 144 43 51 ];
+        %tmp.20 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.21 144 52 72 ];
+        %tmp.21 = getv %tmp.20 :TEXT_JUSTIFY_VCENTER;
+        %tmp.22 = bitor %tmp.19 %tmp.21;
+        invoke %tmp.6 %tmp.7(%tmp.11, %tmp.15, %tmp.16, %tmp.17, %tmp.22);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_137_14_146_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 149; @symbol_functiondef = [seasonPalette,149,21,34]; @symbol_param<0> = [season,149,35,41]; @symbol_param<0>_type<0> = [Number,149,45,51]; @symbol_return<0> = [Array,149,56,61]; @symbol_return<1> = [Number,149,62,68]; ]
+    private
+    function seasonPalette(season as Number) as Array<Number> {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_149_70_162_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 150 8 ]
+        %tmp.1 = lgetv %season;
+        symbol [ season %tmp.1 150 16 22 ];
+        push %tmp.1;
+        switch %tmp.1 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_150_8_161_8_switchStmtEnd;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_150_8_161_8_switchStmtBegin:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 151 12 ]
+        %tmp.2 = dup %tmp.1;
+        symbol [ SEASON_SPRING %tmp.4 151 17 30 ];
+        %tmp.4 = getv ? :SEASON_SPRING;
+        %tmp.5 = getv function %tmp.2 :equals;
+        %tmp.6 = invoke %tmp.2 %tmp.5 (%tmp.4);
+        bt %tmp.6 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_151_12_152_83_switchCase;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 153 12 ]
+        %tmp.7 = dup %tmp.1;
+        symbol [ SEASON_SUMMER %tmp.9 153 17 30 ];
+        %tmp.9 = getv ? :SEASON_SUMMER;
+        %tmp.10 = getv function %tmp.7 :equals;
+        %tmp.11 = invoke %tmp.7 %tmp.10 (%tmp.9);
+        bt %tmp.11 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_153_12_154_83_switchCase;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 155 12 ]
+        %tmp.12 = dup %tmp.1;
+        symbol [ SEASON_AUTUMN %tmp.14 155 17 30 ];
+        %tmp.14 = getv ? :SEASON_AUTUMN;
+        %tmp.15 = getv function %tmp.12 :equals;
+        %tmp.16 = invoke %tmp.12 %tmp.15 (%tmp.14);
+        bt %tmp.16 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_155_12_156_83_switchCase;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 157 12 ]
+        %tmp.17 = dup %tmp.1;
+        symbol [ SEASON_WINTER %tmp.19 157 17 30 ];
+        %tmp.19 = getv ? :SEASON_WINTER;
+        %tmp.20 = getv function %tmp.17 :equals;
+        %tmp.21 = invoke %tmp.17 %tmp.20 (%tmp.19);
+        bt %tmp.21 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_157_12_158_83_switchCase;
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 159 12 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_150_8_161_8_switchStmtDefault:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_150_8_161_8_defaultCodeBegin;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_151_12_152_83_switchCase:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 152 16 ]
+        %tmp.22 = newa 6;
+        %tmp.23 = 0xA8ECF3;
+        %tmp.24 = dup %tmp.22;
+        %tmp.25 = aputv %tmp.24 0 %tmp.23;
+        %tmp.26 = 0x78C9E6;
+        %tmp.27 = dup %tmp.25;
+        %tmp.28 = aputv %tmp.27 1 %tmp.26;
+        %tmp.29 = 0xFFF06A;
+        %tmp.30 = dup %tmp.28;
+        %tmp.31 = aputv %tmp.30 2 %tmp.29;
+        %tmp.32 = 0x66E5F1;
+        %tmp.33 = dup %tmp.31;
+        %tmp.34 = aputv %tmp.33 3 %tmp.32;
+        %tmp.35 = 0xFF70C8;
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 4 %tmp.35;
+        %tmp.38 = 0x55C56A;
+        %tmp.39 = dup %tmp.37;
+        %tmp.40 = aputv %tmp.39 5 %tmp.38;
+        ret %tmp.40;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_153_12_154_83_switchCase:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 154 16 ]
+        %tmp.41 = newa 6;
+        %tmp.42 = 0x74D8F0;
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 0 %tmp.42;
+        %tmp.45 = 0x4BAED8;
+        %tmp.46 = dup %tmp.44;
+        %tmp.47 = aputv %tmp.46 1 %tmp.45;
+        %tmp.48 = 0xFFE65A;
+        %tmp.49 = dup %tmp.47;
+        %tmp.50 = aputv %tmp.49 2 %tmp.48;
+        %tmp.51 = 0x35DCEB;
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 3 %tmp.51;
+        %tmp.54 = 0xF258B7;
+        %tmp.55 = dup %tmp.53;
+        %tmp.56 = aputv %tmp.55 4 %tmp.54;
+        %tmp.57 = 0x36A950;
+        %tmp.58 = dup %tmp.56;
+        %tmp.59 = aputv %tmp.58 5 %tmp.57;
+        ret %tmp.59;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_155_12_156_83_switchCase:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 156 16 ]
+        %tmp.60 = newa 6;
+        %tmp.61 = 0xF7C77E;
+        %tmp.62 = dup %tmp.60;
+        %tmp.63 = aputv %tmp.62 0 %tmp.61;
+        %tmp.64 = 0xE08A4F;
+        %tmp.65 = dup %tmp.63;
+        %tmp.66 = aputv %tmp.65 1 %tmp.64;
+        %tmp.67 = 0xFFD65A;
+        %tmp.68 = dup %tmp.66;
+        %tmp.69 = aputv %tmp.68 2 %tmp.67;
+        %tmp.70 = 0x75C7D5;
+        %tmp.71 = dup %tmp.69;
+        %tmp.72 = aputv %tmp.71 3 %tmp.70;
+        %tmp.73 = 0xE96D78;
+        %tmp.74 = dup %tmp.72;
+        %tmp.75 = aputv %tmp.74 4 %tmp.73;
+        %tmp.76 = 0x8AA447;
+        %tmp.77 = dup %tmp.75;
+        %tmp.78 = aputv %tmp.77 5 %tmp.76;
+        ret %tmp.78;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_157_12_158_83_switchCase:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 158 16 ]
+        %tmp.79 = newa 6;
+        %tmp.80 = 0xB7D9EA;
+        %tmp.81 = dup %tmp.79;
+        %tmp.82 = aputv %tmp.81 0 %tmp.80;
+        %tmp.83 = 0x738EB8;
+        %tmp.84 = dup %tmp.82;
+        %tmp.85 = aputv %tmp.84 1 %tmp.83;
+        %tmp.86 = 0xF1F2E8;
+        %tmp.87 = dup %tmp.85;
+        %tmp.88 = aputv %tmp.87 2 %tmp.86;
+        %tmp.89 = 0x89DAE6;
+        %tmp.90 = dup %tmp.88;
+        %tmp.91 = aputv %tmp.90 3 %tmp.89;
+        %tmp.92 = 0xC48ED4;
+        %tmp.93 = dup %tmp.91;
+        %tmp.94 = aputv %tmp.93 4 %tmp.92;
+        %tmp.95 = 0x7BAE9B;
+        %tmp.96 = dup %tmp.94;
+        %tmp.97 = aputv %tmp.96 5 %tmp.95;
+        ret %tmp.97;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_159_12_160_83_switchCase:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_150_8_161_8_defaultCodeBegin:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 160 16 ]
+        %tmp.98 = newa 6;
+        %tmp.99 = 0xA8ECF3;
+        %tmp.100 = dup %tmp.98;
+        %tmp.101 = aputv %tmp.100 0 %tmp.99;
+        %tmp.102 = 0x78C9E6;
+        %tmp.103 = dup %tmp.101;
+        %tmp.104 = aputv %tmp.103 1 %tmp.102;
+        %tmp.105 = 0xFFF06A;
+        %tmp.106 = dup %tmp.104;
+        %tmp.107 = aputv %tmp.106 2 %tmp.105;
+        %tmp.108 = 0x66E5F1;
+        %tmp.109 = dup %tmp.107;
+        %tmp.110 = aputv %tmp.109 3 %tmp.108;
+        %tmp.111 = 0xFF70C8;
+        %tmp.112 = dup %tmp.110;
+        %tmp.113 = aputv %tmp.112 4 %tmp.111;
+        %tmp.114 = 0x55C56A;
+        %tmp.115 = dup %tmp.113;
+        %tmp.116 = aputv %tmp.115 5 %tmp.114;
+        ret %tmp.116;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_150_8_161_8_switchStmtEnd:
+        pop;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_149_70_162_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 164; @symbol_functiondef = [currentSeason,164,21,34]; @symbol_return<0> = [Number,164,40,46]; ]
+    private
+    function currentSeason() as Number {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_164_47_175_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 165 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_165_8_167_8_if_stmt:
+        symbol [ _seasonSetting %tmp.2 165 12 26 ];
+        %tmp.2 = getv ? :_seasonSetting;
+        symbol [ SEASON_AUTO %tmp.4 165 30 41 ];
+        %tmp.4 = getv ? :SEASON_AUTO;
+        %tmp.5 = ne %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_165_8_167_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_165_8_167_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_165_43_167_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 166 12 ]
+        symbol [ _seasonSetting %tmp.7 166 19 33 ];
+        %tmp.7 = getv ? :_seasonSetting;
+        ret %tmp.7;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_165_43_167_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_165_8_167_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_165_8_167_8_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 169 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_164_47_175_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_164_47_175_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 169 12 15 ];
+        symbol [ Gregorian %tmp.8 169 18 27 ];
+        %tmp.8 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.9 169 28 32 ];
+        %tmp.9 = getv function %tmp.8 :info;
+        symbol [ Time %tmp.10 169 33 37 ];
+        %tmp.10 = getm $.Toybox.Time;
+        symbol [ now %tmp.11 169 38 41 ];
+        %tmp.11 = getv function %tmp.10 :now;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        symbol [ Time %tmp.13 169 45 49 ];
+        %tmp.13 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.14 169 50 62 ];
+        %tmp.14 = getv %tmp.13 :FORMAT_SHORT;
+        %tmp.15 = invoke %tmp.8 %tmp.9(%tmp.12, %tmp.14);
+        lputv %now.1 %tmp.15;
+        symbol [ now %now.1 169 12 15 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 170 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_164_47_175_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_164_47_175_4_stop" ]
+        %month.2 = local;
+        symbol [ month %month.2 170 12 17 ];
+        %tmp.16 = lgetv %now.1;
+        symbol [ now %tmp.16 170 20 23 ];
+        symbol [ month %tmp.17 170 24 29 ];
+        %tmp.17 = getv %tmp.16 :month;
+        lputv %month.2 %tmp.17;
+        symbol [ month %month.2 170 12 17 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 171 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_8_171_77_if_stmt:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_12_171_50_begin:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_12_171_36_begin:
+        %tmp.18 = lgetv %month.2;
+        symbol [ month %tmp.18 171 12 17 ];
+        %tmp.19 = 12;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bt %tmp.20 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_8_171_77_if_true;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_27_171_36_false:
+        %tmp.21 = lgetv %month.2;
+        symbol [ month %tmp.21 171 27 32 ];
+        %tmp.22 = 1;
+        %tmp.23 = eq %tmp.21 %tmp.22;
+        push %tmp.23;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_27_171_36_end:
+        %tmp.24 = phi [%tmp.20 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_12_171_36_begin] [%tmp.23 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_27_171_36_false] [%tmp.24 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_27_171_36_end];
+        bt %tmp.24 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_8_171_77_if_true;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_41_171_50_false:
+        %tmp.25 = lgetv %month.2;
+        symbol [ month %tmp.25 171 41 46 ];
+        %tmp.26 = 2;
+        %tmp.27 = eq %tmp.25 %tmp.26;
+        push %tmp.27;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_41_171_50_end:
+        %tmp.28 = phi [%tmp.24 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_12_171_50_begin] [%tmp.27 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_41_171_50_false] [%tmp.28 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_41_171_50_end];
+        bf %tmp.28 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_8_171_77_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_8_171_77_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_53_171_77_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 171 55 ]
+        symbol [ SEASON_WINTER %tmp.30 171 62 75 ];
+        %tmp.30 = getv ? :SEASON_WINTER;
+        ret %tmp.30;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_53_171_77_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_8_171_77_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_171_8_171_77_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 172 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_8_172_62_if_stmt:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_12_172_35_begin:
+        %tmp.31 = lgetv %month.2;
+        symbol [ month %tmp.31 172 12 17 ];
+        %tmp.32 = 3;
+        %tmp.33 = gte %tmp.31 %tmp.32;
+        bf %tmp.33 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_8_172_62_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_26_172_35_true:
+        %tmp.34 = lgetv %month.2;
+        symbol [ month %tmp.34 172 26 31 ];
+        %tmp.35 = 5;
+        %tmp.36 = lte %tmp.34 %tmp.35;
+        push %tmp.36;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_26_172_35_end:
+        %tmp.37 = phi [%tmp.33 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_12_172_35_begin] [%tmp.36 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_26_172_35_true] [%tmp.37 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_26_172_35_end];
+        bf %tmp.37 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_8_172_62_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_8_172_62_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_38_172_62_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 172 40 ]
+        symbol [ SEASON_SPRING %tmp.39 172 47 60 ];
+        %tmp.39 = getv ? :SEASON_SPRING;
+        ret %tmp.39;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_38_172_62_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_8_172_62_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_172_8_172_62_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 173 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_8_173_62_if_stmt:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_12_173_35_begin:
+        %tmp.40 = lgetv %month.2;
+        symbol [ month %tmp.40 173 12 17 ];
+        %tmp.41 = 6;
+        %tmp.42 = gte %tmp.40 %tmp.41;
+        bf %tmp.42 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_8_173_62_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_26_173_35_true:
+        %tmp.43 = lgetv %month.2;
+        symbol [ month %tmp.43 173 26 31 ];
+        %tmp.44 = 8;
+        %tmp.45 = lte %tmp.43 %tmp.44;
+        push %tmp.45;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_26_173_35_end:
+        %tmp.46 = phi [%tmp.42 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_12_173_35_begin] [%tmp.45 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_26_173_35_true] [%tmp.46 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_26_173_35_end];
+        bf %tmp.46 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_8_173_62_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_8_173_62_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_38_173_62_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 173 40 ]
+        symbol [ SEASON_SUMMER %tmp.48 173 47 60 ];
+        %tmp.48 = getv ? :SEASON_SUMMER;
+        ret %tmp.48;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_38_173_62_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_8_173_62_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_173_8_173_62_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 174 8 ]
+        symbol [ SEASON_AUTUMN %tmp.50 174 15 28 ];
+        %tmp.50 = getv ? :SEASON_AUTUMN;
+        ret %tmp.50;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_164_47_175_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 179; @symbol_functiondef = [drawClockTower,179,21,35]; @symbol_param<0> = [dc,179,36,38]; @symbol_param<0>_type<0> = [Dc,179,42,44]; ]
+    private
+    function drawClockTower(dc as Dc) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 180 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop" ]
+        %palette.1 = local;
+        symbol [ palette %palette.1 180 12 19 ];
+        %tmp.1 = self;
+        symbol [ seasonPalette %tmp.2 180 22 35 ];
+        %tmp.2 = getv function %tmp.1 :seasonPalette;
+        %tmp.3 = self;
+        symbol [ currentSeason %tmp.4 180 36 49 ];
+        %tmp.4 = getv function %tmp.3 :currentSeason;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = invoke %tmp.1 %tmp.2(%tmp.5);
+        lputv %palette.1 %tmp.6;
+        symbol [ palette %palette.1 180 12 19 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 183 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop" ]
+        %outline.2 = local;
+        symbol [ outline %outline.2 183 12 19 ];
+        %tmp.7 = 0x4B1D18;
+        lputv %outline.2 %tmp.7;
+        symbol [ outline %outline.2 183 12 19 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 184 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop" ]
+        %shadow.3 = local;
+        symbol [ shadow %shadow.3 184 12 18 ];
+        %tmp.8 = 0x8F3908;
+        lputv %shadow.3 %tmp.8;
+        symbol [ shadow %shadow.3 184 12 18 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 185 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop" ]
+        %wood.4 = local;
+        symbol [ wood %wood.4 185 12 16 ];
+        %tmp.9 = 0xD76806;
+        lputv %wood.4 %tmp.9;
+        symbol [ wood %wood.4 185 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 186 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop" ]
+        %gold.5 = local;
+        symbol [ gold %gold.5 186 12 16 ];
+        %tmp.10 = 0xF59A08;
+        lputv %gold.5 %tmp.10;
+        symbol [ gold %gold.5 186 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 187 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop" ]
+        %highlight.6 = local;
+        symbol [ highlight %highlight.6 187 12 21 ];
+        %tmp.11 = 0xFFC02A;
+        lputv %highlight.6 %tmp.11;
+        symbol [ highlight %highlight.6 187 12 21 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 188 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop" ]
+        %paper.7 = local;
+        symbol [ paper %paper.7 188 12 17 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_begin:
+        symbol [ _isSleeping %tmp.13 188 20 31 ];
+        %tmp.13 = getv ? :_isSleeping;
+        bf %tmp.13 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_true:
+        %tmp.14 = 0xD39B50;
+        push %tmp.14;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_else_false:
+        %tmp.15 = 0xFFD27A;
+        push %tmp.15;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_end:
+        %tmp.16 = phi [%tmp.13 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_begin] [%tmp.14 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_true] [%tmp.15 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_else_false] [%tmp.16 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_188_20_188_45_end];
+        lputv %paper.7 %tmp.16;
+        symbol [ paper %paper.7 188 12 17 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 189 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop" ]
+        %paperLight.8 = local;
+        symbol [ paperLight %paperLight.8 189 12 22 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_begin:
+        symbol [ _isSleeping %tmp.18 189 25 36 ];
+        %tmp.18 = getv ? :_isSleeping;
+        bf %tmp.18 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_true:
+        %tmp.19 = 0xDFB06A;
+        push %tmp.19;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_else_false:
+        %tmp.20 = 0xFFE09A;
+        push %tmp.20;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_end:
+        %tmp.21 = phi [%tmp.18 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_begin] [%tmp.19 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_true] [%tmp.20 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_else_false] [%tmp.21 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_189_25_189_50_end];
+        lputv %paperLight.8 %tmp.21;
+        symbol [ paperLight %paperLight.8 189 12 22 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 192 8 ]
+        %tmp.22 = self;
+        symbol [ px %tmp.23 192 8 10 ];
+        %tmp.23 = getv function %tmp.22 :px;
+        %tmp.24 = lgetv %dc;
+        symbol [ dc %tmp.24 192 11 13 ];
+        %tmp.25 = 21;
+        %tmp.26 = 4;
+        %tmp.27 = 6;
+        %tmp.28 = 1;
+        %tmp.29 = lgetv %outline.2;
+        symbol [ outline %tmp.29 192 28 35 ];
+        invoke %tmp.22 %tmp.23(%tmp.24, %tmp.25, %tmp.26, %tmp.27, %tmp.28, %tmp.29);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 193 8 ]
+        %tmp.30 = self;
+        symbol [ px %tmp.31 193 8 10 ];
+        %tmp.31 = getv function %tmp.30 :px;
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 193 11 13 ];
+        %tmp.33 = 18;
+        %tmp.34 = 5;
+        %tmp.35 = 12;
+        %tmp.36 = 1;
+        %tmp.37 = lgetv %outline.2;
+        symbol [ outline %tmp.37 193 29 36 ];
+        invoke %tmp.30 %tmp.31(%tmp.32, %tmp.33, %tmp.34, %tmp.35, %tmp.36, %tmp.37);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 194 8 ]
+        %tmp.38 = self;
+        symbol [ px %tmp.39 194 8 10 ];
+        %tmp.39 = getv function %tmp.38 :px;
+        %tmp.40 = lgetv %dc;
+        symbol [ dc %tmp.40 194 11 13 ];
+        %tmp.41 = 16;
+        %tmp.42 = 6;
+        %tmp.43 = 16;
+        %tmp.44 = 2;
+        %tmp.45 = lgetv %outline.2;
+        symbol [ outline %tmp.45 194 29 36 ];
+        invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41, %tmp.42, %tmp.43, %tmp.44, %tmp.45);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 195 8 ]
+        %tmp.46 = self;
+        symbol [ px %tmp.47 195 8 10 ];
+        %tmp.47 = getv function %tmp.46 :px;
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 195 11 13 ];
+        %tmp.49 = 15;
+        %tmp.50 = 8;
+        %tmp.51 = 18;
+        %tmp.52 = 9;
+        %tmp.53 = lgetv %outline.2;
+        symbol [ outline %tmp.53 195 29 36 ];
+        invoke %tmp.46 %tmp.47(%tmp.48, %tmp.49, %tmp.50, %tmp.51, %tmp.52, %tmp.53);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 196 8 ]
+        %tmp.54 = self;
+        symbol [ px %tmp.55 196 8 10 ];
+        %tmp.55 = getv function %tmp.54 :px;
+        %tmp.56 = lgetv %dc;
+        symbol [ dc %tmp.56 196 11 13 ];
+        %tmp.57 = 21;
+        %tmp.58 = 4;
+        %tmp.59 = 6;
+        %tmp.60 = 1;
+        %tmp.61 = lgetv %wood.4;
+        symbol [ wood %tmp.61 196 28 32 ];
+        invoke %tmp.54 %tmp.55(%tmp.56, %tmp.57, %tmp.58, %tmp.59, %tmp.60, %tmp.61);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 197 8 ]
+        %tmp.62 = self;
+        symbol [ px %tmp.63 197 8 10 ];
+        %tmp.63 = getv function %tmp.62 :px;
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 197 11 13 ];
+        %tmp.65 = 18;
+        %tmp.66 = 5;
+        %tmp.67 = 12;
+        %tmp.68 = 1;
+        %tmp.69 = lgetv %wood.4;
+        symbol [ wood %tmp.69 197 29 33 ];
+        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.65, %tmp.66, %tmp.67, %tmp.68, %tmp.69);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 198 8 ]
+        %tmp.70 = self;
+        symbol [ px %tmp.71 198 8 10 ];
+        %tmp.71 = getv function %tmp.70 :px;
+        %tmp.72 = lgetv %dc;
+        symbol [ dc %tmp.72 198 11 13 ];
+        %tmp.73 = 17;
+        %tmp.74 = 6;
+        %tmp.75 = 14;
+        %tmp.76 = 2;
+        %tmp.77 = lgetv %wood.4;
+        symbol [ wood %tmp.77 198 29 33 ];
+        invoke %tmp.70 %tmp.71(%tmp.72, %tmp.73, %tmp.74, %tmp.75, %tmp.76, %tmp.77);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 199 8 ]
+        %tmp.78 = self;
+        symbol [ px %tmp.79 199 8 10 ];
+        %tmp.79 = getv function %tmp.78 :px;
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 199 11 13 ];
+        %tmp.81 = 16;
+        %tmp.82 = 8;
+        %tmp.83 = 16;
+        %tmp.84 = 9;
+        %tmp.85 = lgetv %wood.4;
+        symbol [ wood %tmp.85 199 29 33 ];
+        invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81, %tmp.82, %tmp.83, %tmp.84, %tmp.85);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 200 8 ]
+        %tmp.86 = self;
+        symbol [ px %tmp.87 200 8 10 ];
+        %tmp.87 = getv function %tmp.86 :px;
+        %tmp.88 = lgetv %dc;
+        symbol [ dc %tmp.88 200 11 13 ];
+        %tmp.89 = 18;
+        %tmp.90 = 6;
+        %tmp.91 = 12;
+        %tmp.92 = 1;
+        %tmp.93 = lgetv %palette.1;
+        symbol [ palette %tmp.93 200 29 36 ];
+        %tmp.94 = 0;
+        %tmp.95 = agetv %tmp.93 %tmp.94;
+        invoke %tmp.86 %tmp.87(%tmp.88, %tmp.89, %tmp.90, %tmp.91, %tmp.92, %tmp.95);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 201 8 ]
+        %tmp.96 = self;
+        symbol [ px %tmp.97 201 8 10 ];
+        %tmp.97 = getv function %tmp.96 :px;
+        %tmp.98 = lgetv %dc;
+        symbol [ dc %tmp.98 201 11 13 ];
+        %tmp.99 = 17;
+        %tmp.100 = 7;
+        %tmp.101 = 14;
+        %tmp.102 = 9;
+        %tmp.103 = lgetv %palette.1;
+        symbol [ palette %tmp.103 201 29 36 ];
+        %tmp.104 = 0;
+        %tmp.105 = agetv %tmp.103 %tmp.104;
+        invoke %tmp.96 %tmp.97(%tmp.98, %tmp.99, %tmp.100, %tmp.101, %tmp.102, %tmp.105);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 202 8 ]
+        %tmp.106 = self;
+        symbol [ px %tmp.107 202 8 10 ];
+        %tmp.107 = getv function %tmp.106 :px;
+        %tmp.108 = lgetv %dc;
+        symbol [ dc %tmp.108 202 11 13 ];
+        %tmp.109 = 17;
+        %tmp.110 = 12;
+        %tmp.111 = 14;
+        %tmp.112 = 4;
+        %tmp.113 = lgetv %palette.1;
+        symbol [ palette %tmp.113 202 30 37 ];
+        %tmp.114 = 1;
+        %tmp.115 = agetv %tmp.113 %tmp.114;
+        invoke %tmp.106 %tmp.107(%tmp.108, %tmp.109, %tmp.110, %tmp.111, %tmp.112, %tmp.115);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 205 8 ]
+        %tmp.116 = self;
+        symbol [ px %tmp.117 205 8 10 ];
+        %tmp.117 = getv function %tmp.116 :px;
+        %tmp.118 = lgetv %dc;
+        symbol [ dc %tmp.118 205 11 13 ];
+        %tmp.119 = 19;
+        %tmp.120 = 9;
+        %tmp.121 = 3;
+        %tmp.122 = 3;
+        %tmp.123 = lgetv %palette.1;
+        symbol [ palette %tmp.123 205 28 35 ];
+        %tmp.124 = 2;
+        %tmp.125 = agetv %tmp.123 %tmp.124;
+        invoke %tmp.116 %tmp.117(%tmp.118, %tmp.119, %tmp.120, %tmp.121, %tmp.122, %tmp.125);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 206 8 ]
+        %tmp.126 = self;
+        symbol [ px %tmp.127 206 8 10 ];
+        %tmp.127 = getv function %tmp.126 :px;
+        %tmp.128 = lgetv %dc;
+        symbol [ dc %tmp.128 206 11 13 ];
+        %tmp.129 = 18;
+        %tmp.130 = 10;
+        %tmp.131 = 5;
+        %tmp.132 = 1;
+        %tmp.133 = lgetv %palette.1;
+        symbol [ palette %tmp.133 206 29 36 ];
+        %tmp.134 = 2;
+        %tmp.135 = agetv %tmp.133 %tmp.134;
+        invoke %tmp.126 %tmp.127(%tmp.128, %tmp.129, %tmp.130, %tmp.131, %tmp.132, %tmp.135);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 207 8 ]
+        %tmp.136 = self;
+        symbol [ px %tmp.137 207 8 10 ];
+        %tmp.137 = getv function %tmp.136 :px;
+        %tmp.138 = lgetv %dc;
+        symbol [ dc %tmp.138 207 11 13 ];
+        %tmp.139 = 27;
+        %tmp.140 = 9;
+        %tmp.141 = 3;
+        %tmp.142 = 3;
+        %tmp.143 = 0xF4F2E7;
+        invoke %tmp.136 %tmp.137(%tmp.138, %tmp.139, %tmp.140, %tmp.141, %tmp.142, %tmp.143);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 208 8 ]
+        %tmp.144 = self;
+        symbol [ px %tmp.145 208 8 10 ];
+        %tmp.145 = getv function %tmp.144 :px;
+        %tmp.146 = lgetv %dc;
+        symbol [ dc %tmp.146 208 11 13 ];
+        %tmp.147 = 26;
+        %tmp.148 = 10;
+        %tmp.149 = 5;
+        %tmp.150 = 1;
+        %tmp.151 = 0xF4F2E7;
+        invoke %tmp.144 %tmp.145(%tmp.146, %tmp.147, %tmp.148, %tmp.149, %tmp.150, %tmp.151);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 209 8 ]
+        %tmp.152 = self;
+        symbol [ px %tmp.153 209 8 10 ];
+        %tmp.153 = getv function %tmp.152 :px;
+        %tmp.154 = lgetv %dc;
+        symbol [ dc %tmp.154 209 11 13 ];
+        %tmp.155 = 30;
+        %tmp.156 = 12;
+        %tmp.157 = 1;
+        %tmp.158 = 1;
+        %tmp.159 = 0xD8E7ED;
+        invoke %tmp.152 %tmp.153(%tmp.154, %tmp.155, %tmp.156, %tmp.157, %tmp.158, %tmp.159);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 210 8 ]
+        %tmp.160 = self;
+        symbol [ px %tmp.161 210 8 10 ];
+        %tmp.161 = getv function %tmp.160 :px;
+        %tmp.162 = lgetv %dc;
+        symbol [ dc %tmp.162 210 11 13 ];
+        %tmp.163 = 31;
+        %tmp.164 = 14;
+        %tmp.165 = 1;
+        %tmp.166 = 1;
+        %tmp.167 = 0xD8E7ED;
+        invoke %tmp.160 %tmp.161(%tmp.162, %tmp.163, %tmp.164, %tmp.165, %tmp.166, %tmp.167);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 213 8 ]
+        %tmp.168 = self;
+        symbol [ px %tmp.169 213 8 10 ];
+        %tmp.169 = getv function %tmp.168 :px;
+        %tmp.170 = lgetv %dc;
+        symbol [ dc %tmp.170 213 11 13 ];
+        %tmp.171 = 23;
+        %tmp.172 = 7;
+        %tmp.173 = 3;
+        %tmp.174 = 1;
+        %tmp.175 = lgetv %outline.2;
+        symbol [ outline %tmp.175 213 28 35 ];
+        invoke %tmp.168 %tmp.169(%tmp.170, %tmp.171, %tmp.172, %tmp.173, %tmp.174, %tmp.175);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 214 8 ]
+        %tmp.176 = self;
+        symbol [ px %tmp.177 214 8 10 ];
+        %tmp.177 = getv function %tmp.176 :px;
+        %tmp.178 = lgetv %dc;
+        symbol [ dc %tmp.178 214 11 13 ];
+        %tmp.179 = 22;
+        %tmp.180 = 8;
+        %tmp.181 = 5;
+        %tmp.182 = 1;
+        %tmp.183 = lgetv %outline.2;
+        symbol [ outline %tmp.183 214 28 35 ];
+        invoke %tmp.176 %tmp.177(%tmp.178, %tmp.179, %tmp.180, %tmp.181, %tmp.182, %tmp.183);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 215 8 ]
+        %tmp.184 = self;
+        symbol [ px %tmp.185 215 8 10 ];
+        %tmp.185 = getv function %tmp.184 :px;
+        %tmp.186 = lgetv %dc;
+        symbol [ dc %tmp.186 215 11 13 ];
+        %tmp.187 = 23;
+        %tmp.188 = 6;
+        %tmp.189 = 3;
+        %tmp.190 = 1;
+        %tmp.191 = lgetv %gold.5;
+        symbol [ gold %tmp.191 215 28 32 ];
+        invoke %tmp.184 %tmp.185(%tmp.186, %tmp.187, %tmp.188, %tmp.189, %tmp.190, %tmp.191);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 216 8 ]
+        %tmp.192 = self;
+        symbol [ px %tmp.193 216 8 10 ];
+        %tmp.193 = getv function %tmp.192 :px;
+        %tmp.194 = lgetv %dc;
+        symbol [ dc %tmp.194 216 11 13 ];
+        %tmp.195 = 24;
+        %tmp.196 = 5;
+        %tmp.197 = 1;
+        %tmp.198 = 1;
+        %tmp.199 = lgetv %highlight.6;
+        symbol [ highlight %tmp.199 216 28 37 ];
+        invoke %tmp.192 %tmp.193(%tmp.194, %tmp.195, %tmp.196, %tmp.197, %tmp.198, %tmp.199);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 217 8 ]
+        %tmp.200 = self;
+        symbol [ px %tmp.201 217 8 10 ];
+        %tmp.201 = getv function %tmp.200 :px;
+        %tmp.202 = lgetv %dc;
+        symbol [ dc %tmp.202 217 11 13 ];
+        %tmp.203 = 24;
+        %tmp.204 = 8;
+        %tmp.205 = 1;
+        %tmp.206 = 7;
+        %tmp.207 = lgetv %outline.2;
+        symbol [ outline %tmp.207 217 28 35 ];
+        invoke %tmp.200 %tmp.201(%tmp.202, %tmp.203, %tmp.204, %tmp.205, %tmp.206, %tmp.207);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 218 8 ]
+        %tmp.208 = self;
+        symbol [ px %tmp.209 218 8 10 ];
+        %tmp.209 = getv function %tmp.208 :px;
+        %tmp.210 = lgetv %dc;
+        symbol [ dc %tmp.210 218 11 13 ];
+        %tmp.211 = 25;
+        %tmp.212 = 8;
+        %tmp.213 = 1;
+        %tmp.214 = 7;
+        %tmp.215 = lgetv %highlight.6;
+        symbol [ highlight %tmp.215 218 28 37 ];
+        invoke %tmp.208 %tmp.209(%tmp.210, %tmp.211, %tmp.212, %tmp.213, %tmp.214, %tmp.215);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 219 8 ]
+        %tmp.216 = self;
+        symbol [ px %tmp.217 219 8 10 ];
+        %tmp.217 = getv function %tmp.216 :px;
+        %tmp.218 = lgetv %dc;
+        symbol [ dc %tmp.218 219 11 13 ];
+        %tmp.219 = 23;
+        %tmp.220 = 15;
+        %tmp.221 = 4;
+        %tmp.222 = 1;
+        %tmp.223 = lgetv %outline.2;
+        symbol [ outline %tmp.223 219 29 36 ];
+        invoke %tmp.216 %tmp.217(%tmp.218, %tmp.219, %tmp.220, %tmp.221, %tmp.222, %tmp.223);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 220 8 ]
+        %tmp.224 = self;
+        symbol [ px %tmp.225 220 8 10 ];
+        %tmp.225 = getv function %tmp.224 :px;
+        %tmp.226 = lgetv %dc;
+        symbol [ dc %tmp.226 220 11 13 ];
+        %tmp.227 = 22;
+        %tmp.228 = 16;
+        %tmp.229 = 6;
+        %tmp.230 = 1;
+        %tmp.231 = lgetv %shadow.3;
+        symbol [ shadow %tmp.231 220 29 35 ];
+        invoke %tmp.224 %tmp.225(%tmp.226, %tmp.227, %tmp.228, %tmp.229, %tmp.230, %tmp.231);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 223 8 ]
+        %tmp.232 = self;
+        symbol [ px %tmp.233 223 8 10 ];
+        %tmp.233 = getv function %tmp.232 :px;
+        %tmp.234 = lgetv %dc;
+        symbol [ dc %tmp.234 223 11 13 ];
+        %tmp.235 = 12;
+        %tmp.236 = 16;
+        %tmp.237 = 24;
+        %tmp.238 = 20;
+        %tmp.239 = lgetv %outline.2;
+        symbol [ outline %tmp.239 223 31 38 ];
+        invoke %tmp.232 %tmp.233(%tmp.234, %tmp.235, %tmp.236, %tmp.237, %tmp.238, %tmp.239);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 224 8 ]
+        %tmp.240 = self;
+        symbol [ px %tmp.241 224 8 10 ];
+        %tmp.241 = getv function %tmp.240 :px;
+        %tmp.242 = lgetv %dc;
+        symbol [ dc %tmp.242 224 11 13 ];
+        %tmp.243 = 11;
+        %tmp.244 = 18;
+        %tmp.245 = 26;
+        %tmp.246 = 17;
+        %tmp.247 = lgetv %outline.2;
+        symbol [ outline %tmp.247 224 31 38 ];
+        invoke %tmp.240 %tmp.241(%tmp.242, %tmp.243, %tmp.244, %tmp.245, %tmp.246, %tmp.247);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 225 8 ]
+        %tmp.248 = self;
+        symbol [ px %tmp.249 225 8 10 ];
+        %tmp.249 = getv function %tmp.248 :px;
+        %tmp.250 = lgetv %dc;
+        symbol [ dc %tmp.250 225 11 13 ];
+        %tmp.251 = 13;
+        %tmp.252 = 16;
+        %tmp.253 = 22;
+        %tmp.254 = 20;
+        %tmp.255 = lgetv %wood.4;
+        symbol [ wood %tmp.255 225 31 35 ];
+        invoke %tmp.248 %tmp.249(%tmp.250, %tmp.251, %tmp.252, %tmp.253, %tmp.254, %tmp.255);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 226 8 ]
+        %tmp.256 = self;
+        symbol [ px %tmp.257 226 8 10 ];
+        %tmp.257 = getv function %tmp.256 :px;
+        %tmp.258 = lgetv %dc;
+        symbol [ dc %tmp.258 226 11 13 ];
+        %tmp.259 = 12;
+        %tmp.260 = 18;
+        %tmp.261 = 24;
+        %tmp.262 = 17;
+        %tmp.263 = lgetv %wood.4;
+        symbol [ wood %tmp.263 226 31 35 ];
+        invoke %tmp.256 %tmp.257(%tmp.258, %tmp.259, %tmp.260, %tmp.261, %tmp.262, %tmp.263);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 227 8 ]
+        %tmp.264 = self;
+        symbol [ px %tmp.265 227 8 10 ];
+        %tmp.265 = getv function %tmp.264 :px;
+        %tmp.266 = lgetv %dc;
+        symbol [ dc %tmp.266 227 11 13 ];
+        %tmp.267 = 13;
+        %tmp.268 = 17;
+        %tmp.269 = 22;
+        %tmp.270 = 1;
+        %tmp.271 = lgetv %highlight.6;
+        symbol [ highlight %tmp.271 227 30 39 ];
+        invoke %tmp.264 %tmp.265(%tmp.266, %tmp.267, %tmp.268, %tmp.269, %tmp.270, %tmp.271);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 228 8 ]
+        %tmp.272 = self;
+        symbol [ px %tmp.273 228 8 10 ];
+        %tmp.273 = getv function %tmp.272 :px;
+        %tmp.274 = lgetv %dc;
+        symbol [ dc %tmp.274 228 11 13 ];
+        %tmp.275 = 13;
+        %tmp.276 = 35;
+        %tmp.277 = 22;
+        %tmp.278 = 1;
+        %tmp.279 = lgetv %shadow.3;
+        symbol [ shadow %tmp.279 228 30 36 ];
+        invoke %tmp.272 %tmp.273(%tmp.274, %tmp.275, %tmp.276, %tmp.277, %tmp.278, %tmp.279);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 231 8 ]
+        %tmp.280 = self;
+        symbol [ drawWoodPanel %tmp.281 231 8 21 ];
+        %tmp.281 = getv function %tmp.280 :drawWoodPanel;
+        %tmp.282 = lgetv %dc;
+        symbol [ dc %tmp.282 231 22 24 ];
+        %tmp.283 = 13;
+        %tmp.284 = 18;
+        %tmp.285 = 22;
+        %tmp.286 = 6;
+        %tmp.287 = lgetv %outline.2;
+        symbol [ outline %tmp.287 231 41 48 ];
+        %tmp.288 = lgetv %gold.5;
+        symbol [ gold %tmp.288 231 50 54 ];
+        %tmp.289 = lgetv %paper.7;
+        symbol [ paper %tmp.289 231 56 61 ];
+        %tmp.290 = lgetv %paperLight.8;
+        symbol [ paperLight %tmp.290 231 63 73 ];
+        invoke %tmp.280 %tmp.281(%tmp.282, %tmp.283, %tmp.284, %tmp.285, %tmp.286, %tmp.287, %tmp.288, %tmp.289, %tmp.290);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 234 8 ]
+        %tmp.291 = self;
+        symbol [ drawWoodPanel %tmp.292 234 8 21 ];
+        %tmp.292 = getv function %tmp.291 :drawWoodPanel;
+        %tmp.293 = lgetv %dc;
+        symbol [ dc %tmp.293 234 22 24 ];
+        %tmp.294 = 14;
+        %tmp.295 = 24;
+        %tmp.296 = 7;
+        %tmp.297 = 6;
+        %tmp.298 = lgetv %outline.2;
+        symbol [ outline %tmp.298 234 40 47 ];
+        %tmp.299 = lgetv %gold.5;
+        symbol [ gold %tmp.299 234 49 53 ];
+        %tmp.300 = lgetv %palette.1;
+        symbol [ palette %tmp.300 234 55 62 ];
+        %tmp.301 = 3;
+        %tmp.302 = agetv %tmp.300 %tmp.301;
+        %tmp.303 = lgetv %palette.1;
+        symbol [ palette %tmp.303 234 67 74 ];
+        %tmp.304 = 0;
+        %tmp.305 = agetv %tmp.303 %tmp.304;
+        invoke %tmp.291 %tmp.292(%tmp.293, %tmp.294, %tmp.295, %tmp.296, %tmp.297, %tmp.298, %tmp.299, %tmp.302, %tmp.305);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 235 8 ]
+        %tmp.306 = self;
+        symbol [ drawWoodPanel %tmp.307 235 8 21 ];
+        %tmp.307 = getv function %tmp.306 :drawWoodPanel;
+        %tmp.308 = lgetv %dc;
+        symbol [ dc %tmp.308 235 22 24 ];
+        %tmp.309 = 21;
+        %tmp.310 = 24;
+        %tmp.311 = 6;
+        %tmp.312 = 6;
+        %tmp.313 = lgetv %outline.2;
+        symbol [ outline %tmp.313 235 40 47 ];
+        %tmp.314 = lgetv %gold.5;
+        symbol [ gold %tmp.314 235 49 53 ];
+        %tmp.315 = 0xE87905;
+        %tmp.316 = 0xF4A20B;
+        invoke %tmp.306 %tmp.307(%tmp.308, %tmp.309, %tmp.310, %tmp.311, %tmp.312, %tmp.313, %tmp.314, %tmp.315, %tmp.316);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 236 8 ]
+        %tmp.317 = self;
+        symbol [ drawWoodPanel %tmp.318 236 8 21 ];
+        %tmp.318 = getv function %tmp.317 :drawWoodPanel;
+        %tmp.319 = lgetv %dc;
+        symbol [ dc %tmp.319 236 22 24 ];
+        %tmp.320 = 27;
+        %tmp.321 = 24;
+        %tmp.322 = 7;
+        %tmp.323 = 6;
+        %tmp.324 = lgetv %outline.2;
+        symbol [ outline %tmp.324 236 40 47 ];
+        %tmp.325 = lgetv %gold.5;
+        symbol [ gold %tmp.325 236 49 53 ];
+        %tmp.326 = lgetv %palette.1;
+        symbol [ palette %tmp.326 236 55 62 ];
+        %tmp.327 = 4;
+        %tmp.328 = agetv %tmp.326 %tmp.327;
+        %tmp.329 = 0xEE8CD0;
+        invoke %tmp.317 %tmp.318(%tmp.319, %tmp.320, %tmp.321, %tmp.322, %tmp.323, %tmp.324, %tmp.325, %tmp.328, %tmp.329);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 239 8 ]
+        %tmp.330 = self;
+        symbol [ px %tmp.331 239 8 10 ];
+        %tmp.331 = getv function %tmp.330 :px;
+        %tmp.332 = lgetv %dc;
+        symbol [ dc %tmp.332 239 11 13 ];
+        %tmp.333 = 16;
+        %tmp.334 = 26;
+        %tmp.335 = 3;
+        %tmp.336 = 2;
+        %tmp.337 = lgetv %palette.1;
+        symbol [ palette %tmp.337 239 29 36 ];
+        %tmp.338 = 2;
+        %tmp.339 = agetv %tmp.337 %tmp.338;
+        invoke %tmp.330 %tmp.331(%tmp.332, %tmp.333, %tmp.334, %tmp.335, %tmp.336, %tmp.339);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 240 8 ]
+        %tmp.340 = self;
+        symbol [ px %tmp.341 240 8 10 ];
+        %tmp.341 = getv function %tmp.340 :px;
+        %tmp.342 = lgetv %dc;
+        symbol [ dc %tmp.342 240 11 13 ];
+        %tmp.343 = 17;
+        %tmp.344 = 25;
+        %tmp.345 = 1;
+        %tmp.346 = 4;
+        %tmp.347 = lgetv %palette.1;
+        symbol [ palette %tmp.347 240 29 36 ];
+        %tmp.348 = 2;
+        %tmp.349 = agetv %tmp.347 %tmp.348;
+        invoke %tmp.340 %tmp.341(%tmp.342, %tmp.343, %tmp.344, %tmp.345, %tmp.346, %tmp.349);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 241 8 ]
+        %tmp.350 = self;
+        symbol [ px %tmp.351 241 8 10 ];
+        %tmp.351 = getv function %tmp.350 :px;
+        %tmp.352 = lgetv %dc;
+        symbol [ dc %tmp.352 241 11 13 ];
+        %tmp.353 = 15;
+        %tmp.354 = 25;
+        %tmp.355 = 1;
+        %tmp.356 = 1;
+        %tmp.357 = 0xFFF8A0;
+        invoke %tmp.350 %tmp.351(%tmp.352, %tmp.353, %tmp.354, %tmp.355, %tmp.356, %tmp.357);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 242 8 ]
+        %tmp.358 = self;
+        symbol [ px %tmp.359 242 8 10 ];
+        %tmp.359 = getv function %tmp.358 :px;
+        %tmp.360 = lgetv %dc;
+        symbol [ dc %tmp.360 242 11 13 ];
+        %tmp.361 = 19;
+        %tmp.362 = 28;
+        %tmp.363 = 1;
+        %tmp.364 = 1;
+        %tmp.365 = 0xFFF8A0;
+        invoke %tmp.358 %tmp.359(%tmp.360, %tmp.361, %tmp.362, %tmp.363, %tmp.364, %tmp.365);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 245 8 ]
+        %tmp.366 = self;
+        symbol [ px %tmp.367 245 8 10 ];
+        %tmp.367 = getv function %tmp.366 :px;
+        %tmp.368 = lgetv %dc;
+        symbol [ dc %tmp.368 245 11 13 ];
+        %tmp.369 = 29;
+        %tmp.370 = 26;
+        %tmp.371 = 3;
+        %tmp.372 = 2;
+        %tmp.373 = 0xFFFFFF;
+        invoke %tmp.366 %tmp.367(%tmp.368, %tmp.369, %tmp.370, %tmp.371, %tmp.372, %tmp.373);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 246 8 ]
+        %tmp.374 = self;
+        symbol [ px %tmp.375 246 8 10 ];
+        %tmp.375 = getv function %tmp.374 :px;
+        %tmp.376 = lgetv %dc;
+        symbol [ dc %tmp.376 246 11 13 ];
+        %tmp.377 = 30;
+        %tmp.378 = 25;
+        %tmp.379 = 1;
+        %tmp.380 = 4;
+        %tmp.381 = 0xFFFFFF;
+        invoke %tmp.374 %tmp.375(%tmp.376, %tmp.377, %tmp.378, %tmp.379, %tmp.380, %tmp.381);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 247 8 ]
+        %tmp.382 = self;
+        symbol [ px %tmp.383 247 8 10 ];
+        %tmp.383 = getv function %tmp.382 :px;
+        %tmp.384 = lgetv %dc;
+        symbol [ dc %tmp.384 247 11 13 ];
+        %tmp.385 = 30;
+        %tmp.386 = 27;
+        %tmp.387 = 1;
+        %tmp.388 = 1;
+        %tmp.389 = 0xFFD54A;
+        invoke %tmp.382 %tmp.383(%tmp.384, %tmp.385, %tmp.386, %tmp.387, %tmp.388, %tmp.389);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 248 8 ]
+        %tmp.390 = self;
+        symbol [ px %tmp.391 248 8 10 ];
+        %tmp.391 = getv function %tmp.390 :px;
+        %tmp.392 = lgetv %dc;
+        symbol [ dc %tmp.392 248 11 13 ];
+        %tmp.393 = 28;
+        %tmp.394 = 28;
+        %tmp.395 = 2;
+        %tmp.396 = 1;
+        %tmp.397 = lgetv %palette.1;
+        symbol [ palette %tmp.397 248 29 36 ];
+        %tmp.398 = 5;
+        %tmp.399 = agetv %tmp.397 %tmp.398;
+        invoke %tmp.390 %tmp.391(%tmp.392, %tmp.393, %tmp.394, %tmp.395, %tmp.396, %tmp.399);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 249 8 ]
+        %tmp.400 = self;
+        symbol [ px %tmp.401 249 8 10 ];
+        %tmp.401 = getv function %tmp.400 :px;
+        %tmp.402 = lgetv %dc;
+        symbol [ dc %tmp.402 249 11 13 ];
+        %tmp.403 = 31;
+        %tmp.404 = 28;
+        %tmp.405 = 2;
+        %tmp.406 = 1;
+        %tmp.407 = lgetv %palette.1;
+        symbol [ palette %tmp.407 249 29 36 ];
+        %tmp.408 = 5;
+        %tmp.409 = agetv %tmp.407 %tmp.408;
+        invoke %tmp.400 %tmp.401(%tmp.402, %tmp.403, %tmp.404, %tmp.405, %tmp.406, %tmp.409);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 252 8 ]
+        %tmp.410 = self;
+        symbol [ drawWoodPanel %tmp.411 252 8 21 ];
+        %tmp.411 = getv function %tmp.410 :drawWoodPanel;
+        %tmp.412 = lgetv %dc;
+        symbol [ dc %tmp.412 252 22 24 ];
+        %tmp.413 = 13;
+        %tmp.414 = 30;
+        %tmp.415 = 22;
+        %tmp.416 = 6;
+        %tmp.417 = lgetv %outline.2;
+        symbol [ outline %tmp.417 252 41 48 ];
+        %tmp.418 = lgetv %gold.5;
+        symbol [ gold %tmp.418 252 50 54 ];
+        %tmp.419 = lgetv %paper.7;
+        symbol [ paper %tmp.419 252 56 61 ];
+        %tmp.420 = lgetv %paperLight.8;
+        symbol [ paperLight %tmp.420 252 63 73 ];
+        invoke %tmp.410 %tmp.411(%tmp.412, %tmp.413, %tmp.414, %tmp.415, %tmp.416, %tmp.417, %tmp.418, %tmp.419, %tmp.420);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 255 8 ]
+        %tmp.421 = self;
+        symbol [ px %tmp.422 255 8 10 ];
+        %tmp.422 = getv function %tmp.421 :px;
+        %tmp.423 = lgetv %dc;
+        symbol [ dc %tmp.423 255 11 13 ];
+        %tmp.424 = 16;
+        %tmp.425 = 36;
+        %tmp.426 = 2;
+        %tmp.427 = 3;
+        %tmp.428 = lgetv %outline.2;
+        symbol [ outline %tmp.428 255 29 36 ];
+        invoke %tmp.421 %tmp.422(%tmp.423, %tmp.424, %tmp.425, %tmp.426, %tmp.427, %tmp.428);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 256 8 ]
+        %tmp.429 = self;
+        symbol [ px %tmp.430 256 8 10 ];
+        %tmp.430 = getv function %tmp.429 :px;
+        %tmp.431 = lgetv %dc;
+        symbol [ dc %tmp.431 256 11 13 ];
+        %tmp.432 = 17;
+        %tmp.433 = 36;
+        %tmp.434 = 1;
+        %tmp.435 = 3;
+        %tmp.436 = lgetv %wood.4;
+        symbol [ wood %tmp.436 256 29 33 ];
+        invoke %tmp.429 %tmp.430(%tmp.431, %tmp.432, %tmp.433, %tmp.434, %tmp.435, %tmp.436);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 257 8 ]
+        %tmp.437 = self;
+        symbol [ px %tmp.438 257 8 10 ];
+        %tmp.438 = getv function %tmp.437 :px;
+        %tmp.439 = lgetv %dc;
+        symbol [ dc %tmp.439 257 11 13 ];
+        %tmp.440 = 31;
+        %tmp.441 = 36;
+        %tmp.442 = 2;
+        %tmp.443 = 3;
+        %tmp.444 = lgetv %outline.2;
+        symbol [ outline %tmp.444 257 29 36 ];
+        invoke %tmp.437 %tmp.438(%tmp.439, %tmp.440, %tmp.441, %tmp.442, %tmp.443, %tmp.444);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 258 8 ]
+        %tmp.445 = self;
+        symbol [ px %tmp.446 258 8 10 ];
+        %tmp.446 = getv function %tmp.445 :px;
+        %tmp.447 = lgetv %dc;
+        symbol [ dc %tmp.447 258 11 13 ];
+        %tmp.448 = 31;
+        %tmp.449 = 36;
+        %tmp.450 = 1;
+        %tmp.451 = 3;
+        %tmp.452 = lgetv %wood.4;
+        symbol [ wood %tmp.452 258 29 33 ];
+        invoke %tmp.445 %tmp.446(%tmp.447, %tmp.448, %tmp.449, %tmp.450, %tmp.451, %tmp.452);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 260 8 ]
+        %tmp.453 = self;
+        symbol [ drawDataCounter %tmp.454 260 8 23 ];
+        %tmp.454 = getv function %tmp.453 :drawDataCounter;
+        %tmp.455 = lgetv %dc;
+        symbol [ dc %tmp.455 260 24 26 ];
+        %tmp.456 = lgetv %outline.2;
+        symbol [ outline %tmp.456 260 28 35 ];
+        %tmp.457 = lgetv %wood.4;
+        symbol [ wood %tmp.457 260 37 41 ];
+        %tmp.458 = lgetv %gold.5;
+        symbol [ gold %tmp.458 260 43 47 ];
+        %tmp.459 = lgetv %paper.7;
+        symbol [ paper %tmp.459 260 49 54 ];
+        %tmp.460 = lgetv %paperLight.8;
+        symbol [ paperLight %tmp.460 260 56 66 ];
+        invoke %tmp.453 %tmp.454(%tmp.455, %tmp.456, %tmp.457, %tmp.458, %tmp.459, %tmp.460);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_179_54_261_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 263; @symbol_functiondef = [drawWoodPanel,263,21,34]; @symbol_param<0> = [dc,264,8,10]; @symbol_param<0>_type<0> = [Dc,264,14,16]; @symbol_param<1> = [col,265,8,11]; @symbol_param<1>_type<0> = [Number,265,15,21]; @symbol_param<2> = [row,266,8,11]; @symbol_param<2>_type<0> = [Number,266,15,21]; @symbol_param<3> = [width,267,8,13]; @symbol_param<3>_type<0> = [Number,267,17,23]; @symbol_param<4> = [height,268,8,14]; @symbol_param<4>_type<0> = [Number,268,18,24]; @symbol_param<5> = [outline,269,8,15]; @symbol_param<5>_type<0> = [Number,269,19,25]; @symbol_param<6> = [border,270,8,14]; @symbol_param<6>_type<0> = [Number,270,18,24]; @symbol_param<7> = [fill,271,8,12]; @symbol_param<7>_type<0> = [Number,271,16,22]; @symbol_param<8> = [fillLight,272,8,17]; @symbol_param<8>_type<0> = [Number,272,21,27]; ]
+    private
+    function drawWoodPanel(dc as Dc, col as Number, row as Number, width as Number, height as Number, outline as Number, border as Number, fill as Number, fillLight as Number) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_273_14_278_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 274 8 ]
+        %tmp.1 = self;
+        symbol [ px %tmp.2 274 8 10 ];
+        %tmp.2 = getv function %tmp.1 :px;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 274 11 13 ];
+        %tmp.4 = lgetv %col;
+        symbol [ col %tmp.4 274 15 18 ];
+        %tmp.5 = lgetv %row;
+        symbol [ row %tmp.5 274 20 23 ];
+        %tmp.6 = lgetv %width;
+        symbol [ width %tmp.6 274 25 30 ];
+        %tmp.7 = lgetv %height;
+        symbol [ height %tmp.7 274 32 38 ];
+        %tmp.8 = lgetv %outline;
+        symbol [ outline %tmp.8 274 40 47 ];
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.6, %tmp.7, %tmp.8);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 275 8 ]
+        %tmp.9 = self;
+        symbol [ px %tmp.10 275 8 10 ];
+        %tmp.10 = getv function %tmp.9 :px;
+        %tmp.11 = lgetv %dc;
+        symbol [ dc %tmp.11 275 11 13 ];
+        %tmp.12 = lgetv %col;
+        symbol [ col %tmp.12 275 15 18 ];
+        %tmp.13 = 1;
+        %tmp.14 = add %tmp.12 %tmp.13;
+        %tmp.15 = lgetv %row;
+        symbol [ row %tmp.15 275 24 27 ];
+        %tmp.16 = 1;
+        %tmp.17 = add %tmp.15 %tmp.16;
+        %tmp.18 = lgetv %width;
+        symbol [ width %tmp.18 275 33 38 ];
+        %tmp.19 = 2;
+        %tmp.20 = sub %tmp.18 %tmp.19;
+        %tmp.21 = lgetv %height;
+        symbol [ height %tmp.21 275 44 50 ];
+        %tmp.22 = 2;
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %border;
+        symbol [ border %tmp.24 275 56 62 ];
+        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.14, %tmp.17, %tmp.20, %tmp.23, %tmp.24);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 276 8 ]
+        %tmp.25 = self;
+        symbol [ px %tmp.26 276 8 10 ];
+        %tmp.26 = getv function %tmp.25 :px;
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 276 11 13 ];
+        %tmp.28 = lgetv %col;
+        symbol [ col %tmp.28 276 15 18 ];
+        %tmp.29 = 2;
+        %tmp.30 = add %tmp.28 %tmp.29;
+        %tmp.31 = lgetv %row;
+        symbol [ row %tmp.31 276 24 27 ];
+        %tmp.32 = 2;
+        %tmp.33 = add %tmp.31 %tmp.32;
+        %tmp.34 = lgetv %width;
+        symbol [ width %tmp.34 276 33 38 ];
+        %tmp.35 = 4;
+        %tmp.36 = sub %tmp.34 %tmp.35;
+        %tmp.37 = lgetv %height;
+        symbol [ height %tmp.37 276 44 50 ];
+        %tmp.38 = 4;
+        %tmp.39 = sub %tmp.37 %tmp.38;
+        %tmp.40 = lgetv %fill;
+        symbol [ fill %tmp.40 276 56 60 ];
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.30, %tmp.33, %tmp.36, %tmp.39, %tmp.40);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 277 8 ]
+        %tmp.41 = self;
+        symbol [ px %tmp.42 277 8 10 ];
+        %tmp.42 = getv function %tmp.41 :px;
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 277 11 13 ];
+        %tmp.44 = lgetv %col;
+        symbol [ col %tmp.44 277 15 18 ];
+        %tmp.45 = 2;
+        %tmp.46 = add %tmp.44 %tmp.45;
+        %tmp.47 = lgetv %row;
+        symbol [ row %tmp.47 277 24 27 ];
+        %tmp.48 = 2;
+        %tmp.49 = add %tmp.47 %tmp.48;
+        %tmp.50 = lgetv %width;
+        symbol [ width %tmp.50 277 33 38 ];
+        %tmp.51 = 4;
+        %tmp.52 = sub %tmp.50 %tmp.51;
+        %tmp.53 = 1;
+        %tmp.54 = lgetv %fillLight;
+        symbol [ fillLight %tmp.54 277 47 56 ];
+        invoke %tmp.41 %tmp.42(%tmp.43, %tmp.46, %tmp.49, %tmp.52, %tmp.53, %tmp.54);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_273_14_278_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 280; @symbol_functiondef = [drawDataCounter,280,21,36]; @symbol_param<0> = [dc,281,8,10]; @symbol_param<0>_type<0> = [Dc,281,14,16]; @symbol_param<1> = [outline,282,8,15]; @symbol_param<1>_type<0> = [Number,282,19,25]; @symbol_param<2> = [wood,283,8,12]; @symbol_param<2>_type<0> = [Number,283,16,22]; @symbol_param<3> = [gold,284,8,12]; @symbol_param<3>_type<0> = [Number,284,16,22]; @symbol_param<4> = [paper,285,8,13]; @symbol_param<4>_type<0> = [Number,285,17,23]; @symbol_param<5> = [paperLight,286,8,18]; @symbol_param<5>_type<0> = [Number,286,22,28]; ]
+    private
+    function drawDataCounter(dc as Dc, outline as Number, wood as Number, gold as Number, paper as Number, paperLight as Number) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_287_14_301_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 289 8 ]
+        %tmp.1 = self;
+        symbol [ px %tmp.2 289 8 10 ];
+        %tmp.2 = getv function %tmp.1 :px;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 289 11 13 ];
+        %tmp.4 = 12;
+        %tmp.5 = 38;
+        %tmp.6 = 24;
+        %tmp.7 = 5;
+        %tmp.8 = lgetv %outline;
+        symbol [ outline %tmp.8 289 30 37 ];
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.6, %tmp.7, %tmp.8);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 290 8 ]
+        %tmp.9 = self;
+        symbol [ px %tmp.10 290 8 10 ];
+        %tmp.10 = getv function %tmp.9 :px;
+        %tmp.11 = lgetv %dc;
+        symbol [ dc %tmp.11 290 11 13 ];
+        %tmp.12 = 11;
+        %tmp.13 = 39;
+        %tmp.14 = 26;
+        %tmp.15 = 3;
+        %tmp.16 = lgetv %outline;
+        symbol [ outline %tmp.16 290 30 37 ];
+        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.12, %tmp.13, %tmp.14, %tmp.15, %tmp.16);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 291 8 ]
+        %tmp.17 = self;
+        symbol [ px %tmp.18 291 8 10 ];
+        %tmp.18 = getv function %tmp.17 :px;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 291 11 13 ];
+        %tmp.20 = 13;
+        %tmp.21 = 38;
+        %tmp.22 = 22;
+        %tmp.23 = 5;
+        %tmp.24 = lgetv %wood;
+        symbol [ wood %tmp.24 291 30 34 ];
+        invoke %tmp.17 %tmp.18(%tmp.19, %tmp.20, %tmp.21, %tmp.22, %tmp.23, %tmp.24);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 292 8 ]
+        %tmp.25 = self;
+        symbol [ px %tmp.26 292 8 10 ];
+        %tmp.26 = getv function %tmp.25 :px;
+        %tmp.27 = lgetv %dc;
+        symbol [ dc %tmp.27 292 11 13 ];
+        %tmp.28 = 12;
+        %tmp.29 = 39;
+        %tmp.30 = 24;
+        %tmp.31 = 3;
+        %tmp.32 = lgetv %gold;
+        symbol [ gold %tmp.32 292 30 34 ];
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.28, %tmp.29, %tmp.30, %tmp.31, %tmp.32);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 295 8 ]
+        for @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_test @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_incr @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_init:
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_begin" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 295 17 18 ];
+        %tmp.33 = 0;
+        lputv %i.1 %tmp.33;
+        symbol [ i %i.1 295 17 18 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_test:
+        %tmp.34 = lgetv %i.1;
+        symbol [ i %tmp.34 295 24 25 ];
+        %tmp.35 = 7;
+        %tmp.36 = lt %tmp.34 %tmp.35;
+        bf %tmp.36 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_begin:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_36_300_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 296 12 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_36_300_8_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_36_300_8_stop" ]
+        %cellX.2 = local;
+        symbol [ cellX %cellX.2 296 16 21 ];
+        %tmp.37 = 14;
+        %tmp.38 = lgetv %i.1;
+        symbol [ i %tmp.38 296 30 31 ];
+        %tmp.39 = 3;
+        %tmp.40 = mul %tmp.38 %tmp.39;
+        %tmp.41 = add %tmp.37 %tmp.40;
+        lputv %cellX.2 %tmp.41;
+        symbol [ cellX %cellX.2 296 16 21 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 297 12 ]
+        %tmp.42 = self;
+        symbol [ px %tmp.43 297 12 14 ];
+        %tmp.43 = getv function %tmp.42 :px;
+        %tmp.44 = lgetv %dc;
+        symbol [ dc %tmp.44 297 15 17 ];
+        %tmp.45 = lgetv %cellX.2;
+        symbol [ cellX %tmp.45 297 19 24 ];
+        %tmp.46 = 38;
+        %tmp.47 = 3;
+        %tmp.48 = 5;
+        %tmp.49 = lgetv %outline;
+        symbol [ outline %tmp.49 297 36 43 ];
+        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.45, %tmp.46, %tmp.47, %tmp.48, %tmp.49);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 298 12 ]
+        %tmp.50 = self;
+        symbol [ px %tmp.51 298 12 14 ];
+        %tmp.51 = getv function %tmp.50 :px;
+        %tmp.52 = lgetv %dc;
+        symbol [ dc %tmp.52 298 15 17 ];
+        %tmp.53 = lgetv %cellX.2;
+        symbol [ cellX %tmp.53 298 19 24 ];
+        %tmp.54 = 1;
+        %tmp.55 = add %tmp.53 %tmp.54;
+        %tmp.56 = 39;
+        %tmp.57 = 2;
+        %tmp.58 = 4;
+        %tmp.59 = lgetv %paper;
+        symbol [ paper %tmp.59 298 40 45 ];
+        invoke %tmp.50 %tmp.51(%tmp.52, %tmp.55, %tmp.56, %tmp.57, %tmp.58, %tmp.59);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 299 12 ]
+        %tmp.60 = self;
+        symbol [ px %tmp.61 299 12 14 ];
+        %tmp.61 = getv function %tmp.60 :px;
+        %tmp.62 = lgetv %dc;
+        symbol [ dc %tmp.62 299 15 17 ];
+        %tmp.63 = lgetv %cellX.2;
+        symbol [ cellX %tmp.63 299 19 24 ];
+        %tmp.64 = 1;
+        %tmp.65 = add %tmp.63 %tmp.64;
+        %tmp.66 = 39;
+        %tmp.67 = 2;
+        %tmp.68 = 1;
+        %tmp.69 = lgetv %paperLight;
+        symbol [ paperLight %tmp.69 299 40 50 ];
+        invoke %tmp.60 %tmp.61(%tmp.62, %tmp.65, %tmp.66, %tmp.67, %tmp.68, %tmp.69);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_36_300_8_stop:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_incr:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 295 ]
+        %tmp.72 = lgetv %i.1;
+        symbol [ i %tmp.72 295 31 32 ];
+        %tmp.73 = add %tmp.72 1;
+        lputv %i.1 %tmp.73;
+        symbol [ i %i.1 295 31 32 ];
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_test;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_295_8_300_8_for_end:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_287_14_301_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 305; @symbol_functiondef = [drawDay,305,21,28]; @symbol_param<0> = [dc,305,29,31]; @symbol_param<0>_type<0> = [Dc,305,35,37]; ]
+    private
+    function drawDay(dc as Dc) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_305_47_317_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 306 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_305_47_317_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_305_47_317_4_stop" ]
+        %dayNames.1 = local;
+        symbol [ dayNames %dayNames.1 306 12 20 ];
+        %tmp.1 = newa 7;
+        %tmp.2 = "SUNDAY";
+        %tmp.3 = dup %tmp.1;
+        %tmp.4 = aputv %tmp.3 0 %tmp.2;
+        %tmp.5 = "MONDAY";
+        %tmp.6 = dup %tmp.4;
+        %tmp.7 = aputv %tmp.6 1 %tmp.5;
+        %tmp.8 = "TUESDAY";
+        %tmp.9 = dup %tmp.7;
+        %tmp.10 = aputv %tmp.9 2 %tmp.8;
+        %tmp.11 = "WEDNESDAY";
+        %tmp.12 = dup %tmp.10;
+        %tmp.13 = aputv %tmp.12 3 %tmp.11;
+        %tmp.14 = "THURSDAY";
+        %tmp.15 = dup %tmp.13;
+        %tmp.16 = aputv %tmp.15 4 %tmp.14;
+        %tmp.17 = "FRIDAY";
+        %tmp.18 = dup %tmp.16;
+        %tmp.19 = aputv %tmp.18 5 %tmp.17;
+        %tmp.20 = "SATURDAY";
+        %tmp.21 = dup %tmp.19;
+        %tmp.22 = aputv %tmp.21 6 %tmp.20;
+        lputv %dayNames.1 %tmp.22;
+        symbol [ dayNames %dayNames.1 306 12 20 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 310 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_305_47_317_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_305_47_317_4_stop" ]
+        %info.2 = local;
+        symbol [ info %info.2 310 12 16 ];
+        symbol [ Gregorian %tmp.23 310 19 28 ];
+        %tmp.23 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.24 310 29 33 ];
+        %tmp.24 = getv function %tmp.23 :info;
+        symbol [ Time %tmp.25 310 34 38 ];
+        %tmp.25 = getm $.Toybox.Time;
+        symbol [ now %tmp.26 310 39 42 ];
+        %tmp.26 = getv function %tmp.25 :now;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        symbol [ Time %tmp.28 310 46 50 ];
+        %tmp.28 = getm $.Toybox.Time;
+        symbol [ FORMAT_SHORT %tmp.29 310 51 63 ];
+        %tmp.29 = getv %tmp.28 :FORMAT_SHORT;
+        %tmp.30 = invoke %tmp.23 %tmp.24(%tmp.27, %tmp.29);
+        lputv %info.2 %tmp.30;
+        symbol [ info %info.2 310 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 311 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_305_47_317_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_305_47_317_4_stop" ]
+        %dayIndex.3 = local;
+        symbol [ dayIndex %dayIndex.3 311 12 20 ];
+        %tmp.31 = lgetv %info.2;
+        symbol [ info %tmp.31 311 24 28 ];
+        symbol [ day_of_week %tmp.32 311 29 40 ];
+        %tmp.32 = getv %tmp.31 :day_of_week;
+        %tmp.33 = as %tmp.32 Number;
+        symbol [ Number %tmp.33 311 44 50 ];
+        %tmp.34 = 1;
+        %tmp.35 = sub %tmp.33 %tmp.34;
+        lputv %dayIndex.3 %tmp.35;
+        symbol [ dayIndex %dayIndex.3 311 12 20 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 312 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_8_314_8_if_stmt:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_12_312_54_begin:
+        %tmp.36 = lgetv %dayIndex.3;
+        symbol [ dayIndex %tmp.36 312 12 20 ];
+        %tmp.37 = 0;
+        %tmp.38 = lt %tmp.36 %tmp.37;
+        bt %tmp.38 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_8_314_8_if_true;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_28_312_54_false:
+        %tmp.39 = lgetv %dayIndex.3;
+        symbol [ dayIndex %tmp.39 312 28 36 ];
+        %tmp.40 = lgetv %dayNames.1;
+        symbol [ dayNames %tmp.40 312 40 48 ];
+        symbol [ size %tmp.41 312 49 53 ];
+        %tmp.41 = getv function %tmp.40 :size;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        %tmp.43 = gte %tmp.39 %tmp.42;
+        push %tmp.43;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_28_312_54_end:
+        %tmp.44 = phi [%tmp.38 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_12_312_54_begin] [%tmp.43 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_28_312_54_false] [%tmp.44 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_28_312_54_end];
+        bf %tmp.44 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_8_314_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_8_314_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_57_314_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 313 12 ]
+        %tmp.45 = 0;
+        lputv %dayIndex.3 %tmp.45;
+        symbol [ dayIndex %dayIndex.3 313 12 20 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_57_314_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_8_314_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_312_8_314_8_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 316 8 ]
+        %tmp.46 = self;
+        symbol [ drawTextAt %tmp.47 316 8 18 ];
+        %tmp.47 = getv function %tmp.46 :drawTextAt;
+        %tmp.48 = lgetv %dc;
+        symbol [ dc %tmp.48 316 19 21 ];
+        %tmp.49 = 24;
+        %tmp.50 = 21.0;
+        symbol [ _fontLarge %tmp.52 316 33 43 ];
+        %tmp.52 = getv ? :_fontLarge;
+        %tmp.53 = lgetv %dayNames.1;
+        symbol [ dayNames %tmp.53 316 45 53 ];
+        %tmp.54 = lgetv %dayIndex.3;
+        symbol [ dayIndex %tmp.54 316 54 62 ];
+        %tmp.55 = agetv %tmp.53 %tmp.54;
+        %tmp.56 = 0x6A2A12;
+        invoke %tmp.46 %tmp.47(%tmp.48, %tmp.49, %tmp.50, %tmp.52, %tmp.55, %tmp.56);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_305_47_317_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 319; @symbol_functiondef = [drawTime,319,21,29]; @symbol_param<0> = [dc,319,30,32]; @symbol_param<0>_type<0> = [Dc,319,36,38]; ]
+    private
+    function drawTime(dc as Dc) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 320 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_stop" ]
+        %clock.1 = local;
+        symbol [ clock %clock.1 320 12 17 ];
+        symbol [ System %tmp.1 320 20 26 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 320 27 39 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clock.1 %tmp.3;
+        symbol [ clock %clock.1 320 12 17 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 321 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_stop" ]
+        %hour.2 = local;
+        symbol [ hour %hour.2 321 12 16 ];
+        %tmp.4 = lgetv %clock.1;
+        symbol [ clock %tmp.4 321 19 24 ];
+        symbol [ hour %tmp.5 321 25 29 ];
+        %tmp.5 = getv %tmp.4 :hour;
+        lputv %hour.2 %tmp.5;
+        symbol [ hour %hour.2 321 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 322 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_stop" ]
+        %is24Hour.3 = local;
+        symbol [ is24Hour %is24Hour.3 322 12 20 ];
+        symbol [ System %tmp.6 322 23 29 ];
+        %tmp.6 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.7 322 30 47 ];
+        %tmp.7 = getv function %tmp.6 :getDeviceSettings;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        symbol [ is24Hour %tmp.9 322 50 58 ];
+        %tmp.9 = getv %tmp.8 :is24Hour;
+        lputv %is24Hour.3 %tmp.9;
+        symbol [ is24Hour %is24Hour.3 322 12 20 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 324 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_324_8_327_8_if_stmt:
+        %tmp.10 = lgetv %is24Hour.3;
+        symbol [ is24Hour %tmp.10 324 13 21 ];
+        %tmp.11 = not %tmp.10;
+        bf %tmp.11 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_324_8_327_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_324_8_327_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_324_23_327_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 325 12 ]
+        %tmp.12 = lgetv %hour.2;
+        symbol [ hour %tmp.12 325 19 23 ];
+        %tmp.13 = 12;
+        %tmp.14 = mod %tmp.12 %tmp.13;
+        lputv %hour.2 %tmp.14;
+        symbol [ hour %hour.2 325 12 16 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 326 12 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_326_12_326_40_if_stmt:
+        %tmp.15 = lgetv %hour.2;
+        symbol [ hour %tmp.15 326 16 20 ];
+        %tmp.16 = 0;
+        %tmp.17 = eq %tmp.15 %tmp.16;
+        bf %tmp.17 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_326_12_326_40_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_326_12_326_40_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_326_27_326_40_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 326 29 ]
+        %tmp.18 = 12;
+        lputv %hour.2 %tmp.18;
+        symbol [ hour %hour.2 326 29 33 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_326_27_326_40_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_326_12_326_40_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_326_12_326_40_if_end:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_324_23_327_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_324_8_327_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_324_8_327_8_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 329 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_stop" ]
+        %timeString.4 = local;
+        symbol [ timeString %timeString.4 329 12 22 ];
+        symbol [ Lang %tmp.19 329 25 29 ];
+        %tmp.19 = getm $.Toybox.Lang;
+        symbol [ format %tmp.20 329 30 36 ];
+        %tmp.20 = getv function %tmp.19 :format;
+        %tmp.21 = "$1$:$2$";
+        %tmp.22 = newa 2;
+        %tmp.23 = lgetv %hour.2;
+        symbol [ hour %tmp.23 330 12 16 ];
+        symbol [ format %tmp.24 330 17 23 ];
+        %tmp.24 = getv function %tmp.23 :format;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_begin:
+        %tmp.25 = lgetv %is24Hour.3;
+        symbol [ is24Hour %tmp.25 330 24 32 ];
+        bf %tmp.25 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_true:
+        %tmp.26 = "%02d";
+        push %tmp.26;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_else_false:
+        %tmp.27 = "%d";
+        push %tmp.27;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_end:
+        %tmp.28 = phi [%tmp.25 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_begin] [%tmp.26 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_true] [%tmp.27 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_else_false] [%tmp.28 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_330_24_330_44_end];
+        %tmp.29 = invoke %tmp.23 %tmp.24(%tmp.28);
+        %tmp.30 = dup %tmp.22;
+        %tmp.31 = aputv %tmp.30 0 %tmp.29;
+        %tmp.32 = lgetv %clock.1;
+        symbol [ clock %tmp.32 331 12 17 ];
+        symbol [ min %tmp.33 331 18 21 ];
+        %tmp.33 = getv %tmp.32 :min;
+        symbol [ format %tmp.34 331 22 28 ];
+        %tmp.34 = getv function %tmp.33 :format;
+        %tmp.35 = "%02d";
+        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
+        %tmp.37 = dup %tmp.31;
+        %tmp.38 = aputv %tmp.37 1 %tmp.36;
+        %tmp.39 = invoke %tmp.19 %tmp.20(%tmp.21, %tmp.38);
+        lputv %timeString.4 %tmp.39;
+        symbol [ timeString %timeString.4 329 12 22 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 334 8 ]
+        %tmp.40 = self;
+        symbol [ drawTextAt %tmp.41 334 8 18 ];
+        %tmp.41 = getv function %tmp.40 :drawTextAt;
+        %tmp.42 = lgetv %dc;
+        symbol [ dc %tmp.42 334 19 21 ];
+        %tmp.43 = 24;
+        %tmp.44 = 33.0;
+        symbol [ _fontLarge %tmp.46 334 33 43 ];
+        %tmp.46 = getv ? :_fontLarge;
+        %tmp.47 = lgetv %timeString.4;
+        symbol [ timeString %tmp.47 334 45 55 ];
+        %tmp.48 = 0x6A2A12;
+        invoke %tmp.40 %tmp.41(%tmp.42, %tmp.43, %tmp.44, %tmp.46, %tmp.47, %tmp.48);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_319_48_335_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 337; @symbol_functiondef = [drawSelectedData,337,21,37]; @symbol_param<0> = [dc,337,38,40]; @symbol_param<0>_type<0> = [Dc,337,44,46]; ]
+    private
+    function drawSelectedData(dc as Dc) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_337_56_358_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 338 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_337_56_358_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_337_56_358_4_stop" ]
+        %activity.1 = local;
+        symbol [ activity %activity.1 338 12 20 ];
+        symbol [ ActivityMonitor %tmp.1 338 23 38 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 338 39 46 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %activity.1 %tmp.3;
+        symbol [ activity %activity.1 338 12 20 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 339 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_337_56_358_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_337_56_358_4_stop" ]
+        %label.2 = local;
+        symbol [ label %label.2 339 12 17 ];
+        %tmp.4 = "STP";
+        lputv %label.2 %tmp.4;
+        symbol [ label %label.2 339 12 17 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 340 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_337_56_358_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_337_56_358_4_stop" ]
+        %value.3 = local;
+        symbol [ value %value.3 340 12 17 ];
+        %tmp.5 = "0";
+        lputv %value.3 %tmp.5;
+        symbol [ value %value.3 340 12 17 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 342 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_342_8_352_8_if_stmt:
+        symbol [ _statSetting %tmp.7 342 12 24 ];
+        %tmp.7 = getv ? :_statSetting;
+        symbol [ STAT_HR %tmp.9 342 28 35 ];
+        %tmp.9 = getv ? :STAT_HR;
+        %tmp.10 = eq %tmp.7 %tmp.9;
+        bf %tmp.10 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_342_8_352_8_if_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_342_8_352_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_342_37_345_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 343 12 ]
+        %tmp.11 = "BPM";
+        lputv %label.2 %tmp.11;
+        symbol [ label %label.2 343 12 17 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 344 12 ]
+        %tmp.12 = self;
+        symbol [ getHeartRateString %tmp.13 344 20 38 ];
+        %tmp.13 = getv function %tmp.12 :getHeartRateString;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %value.3 %tmp.14;
+        symbol [ value %value.3 344 12 17 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_342_37_345_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_342_8_352_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_342_8_352_8_if_false:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 345 15 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_15_352_8_if_stmt:
+        symbol [ _statSetting %tmp.16 345 19 31 ];
+        %tmp.16 = getv ? :_statSetting;
+        symbol [ STAT_CALORIES %tmp.18 345 35 48 ];
+        %tmp.18 = getv ? :STAT_CALORIES;
+        %tmp.19 = eq %tmp.16 %tmp.18;
+        bf %tmp.19 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_15_352_8_if_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_15_352_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_50_349_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 346 12 ]
+        %tmp.20 = "CAL";
+        lputv %label.2 %tmp.20;
+        symbol [ label %label.2 346 12 17 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 347 12 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_50_349_8_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_50_349_8_stop" ]
+        %calories.4 = local;
+        symbol [ calories %calories.4 347 16 24 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_begin:
+        %tmp.21 = lgetv %activity.1;
+        symbol [ activity %tmp.21 347 28 36 ];
+        symbol [ calories %tmp.22 347 37 45 ];
+        %tmp.22 = getv %tmp.21 :calories;
+        %tmp.23 = null;
+        %tmp.24 = ne %tmp.22 %tmp.23;
+        bf %tmp.24 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_true:
+        %tmp.25 = lgetv %activity.1;
+        symbol [ activity %tmp.25 347 57 65 ];
+        symbol [ calories %tmp.26 347 66 74 ];
+        %tmp.26 = getv %tmp.25 :calories;
+        push %tmp.26;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_else_false:
+        %tmp.27 = 0;
+        push %tmp.27;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_end:
+        %tmp.28 = phi [%tmp.24 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_begin] [%tmp.26 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_true] [%tmp.27 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_else_false] [%tmp.28 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_347_27_347_77_end];
+        lputv %calories.4 %tmp.28;
+        symbol [ calories %calories.4 347 16 24 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 348 12 ]
+        %tmp.29 = lgetv %calories.4;
+        symbol [ calories %tmp.29 348 20 28 ];
+        symbol [ toString %tmp.30 348 29 37 ];
+        %tmp.30 = getv function %tmp.29 :toString;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        lputv %value.3 %tmp.31;
+        symbol [ value %value.3 348 12 17 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_50_349_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_15_352_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_15_352_8_if_else_false:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_349_15_352_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 350 12 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_349_15_352_8_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_349_15_352_8_stop" ]
+        %steps.5 = local;
+        symbol [ steps %steps.5 350 16 21 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_begin:
+        %tmp.32 = lgetv %activity.1;
+        symbol [ activity %tmp.32 350 25 33 ];
+        symbol [ steps %tmp.33 350 34 39 ];
+        %tmp.33 = getv %tmp.32 :steps;
+        %tmp.34 = null;
+        %tmp.35 = ne %tmp.33 %tmp.34;
+        bf %tmp.35 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_else_false;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_true:
+        %tmp.36 = lgetv %activity.1;
+        symbol [ activity %tmp.36 350 51 59 ];
+        symbol [ steps %tmp.37 350 60 65 ];
+        %tmp.37 = getv %tmp.36 :steps;
+        push %tmp.37;
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_else_false:
+        %tmp.38 = 0;
+        push %tmp.38;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_end:
+        %tmp.39 = phi [%tmp.35 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_begin] [%tmp.37 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_true] [%tmp.38 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_else_false] [%tmp.39 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_350_24_350_68_end];
+        lputv %steps.5 %tmp.39;
+        symbol [ steps %steps.5 350 16 21 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 351 12 ]
+        %tmp.40 = lgetv %steps.5;
+        symbol [ steps %tmp.40 351 20 25 ];
+        symbol [ toString %tmp.41 351 26 34 ];
+        %tmp.41 = getv function %tmp.40 :toString;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        lputv %value.3 %tmp.42;
+        symbol [ value %value.3 351 12 17 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_349_15_352_8_stop:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_345_15_352_8_if_end:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_342_8_352_8_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 356 8 ]
+        %tmp.43 = self;
+        symbol [ drawTextAt %tmp.44 356 8 18 ];
+        %tmp.44 = getv function %tmp.43 :drawTextAt;
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 356 19 21 ];
+        %tmp.46 = 24;
+        %tmp.47 = 27.0;
+        symbol [ _fontSmall %tmp.49 356 33 43 ];
+        %tmp.49 = getv ? :_fontSmall;
+        %tmp.50 = lgetv %label.2;
+        symbol [ label %tmp.50 356 45 50 ];
+        %tmp.51 = 0x6A2A12;
+        invoke %tmp.43 %tmp.44(%tmp.45, %tmp.46, %tmp.47, %tmp.49, %tmp.50, %tmp.51);
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 357 8 ]
+        %tmp.52 = self;
+        symbol [ drawCounterValue %tmp.53 357 8 24 ];
+        %tmp.53 = getv function %tmp.52 :drawCounterValue;
+        %tmp.54 = lgetv %dc;
+        symbol [ dc %tmp.54 357 25 27 ];
+        %tmp.55 = lgetv %value.3;
+        symbol [ value %tmp.55 357 29 34 ];
+        invoke %tmp.52 %tmp.53(%tmp.54, %tmp.55);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_337_56_358_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 360; @symbol_functiondef = [drawCounterValue,360,21,37]; @symbol_param<0> = [dc,360,38,40]; @symbol_param<0>_type<0> = [Dc,360,44,46]; @symbol_param<1> = [value,360,48,53]; @symbol_param<1>_type<0> = [String,360,57,63]; ]
+    private
+    function drawCounterValue(dc as Dc, value as String) as Void {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_360_73_372_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 361 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_360_73_372_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_360_73_372_4_stop" ]
+        %visible.1 = local;
+        symbol [ visible %visible.1 361 12 19 ];
+        %tmp.1 = lgetv %value;
+        symbol [ value %tmp.1 361 22 27 ];
+        lputv %visible.1 %tmp.1;
+        symbol [ visible %visible.1 361 12 19 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 362 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_362_8_364_8_if_stmt:
+        %tmp.2 = lgetv %visible.1;
+        symbol [ visible %tmp.2 362 12 19 ];
+        symbol [ length %tmp.3 362 20 26 ];
+        %tmp.3 = getv function %tmp.2 :length;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = 7;
+        %tmp.6 = gt %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_362_8_364_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_362_8_364_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_362_34_364_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 363 12 ]
+        %tmp.7 = lgetv %visible.1;
+        symbol [ visible %tmp.7 363 22 29 ];
+        symbol [ substring %tmp.8 363 30 39 ];
+        %tmp.8 = getv function %tmp.7 :substring;
+        %tmp.9 = lgetv %visible.1;
+        symbol [ visible %tmp.9 363 40 47 ];
+        symbol [ length %tmp.10 363 48 54 ];
+        %tmp.10 = getv function %tmp.9 :length;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = 7;
+        %tmp.13 = sub %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %visible.1;
+        symbol [ visible %tmp.14 363 62 69 ];
+        symbol [ length %tmp.15 363 70 76 ];
+        %tmp.15 = getv function %tmp.14 :length;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = invoke %tmp.7 %tmp.8(%tmp.13, %tmp.16);
+        lputv %visible.1 %tmp.17;
+        symbol [ visible %visible.1 363 12 19 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_362_34_364_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_362_8_364_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_362_8_364_8_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 366 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_360_73_372_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_360_73_372_4_stop" ]
+        %firstCell.2 = local;
+        symbol [ firstCell %firstCell.2 366 12 21 ];
+        %tmp.18 = 7;
+        %tmp.19 = lgetv %visible.1;
+        symbol [ visible %tmp.19 366 28 35 ];
+        symbol [ length %tmp.20 366 36 42 ];
+        %tmp.20 = getv function %tmp.19 :length;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = sub %tmp.18 %tmp.21;
+        lputv %firstCell.2 %tmp.22;
+        symbol [ firstCell %firstCell.2 366 12 21 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 367 8 ]
+        for @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_test @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_incr @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_init:
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_begin" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 367 17 18 ];
+        %tmp.23 = 0;
+        lputv %i.3 %tmp.23;
+        symbol [ i %i.3 367 17 18 ];
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_test:
+        %tmp.24 = lgetv %i.3;
+        symbol [ i %tmp.24 367 24 25 ];
+        %tmp.25 = lgetv %visible.1;
+        symbol [ visible %tmp.25 367 28 35 ];
+        symbol [ length %tmp.26 367 36 42 ];
+        %tmp.26 = getv function %tmp.25 :length;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        %tmp.28 = lt %tmp.24 %tmp.27;
+        bf %tmp.28 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_begin:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_51_371_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 368 12 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_51_371_8_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_51_371_8_stop" ]
+        %cellCenter.4 = local;
+        symbol [ cellCenter %cellCenter.4 368 16 26 ];
+        %tmp.29 = 15.5;
+        %tmp.30 = lgetv %firstCell.2;
+        symbol [ firstCell %tmp.30 368 38 47 ];
+        %tmp.31 = lgetv %i.3;
+        symbol [ i %tmp.31 368 50 51 ];
+        %tmp.32 = add %tmp.30 %tmp.31;
+        %tmp.33 = 3;
+        %tmp.34 = mul %tmp.32 %tmp.33;
+        %tmp.35 = add %tmp.29 %tmp.34;
+        lputv %cellCenter.4 %tmp.35;
+        symbol [ cellCenter %cellCenter.4 368 16 26 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 369 12 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_51_371_8_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_51_371_8_stop" ]
+        %character.5 = local;
+        symbol [ character %character.5 369 16 25 ];
+        %tmp.36 = lgetv %visible.1;
+        symbol [ visible %tmp.36 369 28 35 ];
+        symbol [ substring %tmp.37 369 36 45 ];
+        %tmp.37 = getv function %tmp.36 :substring;
+        %tmp.38 = lgetv %i.3;
+        symbol [ i %tmp.38 369 46 47 ];
+        %tmp.39 = lgetv %i.3;
+        symbol [ i %tmp.39 369 49 50 ];
+        %tmp.40 = 1;
+        %tmp.41 = add %tmp.39 %tmp.40;
+        %tmp.42 = invoke %tmp.36 %tmp.37(%tmp.38, %tmp.41);
+        lputv %character.5 %tmp.42;
+        symbol [ character %character.5 369 16 25 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 370 12 ]
+        %tmp.43 = self;
+        symbol [ drawTextAt %tmp.44 370 12 22 ];
+        %tmp.44 = getv function %tmp.43 :drawTextAt;
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 370 23 25 ];
+        %tmp.46 = lgetv %cellCenter.4;
+        symbol [ cellCenter %tmp.46 370 27 37 ];
+        %tmp.47 = 40.5;
+        symbol [ _fontLarge %tmp.49 370 45 55 ];
+        %tmp.49 = getv ? :_fontLarge;
+        %tmp.50 = lgetv %character.5;
+        symbol [ character %tmp.50 370 57 66 ];
+        %tmp.51 = 0x6A2A12;
+        invoke %tmp.43 %tmp.44(%tmp.45, %tmp.46, %tmp.47, %tmp.49, %tmp.50, %tmp.51);
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_51_371_8_stop:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_incr:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 367 ]
+        %tmp.54 = lgetv %i.3;
+        symbol [ i %tmp.54 367 46 47 ];
+        %tmp.55 = add %tmp.54 1;
+        lputv %i.3 %tmp.55;
+        symbol [ i %i.3 367 46 47 ];
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_test;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_367_8_371_8_for_end:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_360_73_372_4_stop:
+    }
+    [ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 374; @symbol_functiondef = [getHeartRateString,374,21,39]; @symbol_return<0> = [String,374,45,51]; ]
+    private
+    function getHeartRateString() as String {
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_374_52_389_4_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 375 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_374_52_389_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_374_52_389_4_stop" ]
+        %activity.1 = local;
+        symbol [ activity %activity.1 375 12 20 ];
+        symbol [ Activity %tmp.1 375 23 31 ];
+        %tmp.1 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.2 375 32 47 ];
+        %tmp.2 = getv function %tmp.1 :getActivityInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %activity.1 %tmp.3;
+        symbol [ activity %activity.1 375 12 20 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 376 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_8_378_8_if_stmt:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_12_376_61_begin:
+        %tmp.4 = lgetv %activity.1;
+        symbol [ activity %tmp.4 376 12 20 ];
+        %tmp.5 = null;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_8_378_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_32_376_61_true:
+        %tmp.7 = lgetv %activity.1;
+        symbol [ activity %tmp.7 376 32 40 ];
+        %tmp.8 = as %tmp.7 { (!Null) };
+        symbol [ currentHeartRate %tmp.9 376 41 57 ];
+        %tmp.9 = getv %tmp.8 :currentHeartRate;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        push %tmp.11;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_32_376_61_end:
+        %tmp.12 = phi [%tmp.6 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_12_376_61_begin] [%tmp.11 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_32_376_61_true] [%tmp.12 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_32_376_61_end];
+        bf %tmp.12 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_8_378_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_8_378_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_67_378_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 377 12 ]
+        %tmp.13 = lgetv %activity.1;
+        symbol [ activity %tmp.13 377 19 27 ];
+        %tmp.14 = as %tmp.13 { (!Null) };
+        symbol [ currentHeartRate %tmp.15 377 28 44 ];
+        %tmp.15 = getv %tmp.14 :currentHeartRate;
+        symbol [ toString %tmp.16 377 45 53 ];
+        %tmp.16 = getv function %tmp.15 :toString;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        ret %tmp.17;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_67_378_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_8_378_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_376_8_378_8_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 380 8 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_374_52_389_4_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_374_52_389_4_stop" ]
+        %history.2 = local;
+        symbol [ history %history.2 380 12 19 ];
+        symbol [ ActivityMonitor %tmp.18 380 22 37 ];
+        %tmp.18 = getm $.Toybox.ActivityMonitor;
+        symbol [ getHeartRateHistory %tmp.19 380 38 57 ];
+        %tmp.19 = getv function %tmp.18 :getHeartRateHistory;
+        %tmp.20 = 1;
+        %tmp.21 = true;
+        %tmp.22 = invoke %tmp.18 %tmp.19(%tmp.20, %tmp.21);
+        lputv %history.2 %tmp.22;
+        symbol [ history %history.2 380 12 19 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 381 8 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_8_386_8_if_stmt:
+        %tmp.23 = lgetv %history.2;
+        symbol [ history %tmp.23 381 12 19 ];
+        %tmp.24 = null;
+        %tmp.25 = ne %tmp.23 %tmp.24;
+        bf %tmp.25 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_8_386_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_8_386_8_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_29_386_8_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 382 12 ]
+        [ "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_29_386_8_start" "_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_29_386_8_stop" ]
+        %sample.3 = local;
+        symbol [ sample %sample.3 382 16 22 ];
+        %tmp.26 = lgetv %history.2;
+        symbol [ history %tmp.26 382 25 32 ];
+        %tmp.27 = as %tmp.26 { (!Null) };
+        symbol [ next %tmp.28 382 33 37 ];
+        %tmp.28 = getv function %tmp.27 :next;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        lputv %sample.3 %tmp.29;
+        symbol [ sample %sample.3 382 16 22 ];
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 383 12 ]
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_12_385_12_if_stmt:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_16_383_70_begin:
+        %tmp.30 = lgetv %sample.3;
+        symbol [ sample %tmp.30 383 16 22 ];
+        %tmp.31 = null;
+        %tmp.32 = ne %tmp.30 %tmp.31;
+        bf %tmp.32 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_12_385_12_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_34_383_70_true:
+        %tmp.33 = lgetv %sample.3;
+        symbol [ sample %tmp.33 383 34 40 ];
+        %tmp.34 = as %tmp.33 { (!Null) };
+        symbol [ heartRate %tmp.35 383 41 50 ];
+        %tmp.35 = getv %tmp.34 :heartRate;
+        symbol [ ActivityMonitor %tmp.36 383 54 69 ];
+        %tmp.36 = getm $.Toybox.ActivityMonitor;
+        symbol [ INVALID_HR_SAMPLE %tmp.37 383 70 87 ];
+        %tmp.37 = getv %tmp.36 :INVALID_HR_SAMPLE;
+        %tmp.38 = ne %tmp.35 %tmp.37;
+        push %tmp.38;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_34_383_70_end:
+        %tmp.39 = phi [%tmp.32 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_16_383_70_begin] [%tmp.38 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_34_383_70_true] [%tmp.39 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_34_383_70_end];
+        bf %tmp.39 @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_12_385_12_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_12_385_12_if_true:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_89_385_12_start:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 384 16 ]
+        %tmp.40 = lgetv %sample.3;
+        symbol [ sample %tmp.40 384 23 29 ];
+        %tmp.41 = as %tmp.40 { (!Null) };
+        symbol [ heartRate %tmp.42 384 30 39 ];
+        %tmp.42 = getv %tmp.41 :heartRate;
+        symbol [ toString %tmp.43 384 40 48 ];
+        %tmp.43 = getv function %tmp.42 :toString;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        ret %tmp.44;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_89_385_12_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_12_385_12_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_383_12_385_12_if_end:
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_29_386_8_stop:
+        goto @_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_8_386_8_if_end;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_381_8_386_8_if_end:
+[ "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" 388 8 ]
+        %tmp.45 = "NA";
+        ret %tmp.45;
+_Users_aysesule_Downloads_garmin_harvest_pixels_face_source_HarvestPixelsView_mc_374_52_389_4_stop:
+    }
+}
+[ @file = "/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc"; @line = 1; ]
+<init> {
+}
