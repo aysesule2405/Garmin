@@ -1,35 +1,5 @@
 {
   "settings" : [ {
-    "key" : "Season",
-    "valueType" : "number",
-    "defaultValue" : 0,
-    "configTitle" : "SeasonTitle",
-    "configPrompt" : null,
-    "configType" : "list",
-    "configError" : null,
-    "configHelpUrl" : null,
-    "configReadonly" : false,
-    "configRequired" : false,
-    "configOptions" : [ {
-      "display" : "SeasonAuto",
-      "value" : 0
-    }, {
-      "display" : "SeasonSpring",
-      "value" : 1
-    }, {
-      "display" : "SeasonSummer",
-      "value" : 2
-    }, {
-      "display" : "SeasonAutumn",
-      "value" : 3
-    }, {
-      "display" : "SeasonWinter",
-      "value" : 4
-    } ],
-    "configMin" : null,
-    "configMax" : null,
-    "configMaxLength" : null
-  }, {
     "key" : "Stat",
     "valueType" : "number",
     "defaultValue" : 0,
@@ -53,64 +23,14 @@
     "configMin" : null,
     "configMax" : null,
     "configMaxLength" : null
-  }, {
-    "key" : "StepGoal",
-    "valueType" : "number",
-    "defaultValue" : 10000,
-    "configTitle" : "StepGoalTitle",
-    "configPrompt" : null,
-    "configType" : "list",
-    "configError" : null,
-    "configHelpUrl" : null,
-    "configReadonly" : false,
-    "configRequired" : false,
-    "configOptions" : [ {
-      "display" : "$literal0$",
-      "value" : 5000
-    }, {
-      "display" : "$literal1$",
-      "value" : 7500
-    }, {
-      "display" : "$literal2$",
-      "value" : 8000
-    }, {
-      "display" : "$literal3$",
-      "value" : 10000
-    }, {
-      "display" : "$literal4$",
-      "value" : 12000
-    }, {
-      "display" : "$literal5$",
-      "value" : 15000
-    }, {
-      "display" : "$literal6$",
-      "value" : 20000
-    } ],
-    "configMin" : null,
-    "configMax" : null,
-    "configMaxLength" : null
   } ],
   "supportsLiveValidation" : false,
   "languages" : {
     "valyrian" : {
-      "SeasonSpring" : "Spring",
-      "SeasonSummer" : "Summer",
-      "SeasonWinter" : "Winter",
-      "StatCalories" : "Calories",
-      "AppName" : "Harvest Pixels",
-      "$literal1$" : "7,500",
-      "$literal0$" : "5,000",
-      "$literal3$" : "10,000",
-      "$literal2$" : "8,000",
-      "$literal5$" : "15,000",
-      "StepGoalTitle" : "Step Goal",
-      "$literal4$" : "12,000",
-      "SeasonAuto" : "Auto (current month)",
-      "$literal6$" : "20,000",
-      "SeasonTitle" : "Season",
       "StatTitle" : "Bottom Data",
       "StatSteps" : "Steps",
-      "SeasonAutumn" : "Autumn",
+      "StatCalories" : "Calories",
+      "AppName" : "Harvest Pixels",
       "StatHeartRate" : "Heart Rate"
     }
   }

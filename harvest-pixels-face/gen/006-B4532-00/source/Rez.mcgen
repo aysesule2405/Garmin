@@ -6,6 +6,7 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var HarvestBackground as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
@@ -15,16 +16,9 @@ module Rez {
     } // Fonts
 
     module Strings {
-        (:initialized) var StepGoalTitle as ResourceId;
-        (:initialized) var SeasonSpring as ResourceId;
-        (:initialized) var SeasonAuto as ResourceId;
-        (:initialized) var SeasonSummer as ResourceId;
-        (:initialized) var SeasonTitle as ResourceId;
         (:initialized) var StatTitle as ResourceId;
-        (:initialized) var SeasonWinter as ResourceId;
         (:initialized) var StatSteps as ResourceId;
         (:initialized) var StatCalories as ResourceId;
-        (:initialized) var SeasonAutumn as ResourceId;
         (:initialized) var AppName as ResourceId;
         (:initialized) var StatHeartRate as ResourceId;
     } // Strings

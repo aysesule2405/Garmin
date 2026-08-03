@@ -2,417 +2,321 @@
 <debugInfo>
     <manifest filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/manifest.xml"/>
     <pcToLineNum>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/gen/006-B4532-00/source/Rez.mcgen" id="1" lineNum="7" parent="globals/Rez" pc="268435460" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="2" lineNum="27" parent="globals/HarvestPixelsView" pc="268435480" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="1" lineNum="19" parent="globals/HarvestPixelsView" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/gen/006-B4532-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435472" symbol="&lt;init&gt;"/>
         <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="3" lineNum="5" parent="globals/HarvestPixelsApp" pc="268435492" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="149" parent="globals/HarvestPixelsView" pc="268435504" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="150" parent="globals/HarvestPixelsView" pc="268435506" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="151" parent="globals/HarvestPixelsView" pc="268435508" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="153" parent="globals/HarvestPixelsView" pc="268435524" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="155" parent="globals/HarvestPixelsView" pc="268435540" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="157" parent="globals/HarvestPixelsView" pc="268435556" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="159" parent="globals/HarvestPixelsView" pc="268435572" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="152" parent="globals/HarvestPixelsView" pc="268435575" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="154" parent="globals/HarvestPixelsView" pc="268435581" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="156" parent="globals/HarvestPixelsView" pc="268435587" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="158" parent="globals/HarvestPixelsView" pc="268435593" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="160" parent="globals/HarvestPixelsView" pc="268435599" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="319" parent="globals/HarvestPixelsView" pc="268435607" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="320" parent="globals/HarvestPixelsView" pc="268435610" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="321" parent="globals/HarvestPixelsView" pc="268435622" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="322" parent="globals/HarvestPixelsView" pc="268435630" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="324" parent="globals/HarvestPixelsView" pc="268435647" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="325" parent="globals/HarvestPixelsView" pc="268435653" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="326" parent="globals/HarvestPixelsView" pc="268435660" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="326" parent="globals/HarvestPixelsView" pc="268435667" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="329" parent="globals/HarvestPixelsView" pc="268435677" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="334" parent="globals/HarvestPixelsView" pc="268435752" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="114" parent="globals/HarvestPixelsView" pc="268435782" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="122" parent="globals/HarvestPixelsView" pc="268435785" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="123" parent="globals/HarvestPixelsView" pc="268435797" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="124" parent="globals/HarvestPixelsView" pc="268435809" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="125" parent="globals/HarvestPixelsView" pc="268435824" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="126" parent="globals/HarvestPixelsView" pc="268435839" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="127" parent="globals/HarvestPixelsView" pc="268435853" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="7" lineNum="98" parent="globals/HarvestPixelsView" pc="268435878" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;canvasSize&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="7" lineNum="99" parent="globals/HarvestPixelsView" pc="268435880" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;canvasSize&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="8" lineNum="49" parent="globals/HarvestPixelsView" pc="268435908" symbol="onSettingsChanged"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="8" lineNum="50" parent="globals/HarvestPixelsView" pc="268435910" symbol="onSettingsChanged"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="8" lineNum="51" parent="globals/HarvestPixelsView" pc="268435917" symbol="onSettingsChanged"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="337" parent="globals/HarvestPixelsView" pc="268435929" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="338" parent="globals/HarvestPixelsView" pc="268435932" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="339" parent="globals/HarvestPixelsView" pc="268435944" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="340" parent="globals/HarvestPixelsView" pc="268435951" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="342" parent="globals/HarvestPixelsView" pc="268435958" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="343" parent="globals/HarvestPixelsView" pc="268435969" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="344" parent="globals/HarvestPixelsView" pc="268435976" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="345" parent="globals/HarvestPixelsView" pc="268435987" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="346" parent="globals/HarvestPixelsView" pc="268435998" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="347" parent="globals/HarvestPixelsView" pc="268436005" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="348" parent="globals/HarvestPixelsView" pc="268436027" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="350" parent="globals/HarvestPixelsView" pc="268436039" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="351" parent="globals/HarvestPixelsView" pc="268436061" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="356" parent="globals/HarvestPixelsView" pc="268436070" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="357" parent="globals/HarvestPixelsView" pc="268436099" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="10" lineNum="76" parent="globals/HarvestPixelsView" pc="268436113" symbol="onExitSleep"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="10" lineNum="77" parent="globals/HarvestPixelsView" pc="268436115" symbol="onExitSleep"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="10" lineNum="78" parent="globals/HarvestPixelsView" pc="268436123" symbol="onExitSleep"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="280" parent="globals/HarvestPixelsView" pc="268436135" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="289" parent="globals/HarvestPixelsView" pc="268436138" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="290" parent="globals/HarvestPixelsView" pc="268436159" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="291" parent="globals/HarvestPixelsView" pc="268436180" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="292" parent="globals/HarvestPixelsView" pc="268436201" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="295" parent="globals/HarvestPixelsView" pc="268436222" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="296" parent="globals/HarvestPixelsView" pc="268436233" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="297" parent="globals/HarvestPixelsView" pc="268436243" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="298" parent="globals/HarvestPixelsView" pc="268436264" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="299" parent="globals/HarvestPixelsView" pc="268436288" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="12" lineNum="66" parent="globals/HarvestPixelsView" pc="268436323" symbol="onLayout"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="12" lineNum="67" parent="globals/HarvestPixelsView" pc="268436325" symbol="onLayout"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="12" lineNum="68" parent="globals/HarvestPixelsView" pc="268436339" symbol="onLayout"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="164" parent="globals/HarvestPixelsView" pc="268436354" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="165" parent="globals/HarvestPixelsView" pc="268436357" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="166" parent="globals/HarvestPixelsView" pc="268436367" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="169" parent="globals/HarvestPixelsView" pc="268436376" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="170" parent="globals/HarvestPixelsView" pc="268436401" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="171" parent="globals/HarvestPixelsView" pc="268436409" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="171" parent="globals/HarvestPixelsView" pc="268436433" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="172" parent="globals/HarvestPixelsView" pc="268436439" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="172" parent="globals/HarvestPixelsView" pc="268436455" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="173" parent="globals/HarvestPixelsView" pc="268436461" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="173" parent="globals/HarvestPixelsView" pc="268436477" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="174" parent="globals/HarvestPixelsView" pc="268436483" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="360" parent="globals/HarvestPixelsView" pc="268436486" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="361" parent="globals/HarvestPixelsView" pc="268436489" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="362" parent="globals/HarvestPixelsView" pc="268436493" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="363" parent="globals/HarvestPixelsView" pc="268436506" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="366" parent="globals/HarvestPixelsView" pc="268436537" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="367" parent="globals/HarvestPixelsView" pc="268436549" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="368" parent="globals/HarvestPixelsView" pc="268436565" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="369" parent="globals/HarvestPixelsView" pc="268436581" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="370" parent="globals/HarvestPixelsView" pc="268436599" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="54" parent="globals/HarvestPixelsView" pc="268436639" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="55" parent="globals/HarvestPixelsView" pc="268436642" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="56" parent="globals/HarvestPixelsView" pc="268436661" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="58" parent="globals/HarvestPixelsView" pc="268436689" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="59" parent="globals/HarvestPixelsView" pc="268436708" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="61" parent="globals/HarvestPixelsView" pc="268436736" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="62" parent="globals/HarvestPixelsView" pc="268436755" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="63" parent="globals/HarvestPixelsView" pc="268436780" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="16" lineNum="102" parent="globals/HarvestPixelsView" pc="268436803" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridX&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="16" lineNum="103" parent="globals/HarvestPixelsView" pc="268436806" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridX&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="16" lineNum="104" parent="globals/HarvestPixelsView" pc="268436814" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridX&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="16" lineNum="105" parent="globals/HarvestPixelsView" pc="268436827" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridX&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="374" parent="globals/HarvestPixelsView" pc="268436850" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="375" parent="globals/HarvestPixelsView" pc="268436853" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="376" parent="globals/HarvestPixelsView" pc="268436865" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="377" parent="globals/HarvestPixelsView" pc="268436882" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="380" parent="globals/HarvestPixelsView" pc="268436899" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="381" parent="globals/HarvestPixelsView" pc="268436916" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="382" parent="globals/HarvestPixelsView" pc="268436922" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="383" parent="globals/HarvestPixelsView" pc="268436932" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="384" parent="globals/HarvestPixelsView" pc="268436952" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="388" parent="globals/HarvestPixelsView" pc="268436972" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="108" parent="globals/HarvestPixelsView" pc="268436978" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridY&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="109" parent="globals/HarvestPixelsView" pc="268436981" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridY&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="110" parent="globals/HarvestPixelsView" pc="268436989" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridY&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="111" parent="globals/HarvestPixelsView" pc="268437002" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridY&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="19" lineNum="263" parent="globals/HarvestPixelsView" pc="268437025" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawWoodPanel&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="19" lineNum="274" parent="globals/HarvestPixelsView" pc="268437027" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawWoodPanel&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="19" lineNum="275" parent="globals/HarvestPixelsView" pc="268437048" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawWoodPanel&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="19" lineNum="276" parent="globals/HarvestPixelsView" pc="268437081" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawWoodPanel&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="19" lineNum="277" parent="globals/HarvestPixelsView" pc="268437114" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawWoodPanel&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="20" lineNum="71" parent="globals/HarvestPixelsView" pc="268437145" symbol="onEnterSleep"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="20" lineNum="72" parent="globals/HarvestPixelsView" pc="268437147" symbol="onEnterSleep"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="20" lineNum="73" parent="globals/HarvestPixelsView" pc="268437155" symbol="onEnterSleep"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="179" parent="globals/HarvestPixelsView" pc="268437167" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="180" parent="globals/HarvestPixelsView" pc="268437170" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="183" parent="globals/HarvestPixelsView" pc="268437186" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="184" parent="globals/HarvestPixelsView" pc="268437192" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="185" parent="globals/HarvestPixelsView" pc="268437199" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="186" parent="globals/HarvestPixelsView" pc="268437206" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="187" parent="globals/HarvestPixelsView" pc="268437213" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="188" parent="globals/HarvestPixelsView" pc="268437220" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="189" parent="globals/HarvestPixelsView" pc="268437243" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="192" parent="globals/HarvestPixelsView" pc="268437266" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="193" parent="globals/HarvestPixelsView" pc="268437287" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="194" parent="globals/HarvestPixelsView" pc="268437308" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="195" parent="globals/HarvestPixelsView" pc="268437329" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="196" parent="globals/HarvestPixelsView" pc="268437350" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="197" parent="globals/HarvestPixelsView" pc="268437371" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="198" parent="globals/HarvestPixelsView" pc="268437392" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="199" parent="globals/HarvestPixelsView" pc="268437413" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="200" parent="globals/HarvestPixelsView" pc="268437434" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="201" parent="globals/HarvestPixelsView" pc="268437457" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="202" parent="globals/HarvestPixelsView" pc="268437480" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="205" parent="globals/HarvestPixelsView" pc="268437504" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="206" parent="globals/HarvestPixelsView" pc="268437528" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="207" parent="globals/HarvestPixelsView" pc="268437552" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="208" parent="globals/HarvestPixelsView" pc="268437576" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="209" parent="globals/HarvestPixelsView" pc="268437600" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="210" parent="globals/HarvestPixelsView" pc="268437624" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="213" parent="globals/HarvestPixelsView" pc="268437648" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="214" parent="globals/HarvestPixelsView" pc="268437669" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="215" parent="globals/HarvestPixelsView" pc="268437690" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="216" parent="globals/HarvestPixelsView" pc="268437711" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="217" parent="globals/HarvestPixelsView" pc="268437732" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="218" parent="globals/HarvestPixelsView" pc="268437753" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="219" parent="globals/HarvestPixelsView" pc="268437774" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="220" parent="globals/HarvestPixelsView" pc="268437795" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="223" parent="globals/HarvestPixelsView" pc="268437816" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="224" parent="globals/HarvestPixelsView" pc="268437837" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="225" parent="globals/HarvestPixelsView" pc="268437858" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="226" parent="globals/HarvestPixelsView" pc="268437879" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="227" parent="globals/HarvestPixelsView" pc="268437900" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="228" parent="globals/HarvestPixelsView" pc="268437921" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="231" parent="globals/HarvestPixelsView" pc="268437942" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="234" parent="globals/HarvestPixelsView" pc="268437969" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="235" parent="globals/HarvestPixelsView" pc="268438001" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="236" parent="globals/HarvestPixelsView" pc="268438034" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="239" parent="globals/HarvestPixelsView" pc="268438067" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="240" parent="globals/HarvestPixelsView" pc="268438091" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="241" parent="globals/HarvestPixelsView" pc="268438115" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="242" parent="globals/HarvestPixelsView" pc="268438139" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="245" parent="globals/HarvestPixelsView" pc="268438163" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="246" parent="globals/HarvestPixelsView" pc="268438187" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="247" parent="globals/HarvestPixelsView" pc="268438211" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="248" parent="globals/HarvestPixelsView" pc="268438235" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="249" parent="globals/HarvestPixelsView" pc="268438259" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="252" parent="globals/HarvestPixelsView" pc="268438283" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="255" parent="globals/HarvestPixelsView" pc="268438310" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="256" parent="globals/HarvestPixelsView" pc="268438331" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="257" parent="globals/HarvestPixelsView" pc="268438352" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="258" parent="globals/HarvestPixelsView" pc="268438373" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="260" parent="globals/HarvestPixelsView" pc="268438394" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="40" parent="globals/HarvestPixelsView" pc="268438416" symbol="initialize"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="41" parent="globals/HarvestPixelsView" pc="268438418" symbol="initialize"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="42" parent="globals/HarvestPixelsView" pc="268438430" symbol="initialize"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="45" parent="globals/HarvestPixelsView" pc="268438437" symbol="initialize"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="46" parent="globals/HarvestPixelsView" pc="268438475" symbol="initialize"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="23" lineNum="130" parent="globals/HarvestPixelsView" pc="268438514" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="23" lineNum="138" parent="globals/HarvestPixelsView" pc="268438516" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="23" lineNum="139" parent="globals/HarvestPixelsView" pc="268438530" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="81" parent="globals/HarvestPixelsView" pc="268438567" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="83" parent="globals/HarvestPixelsView" pc="268438569" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="84" parent="globals/HarvestPixelsView" pc="268438580" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="87" parent="globals/HarvestPixelsView" pc="268438595" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="88" parent="globals/HarvestPixelsView" pc="268438607" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="90" parent="globals/HarvestPixelsView" pc="268438615" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="91" parent="globals/HarvestPixelsView" pc="268438626" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="92" parent="globals/HarvestPixelsView" pc="268438637" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="24" lineNum="93" parent="globals/HarvestPixelsView" pc="268438648" symbol="onUpdate"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="25" lineNum="305" parent="globals/HarvestPixelsView" pc="268438660" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="25" lineNum="306" parent="globals/HarvestPixelsView" pc="268438663" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="25" lineNum="310" parent="globals/HarvestPixelsView" pc="268438670" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="25" lineNum="311" parent="globals/HarvestPixelsView" pc="268438695" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="25" lineNum="312" parent="globals/HarvestPixelsView" pc="268438706" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="25" lineNum="313" parent="globals/HarvestPixelsView" pc="268438726" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="25" lineNum="316" parent="globals/HarvestPixelsView" pc="268438732" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="26" lineNum="12" parent="globals/HarvestPixelsApp" pc="268438765" symbol="onStart"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="27" lineNum="23" parent="globals/HarvestPixelsApp" pc="268438768" symbol="onSettingsChanged"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="27" lineNum="24" parent="globals/HarvestPixelsApp" pc="268438770" symbol="onSettingsChanged"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="27" lineNum="25" parent="globals/HarvestPixelsApp" pc="268438779" symbol="onSettingsChanged"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="28" lineNum="18" parent="globals/HarvestPixelsApp" pc="268438795" symbol="getInitialView"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="28" lineNum="19" parent="globals/HarvestPixelsApp" pc="268438797" symbol="getInitialView"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="28" lineNum="20" parent="globals/HarvestPixelsApp" pc="268438822" symbol="getInitialView"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="29" lineNum="8" parent="globals/HarvestPixelsApp" pc="268438835" symbol="initialize"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="29" lineNum="9" parent="globals/HarvestPixelsApp" pc="268438837" symbol="initialize"/>
-        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="30" lineNum="15" parent="globals/HarvestPixelsApp" pc="268438850" symbol="onStop"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="153" parent="globals/HarvestPixelsView" pc="268435504" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="154" parent="globals/HarvestPixelsView" pc="268435507" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="155" parent="globals/HarvestPixelsView" pc="268435519" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="156" parent="globals/HarvestPixelsView" pc="268435527" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="158" parent="globals/HarvestPixelsView" pc="268435544" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="159" parent="globals/HarvestPixelsView" pc="268435550" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="160" parent="globals/HarvestPixelsView" pc="268435557" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="160" parent="globals/HarvestPixelsView" pc="268435564" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="163" parent="globals/HarvestPixelsView" pc="268435574" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="4" lineNum="168" parent="globals/HarvestPixelsView" pc="268435649" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="121" parent="globals/HarvestPixelsView" pc="268435685" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSmallTextAt&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="127" parent="globals/HarvestPixelsView" pc="268435687" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSmallTextAt&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="5" lineNum="128" parent="globals/HarvestPixelsView" pc="268435703" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSmallTextAt&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="81" parent="globals/HarvestPixelsView" pc="268435727" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artHeight&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="6" lineNum="82" parent="globals/HarvestPixelsView" pc="268435729" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artHeight&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="7" lineNum="47" parent="globals/HarvestPixelsView" pc="268435741" symbol="onSettingsChanged"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="7" lineNum="48" parent="globals/HarvestPixelsView" pc="268435743" symbol="onSettingsChanged"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="7" lineNum="49" parent="globals/HarvestPixelsView" pc="268435750" symbol="onSettingsChanged"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="8" lineNum="173" parent="globals/HarvestPixelsView" pc="268435762" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSideStats&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="8" lineNum="174" parent="globals/HarvestPixelsView" pc="268435765" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSideStats&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="8" lineNum="176" parent="globals/HarvestPixelsView" pc="268435803" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSideStats&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="8" lineNum="177" parent="globals/HarvestPixelsView" pc="268435820" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSideStats&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="8" lineNum="178" parent="globals/HarvestPixelsView" pc="268435840" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSideStats&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="182" parent="globals/HarvestPixelsView" pc="268435881" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="183" parent="globals/HarvestPixelsView" pc="268435884" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="184" parent="globals/HarvestPixelsView" pc="268435896" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="186" parent="globals/HarvestPixelsView" pc="268435903" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="187" parent="globals/HarvestPixelsView" pc="268435914" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="188" parent="globals/HarvestPixelsView" pc="268435925" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="189" parent="globals/HarvestPixelsView" pc="268435936" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="190" parent="globals/HarvestPixelsView" pc="268435958" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="192" parent="globals/HarvestPixelsView" pc="268435970" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="193" parent="globals/HarvestPixelsView" pc="268435992" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="196" parent="globals/HarvestPixelsView" pc="268436001" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="197" parent="globals/HarvestPixelsView" pc="268436014" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="203" parent="globals/HarvestPixelsView" pc="268436045" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="204" parent="globals/HarvestPixelsView" pc="268436057" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="205" parent="globals/HarvestPixelsView" pc="268436073" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="206" parent="globals/HarvestPixelsView" pc="268436094" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="9" lineNum="207" parent="globals/HarvestPixelsView" pc="268436112" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="10" lineNum="93" parent="globals/HarvestPixelsView" pc="268436149" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;sourceX&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="10" lineNum="94" parent="globals/HarvestPixelsView" pc="268436151" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;sourceX&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="97" parent="globals/HarvestPixelsView" pc="268436172" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;sourceY&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="11" lineNum="98" parent="globals/HarvestPixelsView" pc="268436174" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;sourceY&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="12" lineNum="57" parent="globals/HarvestPixelsView" pc="268436195" symbol="onLayout"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="12" lineNum="58" parent="globals/HarvestPixelsView" pc="268436197" symbol="onLayout"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="12" lineNum="59" parent="globals/HarvestPixelsView" pc="268436211" symbol="onLayout"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="77" parent="globals/HarvestPixelsView" pc="268436226" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artWidth&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="13" lineNum="78" parent="globals/HarvestPixelsView" pc="268436228" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artWidth&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="52" parent="globals/HarvestPixelsView" pc="268436240" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="53" parent="globals/HarvestPixelsView" pc="268436243" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="14" lineNum="54" parent="globals/HarvestPixelsView" pc="268436262" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="211" parent="globals/HarvestPixelsView" pc="268436291" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="212" parent="globals/HarvestPixelsView" pc="268436294" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="213" parent="globals/HarvestPixelsView" pc="268436306" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="214" parent="globals/HarvestPixelsView" pc="268436323" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="217" parent="globals/HarvestPixelsView" pc="268436340" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="218" parent="globals/HarvestPixelsView" pc="268436357" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="219" parent="globals/HarvestPixelsView" pc="268436363" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="220" parent="globals/HarvestPixelsView" pc="268436373" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="222" parent="globals/HarvestPixelsView" pc="268436393" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="15" lineNum="226" parent="globals/HarvestPixelsView" pc="268436413" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="16" lineNum="101" parent="globals/HarvestPixelsView" pc="268436419" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawReferenceArtwork&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="16" lineNum="102" parent="globals/HarvestPixelsView" pc="268436421" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawReferenceArtwork&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="85" parent="globals/HarvestPixelsView" pc="268436449" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artX&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="17" lineNum="86" parent="globals/HarvestPixelsView" pc="268436451" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artX&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="29" parent="globals/HarvestPixelsView" pc="268436467" symbol="initialize"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="30" parent="globals/HarvestPixelsView" pc="268436469" symbol="initialize"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="31" parent="globals/HarvestPixelsView" pc="268436481" symbol="initialize"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="34" parent="globals/HarvestPixelsView" pc="268436488" symbol="initialize"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="39" parent="globals/HarvestPixelsView" pc="268436526" symbol="initialize"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="18" lineNum="42" parent="globals/HarvestPixelsView" pc="268436564" symbol="initialize"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="19" lineNum="89" parent="globals/HarvestPixelsView" pc="268436603" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artY&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="19" lineNum="90" parent="globals/HarvestPixelsView" pc="268436605" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artY&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="20" lineNum="105" parent="globals/HarvestPixelsView" pc="268436621" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="20" lineNum="111" parent="globals/HarvestPixelsView" pc="268436623" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="20" lineNum="112" parent="globals/HarvestPixelsView" pc="268436639" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="62" parent="globals/HarvestPixelsView" pc="268436663" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="63" parent="globals/HarvestPixelsView" pc="268436665" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="64" parent="globals/HarvestPixelsView" pc="268436676" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="67" parent="globals/HarvestPixelsView" pc="268436691" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="68" parent="globals/HarvestPixelsView" pc="268436703" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="70" parent="globals/HarvestPixelsView" pc="268436711" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="71" parent="globals/HarvestPixelsView" pc="268436722" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="72" parent="globals/HarvestPixelsView" pc="268436733" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="73" parent="globals/HarvestPixelsView" pc="268436744" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="21" lineNum="74" parent="globals/HarvestPixelsView" pc="268436755" symbol="onUpdate"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="138" parent="globals/HarvestPixelsView" pc="268436767" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="139" parent="globals/HarvestPixelsView" pc="268436770" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="143" parent="globals/HarvestPixelsView" pc="268436777" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="144" parent="globals/HarvestPixelsView" pc="268436802" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="145" parent="globals/HarvestPixelsView" pc="268436813" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="146" parent="globals/HarvestPixelsView" pc="268436833" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsView.mc" id="22" lineNum="149" parent="globals/HarvestPixelsView" pc="268436839" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="23" lineNum="12" parent="globals/HarvestPixelsApp" pc="268436878" symbol="onStart"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="24" lineNum="23" parent="globals/HarvestPixelsApp" pc="268436881" symbol="onSettingsChanged"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="24" lineNum="24" parent="globals/HarvestPixelsApp" pc="268436883" symbol="onSettingsChanged"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="24" lineNum="25" parent="globals/HarvestPixelsApp" pc="268436892" symbol="onSettingsChanged"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="25" lineNum="18" parent="globals/HarvestPixelsApp" pc="268436908" symbol="getInitialView"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="25" lineNum="19" parent="globals/HarvestPixelsApp" pc="268436910" symbol="getInitialView"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="25" lineNum="20" parent="globals/HarvestPixelsApp" pc="268436935" symbol="getInitialView"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="26" lineNum="8" parent="globals/HarvestPixelsApp" pc="268436948" symbol="initialize"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="26" lineNum="9" parent="globals/HarvestPixelsApp" pc="268436950" symbol="initialize"/>
+        <entry filename="/Users/aysesule/Downloads/garmin/harvest-pixels-face/source/HarvestPixelsApp.mc" id="27" lineNum="15" parent="globals/HarvestPixelsApp" pc="268436963" symbol="onStop"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="30" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;"/>
+        <entry id="14" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artHeight&gt;"/>
         <entry id="8389683" method="true" symbol="onSettingsChanged"/>
-        <entry field="true" id="42" symbol="SeasonWinter"/>
-        <entry field="true" id="44" symbol="StatHeartRate"/>
+        <entry field="true" id="36" symbol="StatHeartRate"/>
         <entry id="24" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;"/>
-        <entry field="true" id="37" symbol="SeasonAuto"/>
         <entry id="8388924" module="true" symbol="Gregorian"/>
-        <entry field="true" id="14" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_stepGoal&gt;"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="9" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_fontSmall&gt;"/>
-        <entry field="true" id="36" symbol="AppName"/>
+        <entry field="true" id="10" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_fontSmall&gt;"/>
+        <entry field="true" id="34" symbol="AppName"/>
         <entry id="8388633" module="true" symbol="ActivityMonitor"/>
         <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="17" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artY&gt;"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="16" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artX&gt;"/>
         <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="28" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;sourceY&gt;"/>
+        <entry id="27" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;sourceX&gt;"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="13" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_statSetting&gt;"/>
+        <entry field="true" id="12" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_statSetting&gt;"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-        <entry field="true" id="11" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_isSleeping&gt;"/>
-        <entry id="31" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry id="8389376" method="true" symbol="onEnterSleep"/>
-        <entry id="28" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridY&gt;"/>
-        <entry id="27" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;gridX&gt;"/>
-        <entry id="16" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;canvasSize&gt;"/>
-        <entry id="18" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;"/>
-        <entry id="17" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;"/>
+        <entry id="15" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;artWidth&gt;"/>
+        <entry field="true" id="30" symbol="HarvestBackground"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry field="true" id="34" symbol="PixelFontLarge"/>
-        <entry field="true" id="8" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_fontLarge&gt;"/>
-        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="19" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawReferenceArtwork&gt;"/>
+        <entry field="true" id="32" symbol="PixelFontLarge"/>
+        <entry field="true" id="9" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_fontLarge&gt;"/>
         <entry id="8388644" module="true" symbol="System"/>
-        <entry id="21" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
+        <entry id="18" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry field="true" id="41" symbol="SeasonTitle"/>
-        <entry id="29" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
-        <entry field="true" id="46" symbol="StatTitle"/>
-        <entry field="true" id="35" symbol="PixelFontSmall"/>
+        <entry id="26" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;"/>
+        <entry field="true" id="38" symbol="StatTitle"/>
+        <entry field="true" id="33" symbol="PixelFontSmall"/>
         <entry id="7" object="true" symbol="HarvestPixelsView"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="38" symbol="SeasonAutumn"/>
-        <entry field="true" id="33" symbol="LauncherIcon"/>
+        <entry field="true" id="31" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
-        <entry id="26" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
-        <entry field="true" id="32" symbol="&lt;globals/HarvestPixelsApp/&lt;&gt;_view&gt;"/>
+        <entry id="25" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;"/>
+        <entry field="true" id="29" symbol="&lt;globals/HarvestPixelsApp/&lt;&gt;_view&gt;"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="23" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;"/>
-        <entry field="true" id="12" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_seasonSetting&gt;"/>
+        <entry id="22" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSmallTextAt&gt;"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry field="true" id="15" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_w&gt;"/>
+        <entry field="true" id="13" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_w&gt;"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="40" symbol="SeasonSummer"/>
-        <entry id="25" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawWoodPanel&gt;"/>
         <entry id="8391701" method="true" symbol="setAntiAlias"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
-        <entry field="true" id="39" symbol="SeasonSpring"/>
         <entry id="8389281" method="true" symbol="onStop"/>
-        <entry field="true" id="10" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_h&gt;"/>
-        <entry id="19" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;"/>
-        <entry field="true" id="47" symbol="StepGoalTitle"/>
+        <entry field="true" id="11" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_h&gt;"/>
         <entry id="6" object="true" symbol="HarvestPixelsApp"/>
+        <entry field="true" id="8" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;_background&gt;"/>
         <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
-        <entry field="true" id="43" symbol="StatCalories"/>
-        <entry id="22" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
-        <entry id="20" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;"/>
-        <entry field="true" id="45" symbol="StatSteps"/>
+        <entry field="true" id="35" symbol="StatCalories"/>
+        <entry id="20" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;"/>
+        <entry field="true" id="37" symbol="StatSteps"/>
         <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="21" method="true" symbol="&lt;globals/HarvestPixelsView/&lt;&gt;drawSideStats&gt;"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435606" name="season" stackId="1" startPc="268435504"/>
-        <entry arg="true" endPc="268435781" name="dc" stackId="1" startPc="268435607"/>
-        <entry endPc="268435780" name="clock" stackId="2" startPc="268435610"/>
-        <entry endPc="268435780" name="hour" stackId="3" startPc="268435610"/>
-        <entry endPc="268435780" name="is24Hour" stackId="4" startPc="268435610"/>
-        <entry endPc="268435780" name="timeString" stackId="5" startPc="268435610"/>
-        <entry arg="true" endPc="268435877" name="dc" stackId="1" startPc="268435782"/>
-        <entry arg="true" endPc="268435877" name="col" stackId="2" startPc="268435782"/>
-        <entry arg="true" endPc="268435877" name="row" stackId="3" startPc="268435782"/>
-        <entry arg="true" endPc="268435877" name="colSpan" stackId="4" startPc="268435782"/>
-        <entry arg="true" endPc="268435877" name="rowSpan" stackId="5" startPc="268435782"/>
-        <entry arg="true" endPc="268435877" name="color" stackId="6" startPc="268435782"/>
-        <entry endPc="268435876" name="x" stackId="7" startPc="268435785"/>
-        <entry endPc="268435876" name="y" stackId="8" startPc="268435785"/>
-        <entry endPc="268435876" name="x2" stackId="9" startPc="268435785"/>
-        <entry endPc="268435876" name="y2" stackId="10" startPc="268435785"/>
-        <entry arg="true" endPc="268436112" name="dc" stackId="1" startPc="268435929"/>
-        <entry endPc="268436111" name="activity" stackId="2" startPc="268435932"/>
-        <entry endPc="268436111" name="label" stackId="3" startPc="268435932"/>
-        <entry endPc="268436111" name="value" stackId="4" startPc="268435932"/>
-        <entry endPc="268436035" name="calories" stackId="5" startPc="268435998"/>
-        <entry endPc="268436069" name="steps" stackId="6" startPc="268436039"/>
-        <entry arg="true" endPc="268436322" name="dc" stackId="1" startPc="268436135"/>
-        <entry arg="true" endPc="268436322" name="outline" stackId="2" startPc="268436135"/>
-        <entry arg="true" endPc="268436322" name="wood" stackId="3" startPc="268436135"/>
-        <entry arg="true" endPc="268436322" name="gold" stackId="4" startPc="268436135"/>
-        <entry arg="true" endPc="268436322" name="paper" stackId="5" startPc="268436135"/>
-        <entry arg="true" endPc="268436322" name="paperLight" stackId="6" startPc="268436135"/>
-        <entry endPc="268436321" name="i" stackId="7" startPc="268436233"/>
-        <entry endPc="268436311" name="cellX" stackId="8" startPc="268436233"/>
-        <entry arg="true" endPc="268436353" name="dc" stackId="1" startPc="268436323"/>
-        <entry endPc="268436485" name="now" stackId="1" startPc="268436357"/>
-        <entry endPc="268436485" name="month" stackId="2" startPc="268436357"/>
-        <entry arg="true" endPc="268436638" name="dc" stackId="1" startPc="268436486"/>
-        <entry arg="true" endPc="268436638" name="value" stackId="2" startPc="268436486"/>
-        <entry endPc="268436637" name="visible" stackId="3" startPc="268436489"/>
-        <entry endPc="268436637" name="firstCell" stackId="4" startPc="268436489"/>
-        <entry endPc="268436637" name="i" stackId="5" startPc="268436565"/>
-        <entry endPc="268436627" name="cellCenter" stackId="6" startPc="268436565"/>
-        <entry endPc="268436627" name="character" stackId="7" startPc="268436565"/>
-        <entry endPc="268436801" name="season" stackId="1" startPc="268436642"/>
-        <entry endPc="268436801" name="stat" stackId="2" startPc="268436642"/>
-        <entry endPc="268436801" name="goal" stackId="3" startPc="268436642"/>
-        <entry endPc="268436801" name="goalNumber" stackId="4" startPc="268436642"/>
-        <entry arg="true" endPc="268436849" name="col" stackId="1" startPc="268436803"/>
-        <entry endPc="268436849" name="size" stackId="2" startPc="268436806"/>
-        <entry endPc="268436849" name="offset" stackId="3" startPc="268436806"/>
-        <entry endPc="268436977" name="activity" stackId="1" startPc="268436853"/>
-        <entry endPc="268436977" name="history" stackId="2" startPc="268436853"/>
-        <entry endPc="268436968" name="sample" stackId="3" startPc="268436922"/>
-        <entry arg="true" endPc="268437024" name="row" stackId="1" startPc="268436978"/>
-        <entry endPc="268437024" name="size" stackId="2" startPc="268436981"/>
-        <entry endPc="268437024" name="offset" stackId="3" startPc="268436981"/>
-        <entry arg="true" endPc="268437144" name="dc" stackId="1" startPc="268437025"/>
-        <entry arg="true" endPc="268437144" name="col" stackId="2" startPc="268437025"/>
-        <entry arg="true" endPc="268437144" name="row" stackId="3" startPc="268437025"/>
-        <entry arg="true" endPc="268437144" name="width" stackId="4" startPc="268437025"/>
-        <entry arg="true" endPc="268437144" name="height" stackId="5" startPc="268437025"/>
-        <entry arg="true" endPc="268437144" name="outline" stackId="6" startPc="268437025"/>
-        <entry arg="true" endPc="268437144" name="border" stackId="7" startPc="268437025"/>
-        <entry arg="true" endPc="268437144" name="fill" stackId="8" startPc="268437025"/>
-        <entry arg="true" endPc="268437144" name="fillLight" stackId="9" startPc="268437025"/>
-        <entry arg="true" endPc="268438415" name="dc" stackId="1" startPc="268437167"/>
-        <entry endPc="268438414" name="palette" stackId="2" startPc="268437170"/>
-        <entry endPc="268438414" name="outline" stackId="3" startPc="268437170"/>
-        <entry endPc="268438414" name="shadow" stackId="4" startPc="268437170"/>
-        <entry endPc="268438414" name="wood" stackId="5" startPc="268437170"/>
-        <entry endPc="268438414" name="gold" stackId="6" startPc="268437170"/>
-        <entry endPc="268438414" name="highlight" stackId="7" startPc="268437170"/>
-        <entry endPc="268438414" name="paper" stackId="8" startPc="268437170"/>
-        <entry endPc="268438414" name="paperLight" stackId="9" startPc="268437170"/>
-        <entry arg="true" endPc="268438566" name="dc" stackId="1" startPc="268438514"/>
-        <entry arg="true" endPc="268438566" name="col" stackId="2" startPc="268438514"/>
-        <entry arg="true" endPc="268438566" name="row" stackId="3" startPc="268438514"/>
-        <entry arg="true" endPc="268438566" name="font" stackId="4" startPc="268438514"/>
-        <entry arg="true" endPc="268438566" name="text" stackId="5" startPc="268438514"/>
-        <entry arg="true" endPc="268438566" name="color" stackId="6" startPc="268438514"/>
-        <entry arg="true" endPc="268438659" name="dc" stackId="1" startPc="268438567"/>
-        <entry arg="true" endPc="268438764" name="dc" stackId="1" startPc="268438660"/>
-        <entry endPc="268438763" name="dayNames" stackId="2" startPc="268438663"/>
-        <entry endPc="268438763" name="info" stackId="3" startPc="268438663"/>
-        <entry endPc="268438763" name="dayIndex" stackId="4" startPc="268438663"/>
+        <entry arg="true" endPc="268435684" name="dc" stackId="1" startPc="268435504"/>
+        <entry endPc="268435683" name="clock" stackId="2" startPc="268435507"/>
+        <entry endPc="268435683" name="hour" stackId="3" startPc="268435507"/>
+        <entry endPc="268435683" name="is24Hour" stackId="4" startPc="268435507"/>
+        <entry endPc="268435683" name="timeString" stackId="5" startPc="268435507"/>
+        <entry arg="true" endPc="268435726" name="dc" stackId="1" startPc="268435685"/>
+        <entry arg="true" endPc="268435726" name="x" stackId="2" startPc="268435685"/>
+        <entry arg="true" endPc="268435726" name="y" stackId="3" startPc="268435685"/>
+        <entry arg="true" endPc="268435726" name="text" stackId="4" startPc="268435685"/>
+        <entry arg="true" endPc="268435880" name="dc" stackId="1" startPc="268435762"/>
+        <entry endPc="268435879" name="battery" stackId="2" startPc="268435765"/>
+        <entry endPc="268435879" name="batteryPct" stackId="3" startPc="268435765"/>
+        <entry arg="true" endPc="268436148" name="dc" stackId="1" startPc="268435881"/>
+        <entry endPc="268436147" name="activity" stackId="2" startPc="268435884"/>
+        <entry endPc="268436147" name="value" stackId="3" startPc="268435884"/>
+        <entry endPc="268435966" name="calories" stackId="4" startPc="268435936"/>
+        <entry endPc="268436000" name="steps" stackId="5" startPc="268435970"/>
+        <entry endPc="268436147" name="firstCell" stackId="6" startPc="268435884"/>
+        <entry endPc="268436147" name="i" stackId="7" startPc="268436073"/>
+        <entry endPc="268436137" name="cellCenter" stackId="8" startPc="268436073"/>
+        <entry endPc="268436137" name="character" stackId="9" startPc="268436073"/>
+        <entry arg="true" endPc="268436171" name="value" stackId="1" startPc="268436149"/>
+        <entry arg="true" endPc="268436194" name="value" stackId="1" startPc="268436172"/>
+        <entry arg="true" endPc="268436225" name="dc" stackId="1" startPc="268436195"/>
+        <entry endPc="268436289" name="stat" stackId="1" startPc="268436243"/>
+        <entry endPc="268436418" name="activity" stackId="1" startPc="268436294"/>
+        <entry endPc="268436418" name="history" stackId="2" startPc="268436294"/>
+        <entry endPc="268436409" name="sample" stackId="3" startPc="268436363"/>
+        <entry arg="true" endPc="268436448" name="dc" stackId="1" startPc="268436419"/>
+        <entry arg="true" endPc="268436662" name="dc" stackId="1" startPc="268436621"/>
+        <entry arg="true" endPc="268436662" name="x" stackId="2" startPc="268436621"/>
+        <entry arg="true" endPc="268436662" name="y" stackId="3" startPc="268436621"/>
+        <entry arg="true" endPc="268436662" name="text" stackId="4" startPc="268436621"/>
+        <entry arg="true" endPc="268436766" name="dc" stackId="1" startPc="268436663"/>
+        <entry arg="true" endPc="268436877" name="dc" stackId="1" startPc="268436767"/>
+        <entry endPc="268436876" name="dayNames" stackId="2" startPc="268436770"/>
+        <entry endPc="268436876" name="info" stackId="3" startPc="268436770"/>
+        <entry endPc="268436876" name="dayIndex" stackId="4" startPc="268436770"/>
     </localVars>
     <deviceInfo deviceVersion="e6263c2a80ff43933f83afa71f1f6645dc2cb4a3" partNumber="006-B4532-00"/>
     <annotations>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SeasonSpring"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SeasonTitle"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StepGoalTitle"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SeasonAutumn"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="HarvestBackground"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StatCalories"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StatSteps"/>
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="PixelFontSmall"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="PixelFontLarge"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StatHeartRate"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StatTitle"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="StatCalories"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SeasonWinter"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SeasonAuto"/>
-        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SeasonSummer"/>
-        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="PixelFontLarge"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/Rez" offset="116" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/HarvestPixelsView" offset="169" parentId="globals" symbolId="HarvestPixelsView" type="class"/>
-        <dataEntry label="globals/HarvestPixelsApp" offset="474" parentId="globals" symbolId="HarvestPixelsApp" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="563" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="598" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="642" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/HarvestPixelsView" offset="116" parentId="globals" symbolId="HarvestPixelsView" type="class"/>
+        <dataEntry label="globals/Rez" offset="376" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/HarvestPixelsApp" offset="429" parentId="globals" symbolId="HarvestPixelsApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="518" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="562" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="606" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435479" name="&lt;init&gt;" parent="Rez" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="HarvestPixelsView" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435491" name="&lt;init&gt;" parent="HarvestPixelsView" startPc="268435480">
+        <functionEntry accessMode="public" endPc="268435491" name="&lt;init&gt;" parent="Rez" startPc="268435472">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268435503" name="&lt;init&gt;" parent="HarvestPixelsApp" startPc="268435492">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435684" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;" parent="HarvestPixelsView" startPc="268435504">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435726" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawSmallTextAt&gt;" parent="HarvestPixelsView" startPc="268435685">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="text"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435740" name="&lt;globals/HarvestPixelsView/&lt;&gt;artHeight&gt;" parent="HarvestPixelsView" startPc="268435727">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435761" name="onSettingsChanged" parent="HarvestPixelsView" startPc="268435741">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435880" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawSideStats&gt;" parent="HarvestPixelsView" startPc="268435762">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436148" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;" parent="HarvestPixelsView" startPc="268435881">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436171" name="&lt;globals/HarvestPixelsView/&lt;&gt;sourceX&gt;" parent="HarvestPixelsView" startPc="268436149">
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436194" name="&lt;globals/HarvestPixelsView/&lt;&gt;sourceY&gt;" parent="HarvestPixelsView" startPc="268436172">
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436225" name="onLayout" parent="HarvestPixelsView" startPc="268436195">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436239" name="&lt;globals/HarvestPixelsView/&lt;&gt;artWidth&gt;" parent="HarvestPixelsView" startPc="268436226">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436290" name="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;" parent="HarvestPixelsView" startPc="268436240">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436418" name="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;" parent="HarvestPixelsView" startPc="268436291">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436448" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawReferenceArtwork&gt;" parent="HarvestPixelsView" startPc="268436419">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436466" name="&lt;globals/HarvestPixelsView/&lt;&gt;artX&gt;" parent="HarvestPixelsView" startPc="268436449">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436602" name="initialize" parent="HarvestPixelsView" startPc="268436467">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436620" name="&lt;globals/HarvestPixelsView/&lt;&gt;artY&gt;" parent="HarvestPixelsView" startPc="268436603">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436662" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;" parent="HarvestPixelsView" startPc="268436621">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="text"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436766" name="onUpdate" parent="HarvestPixelsView" startPc="268436663">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436877" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;" parent="HarvestPixelsView" startPc="268436767">
+            <param id="dc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -424,124 +328,20 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268435606" name="&lt;globals/HarvestPixelsView/&lt;&gt;seasonPalette&gt;" parent="HarvestPixelsView" startPc="268435504">
-            <param id="season"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268435781" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawTime&gt;" parent="HarvestPixelsView" startPc="268435607">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268435877" name="&lt;globals/HarvestPixelsView/&lt;&gt;px&gt;" parent="HarvestPixelsView" startPc="268435782">
-            <param id="dc"/>
-            <param id="col"/>
-            <param id="row"/>
-            <param id="colSpan"/>
-            <param id="rowSpan"/>
-            <param id="color"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268435907" name="&lt;globals/HarvestPixelsView/&lt;&gt;canvasSize&gt;" parent="HarvestPixelsView" startPc="268435878">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435928" name="onSettingsChanged" parent="HarvestPixelsView" startPc="268435908">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268436112" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawSelectedData&gt;" parent="HarvestPixelsView" startPc="268435929">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436134" name="onExitSleep" parent="HarvestPixelsView" startPc="268436113">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268436322" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawDataCounter&gt;" parent="HarvestPixelsView" startPc="268436135">
-            <param id="dc"/>
-            <param id="outline"/>
-            <param id="wood"/>
-            <param id="gold"/>
-            <param id="paper"/>
-            <param id="paperLight"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436353" name="onLayout" parent="HarvestPixelsView" startPc="268436323">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268436485" name="&lt;globals/HarvestPixelsView/&lt;&gt;currentSeason&gt;" parent="HarvestPixelsView" startPc="268436354">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268436638" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawCounterValue&gt;" parent="HarvestPixelsView" startPc="268436486">
-            <param id="dc"/>
-            <param id="value"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268436802" name="&lt;globals/HarvestPixelsView/&lt;&gt;loadSettings&gt;" parent="HarvestPixelsView" startPc="268436639">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268436849" name="&lt;globals/HarvestPixelsView/&lt;&gt;gridX&gt;" parent="HarvestPixelsView" startPc="268436803">
-            <param id="col"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268436977" name="&lt;globals/HarvestPixelsView/&lt;&gt;getHeartRateString&gt;" parent="HarvestPixelsView" startPc="268436850">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268437024" name="&lt;globals/HarvestPixelsView/&lt;&gt;gridY&gt;" parent="HarvestPixelsView" startPc="268436978">
-            <param id="row"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268437144" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawWoodPanel&gt;" parent="HarvestPixelsView" startPc="268437025">
-            <param id="dc"/>
-            <param id="col"/>
-            <param id="row"/>
-            <param id="width"/>
-            <param id="height"/>
-            <param id="outline"/>
-            <param id="border"/>
-            <param id="fill"/>
-            <param id="fillLight"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437166" name="onEnterSleep" parent="HarvestPixelsView" startPc="268437145">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268438415" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawClockTower&gt;" parent="HarvestPixelsView" startPc="268437167">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268438513" name="initialize" parent="HarvestPixelsView" startPc="268438416">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268438566" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawTextAt&gt;" parent="HarvestPixelsView" startPc="268438514">
-            <param id="dc"/>
-            <param id="col"/>
-            <param id="row"/>
-            <param id="font"/>
-            <param id="text"/>
-            <param id="color"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268438659" name="onUpdate" parent="HarvestPixelsView" startPc="268438567">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="private" endPc="268438764" name="&lt;globals/HarvestPixelsView/&lt;&gt;drawDay&gt;" parent="HarvestPixelsView" startPc="268438660">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268438767" name="onStart" parent="HarvestPixelsApp" startPc="268438765">
+        <functionEntry accessMode="public" endPc="268436880" name="onStart" parent="HarvestPixelsApp" startPc="268436878">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438794" name="onSettingsChanged" parent="HarvestPixelsApp" startPc="268438768">
+        <functionEntry accessMode="public" endPc="268436907" name="onSettingsChanged" parent="HarvestPixelsApp" startPc="268436881">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438834" name="getInitialView" parent="HarvestPixelsApp" startPc="268438795">
+        <functionEntry accessMode="public" endPc="268436947" name="getInitialView" parent="HarvestPixelsApp" startPc="268436908">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438849" name="initialize" parent="HarvestPixelsApp" startPc="268438835">
+        <functionEntry accessMode="public" endPc="268436962" name="initialize" parent="HarvestPixelsApp" startPc="268436948">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438852" name="onStop" parent="HarvestPixelsApp" startPc="268438850">
+        <functionEntry accessMode="public" endPc="268436965" name="onStop" parent="HarvestPixelsApp" startPc="268436963">
             <param id="state"/>
             <documentation/>
         </functionEntry>
